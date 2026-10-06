@@ -166,6 +166,44 @@
   "network": true
  },
  {
+  "id": "ashby:c6fd95f5-d7f8-4297-be2d-e91d19052469",
+  "board": "ashby:circle",
+  "source": "ashby",
+  "title": "Lead Product Designer, Marketplace",
+  "company": "circle",
+  "url": "https://jobs.ashbyhq.com/circle/c6fd95f5-d7f8-4297-be2d-e91d19052469",
+  "region": "REMOTE",
+  "location": "Anywhere / United States",
+  "posted": "2026-08-26T14:55:59.223000+00:00",
+  "salary": "$140K - $170K",
+  "first_seen": "2026-10-06T15:17:00.804945+00:00",
+  "tags": [
+   "AI",
+   "Fintech"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "ashby:130695ad-687e-4c49-976f-eb46f9b45ac9",
+  "board": "ashby:circle",
+  "source": "ashby",
+  "title": "Lead Product Designer",
+  "company": "circle",
+  "url": "https://jobs.ashbyhq.com/circle/130695ad-687e-4c49-976f-eb46f9b45ac9",
+  "region": "REMOTE",
+  "location": "Anywhere / United States",
+  "posted": "2026-08-26T14:51:39.802000+00:00",
+  "salary": "$140K - $170K",
+  "first_seen": "2026-10-06T15:17:00.804945+00:00",
+  "tags": [
+   "AI",
+   "Fintech"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
   "id": "greenhouse:4960742101",
   "board": "greenhouse:bybit",
   "source": "greenhouse",
@@ -336,24 +374,6 @@
    "Gov/Enterprise"
   ],
   "fit": 8,
-  "network": false
- },
- {
-  "id": "workable:0513bea4-f670-4dfe-a747-f65bcbd44dd1",
-  "board": "workable-search",
-  "source": "workable",
-  "title": "UI/UX Designer",
-  "company": "Star",
-  "url": "https://jobs.workable.com/view/1Cn3yTdFPnUGfSv7HhnChZ/ui%2Fux-designer-in-riyadh-at-star",
-  "region": "SA",
-  "location": "Riyadh, Saudi Arabia",
-  "posted": "2026-07-08T15:01:20.626000+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T14:44:55.709066+00:00",
-  "tags": [
-   "Design system"
-  ],
-  "fit": 3,
   "network": false
  }
 ]
