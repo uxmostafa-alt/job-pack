@@ -9,6 +9,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -37,7 +38,8 @@ TITLE_BLOCK = re.compile(
     r"mechanical|civil|architect|architectural|landscape|game|level|instructional|packaging|print|jewel\w*|"
     r"textile|hardware|electrical|structural|sound|3d|merchandis\w*|head|director|vp|vice president|"
     r"manager|engineer|developer|researcher|copywriter|content designer|marketing|brand|video|illustrat\w*|"
-    r"freelance|contract(or)?|part[- ]time|tutor|trainer|annotat\w*)\b",
+    r"freelance|contract(or)?|part[- ]time|tutor|trainer|annotat\w*|"
+    r"nationals?|tamheer|emirati|saudi(zation|isation)|locali[sz]ation program)\b",
     re.I,
 )
 AI_TITLE = re.compile(r"\b(ai|ml|genai|llm|conversational|machine learning|agentic)\b", re.I)
@@ -210,6 +212,29 @@ def recruitee(slug):
 
 ATS = {"greenhouse": greenhouse, "lever": lever, "ashby": ashby, "workable": workable, "recruitee": recruitee}
 
+
+def workable_search(_):
+    """Workable's public job search across all its customers; many GCC startups hire through Workable."""
+    for place in ("United Arab Emirates", "Saudi Arabia", "Qatar"):
+        for q in ("product designer", "ux designer", "ui designer"):
+            token = ""
+            for _page in range(3):
+                url = (f"https://jobs.workable.com/api/v1/jobs?query={urllib.parse.quote(q)}"
+                       f"&location={urllib.parse.quote(place)}" + (f"&pageToken={urllib.parse.quote(token)}" if token else ""))
+                d = get_json(url)
+                for j in d.get("jobs", []):
+                    if j.get("state") not in (None, "published"):
+                        continue
+                    loc = j.get("location") or {}
+                    label = ", ".join(x for x in [loc.get("city"), loc.get("countryName")] if x)
+                    company = (j.get("company") or {}).get("title", "")
+                    yield job("workable", "workable-search", j["id"], j["title"], company, j["url"],
+                              classify_place(label, None, j.get("workplace") == "remote"), to_dt(j.get("created")), None,
+                              strip_html(" ".join(str(j.get(k) or "") for k in ("description", "requirementsSection"))))
+                token = d.get("nextPageToken")
+                if not token:
+                    break
+
 # ---------- remote job boards (credited on the page, as their terms ask) ----------
 
 def remotive(_):
@@ -261,7 +286,7 @@ def workingnomads(_):
                   classify_place(j.get("location"), None, True), to_dt(j.get("pub_date")), None, strip_html(j.get("description")))
 
 
-BOARDS = {"remotive": remotive, "remoteok": remoteok, "himalayas": himalayas, "jobicy": jobicy, "wwr": wwr, "workingnomads": workingnomads}
+BOARDS = {"workable-search": workable_search, "remotive": remotive, "remoteok": remoteok, "himalayas": himalayas, "jobicy": jobicy, "wwr": wwr, "workingnomads": workingnomads}
 
 # ---------- pipeline ----------
 

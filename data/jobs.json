@@ -131,6 +131,22 @@
   "network": false
  },
  {
+  "id": "workable:f42e93b2-8962-4854-b08b-58b35f1d4d76",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Senior UX/UI Designer",
+  "company": "Müller`s Solutions",
+  "url": "https://jobs.workable.com/view/w9RrnYC194oHdfPmqtF53J/senior-ux%2Fui-designer-in-riyadh-at-m%C3%BCller%60s-solutions",
+  "region": "SA",
+  "location": "Riyadh, Saudi Arabia",
+  "posted": "2026-09-10T08:53:16.722000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:44:55.709066+00:00",
+  "tags": [],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "greenhouse:4967016101",
   "board": "greenhouse:bybit",
   "source": "greenhouse",
@@ -166,6 +182,79 @@
   ],
   "fit": 8,
   "network": true
+ },
+ {
+  "id": "workable:3bcca6e2-9597-45f9-b52c-87a7cff3f147",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Product Designer",
+  "company": "Fuse Energy",
+  "url": "https://jobs.workable.com/view/8ohK6YaZhZF89pC5Y4rkHZ/remote-product-designer-in-dubai-at-fuse-energy",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-08-21T13:49:02.246000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:44:55.709066+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "workable:39becba3-09b8-4e26-82da-71930899485a",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "UX/UI Designer",
+  "company": "Kayali",
+  "url": "https://jobs.workable.com/view/88zsusPeeweaXExsw6y49f/ux%2Fui-designer-in-dubai-at-kayali",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-08-12T12:20:35.616000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:44:55.709066+00:00",
+  "tags": [
+   "Arabic/RTL"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "workable:a0eecfb3-e0fd-425b-96b8-c89e4f73af17",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Interaction Designer",
+  "company": "webook.com",
+  "url": "https://jobs.workable.com/view/kSBFpYGtCBR4S5BpySb6Sx/interaction-designer-in-riyadh-at-webook.com",
+  "region": "SA",
+  "location": "Riyadh, Saudi Arabia",
+  "posted": "2026-08-12T11:40:08.589000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:44:55.709066+00:00",
+  "tags": [
+   "Design system"
+  ],
+  "fit": 5,
+  "network": true
+ },
+ {
+  "id": "workable:19e609eb-26a3-427f-acc2-2371d0ad17dc",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Product Design Lead",
+  "company": "FlyAkeed",
+  "url": "https://jobs.workable.com/view/4cuityN7EFNxWdLCNRHc5Q/product-design-lead-in-riyadh-at-flyakeed",
+  "region": "SA",
+  "location": "Riyadh, Saudi Arabia",
+  "posted": "2026-08-02T09:30:34.279000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:44:55.709066+00:00",
+  "tags": [
+   "AI",
+   "Design system"
+  ],
+  "fit": 6,
+  "network": false
  },
  {
   "id": "greenhouse:8651241002",
@@ -228,5 +317,43 @@
   ],
   "fit": 10,
   "network": true
+ },
+ {
+  "id": "workable:d575ffcb-adfa-4655-b450-46145b0d6fcf",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Senior UX/UI Designers On-site Dubai - Octopus by RTG (9 months)",
+  "company": "robusta",
+  "url": "https://jobs.workable.com/view/smPU8kfoeBJRycEzcUf3sk/senior-ux%2Fui-designers-on-site-dubai---octopus-by-rtg-(9-months)-in-dubai-at-robusta",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-07-13T13:06:27.268000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:44:55.709066+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 8,
+  "network": false
+ },
+ {
+  "id": "workable:0513bea4-f670-4dfe-a747-f65bcbd44dd1",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "UI/UX Designer",
+  "company": "Star",
+  "url": "https://jobs.workable.com/view/1Cn3yTdFPnUGfSv7HhnChZ/ui%2Fux-designer-in-riyadh-at-star",
+  "region": "SA",
+  "location": "Riyadh, Saudi Arabia",
+  "posted": "2026-07-08T15:01:20.626000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:44:55.709066+00:00",
+  "tags": [
+   "Design system"
+  ],
+  "fit": 3,
+  "network": false
  }
 ]
