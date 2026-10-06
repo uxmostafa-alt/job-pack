@@ -27,7 +27,10 @@ header h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
 .sub { color: var(--muted); margin: 0; font-size: 14px; }
 details.health { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
 details.health ul { margin: 6px 0 0; padding-left: 18px; }
-form.filters { margin: 18px 0 8px; padding: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; display: grid; gap: 12px; }
+.tabs { display: flex; gap: 4px; margin: 18px 0 0; border-bottom: 1px solid var(--line); }
+.tabs button { border: 1px solid transparent; border-bottom: 0; border-radius: 8px 8px 0 0; background: none; padding: 9px 16px; font-size: 15px; color: var(--muted); margin-bottom: -1px; }
+.tabs button[aria-selected="true"] { background: var(--paper); color: var(--ink); border-color: var(--line); }
+form.filters { margin: 12px 0 8px; padding: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; display: grid; gap: 12px; }
 fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
 legend { font-weight: 600; font-size: 13px; padding: 0; margin-bottom: 6px; float: left; width: 100%; }
 label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
@@ -62,13 +65,16 @@ footer a { color: inherit; }
     <details class="health"><summary id="health-sum"></summary><ul id="health-list"></ul></details>
   </header>
 
+  <div class="tabs" role="tablist" aria-label="Job type">
+    <button type="button" role="tab" id="tab-gulf" data-tab="gulf" aria-controls="jobs"></button>
+    <button type="button" role="tab" id="tab-remote" data-tab="remote" aria-controls="jobs"></button>
+  </div>
+
   <form class="filters" id="filters" aria-label="Filter jobs">
-    <fieldset>
+    <fieldset id="where">
       <legend>Where</legend>
       <label><input type="checkbox" name="region" value="AE" checked> UAE</label>
       <label><input type="checkbox" name="region" value="SA" checked> KSA</label>
-      <label><input type="checkbox" name="region" value="GCC" checked> Other GCC</label>
-      <label><input type="checkbox" name="region" value="REMOTE" checked> Remote</label>
     </fieldset>
     <fieldset>
       <legend>Show</legend>
@@ -99,7 +105,7 @@ footer a { color: inherit; }
   </form>
 
   <p class="count" id="count" aria-live="polite"></p>
-  <ol class="jobs" id="jobs"></ol>
+  <ol class="jobs" id="jobs" role="tabpanel"></ol>
 
   <footer>
     Each title links to the original posting. Remote listings via
@@ -117,7 +123,7 @@ footer a { color: inherit; }
 <script>
 (() => {
   const D = JSON.parse(document.getElementById("data").textContent);
-  const REGION = { AE: "UAE", SA: "KSA", GCC: "GCC", REMOTE: "Remote" };
+  const REGION = { AE: "UAE", SA: "KSA", REMOTE: "Remote" };
   const SENIOR = /\b(senior|sr\.?|lead|staff|principal)\b/i;
   const AI = /\b(ai|ml|genai|llm|conversational|machine learning|agentic)\b/i;
   const now = Date.now(), DAY = 864e5;
@@ -131,7 +137,7 @@ footer a { color: inherit; }
 
   // Header: refresh time and per-source health.
   document.getElementById("stamp").textContent =
-    `Refreshed ${D.generated_cairo} Cairo · ${D.jobs.length} roles · refreshes 08:00 and 20:00 Cairo`;
+    `Refreshed ${D.generated_cairo} Cairo · refreshes 07:40, 11:40, 15:40 and 19:40 Cairo`;
   const h = Object.entries(D.health);
   const failed = h.filter(([, v]) => v.failed).length;
   document.getElementById("health-sum").textContent =
@@ -200,28 +206,50 @@ footer a { color: inherit; }
     return li;
   }
 
+  // Gulf and Remote never mix: each tab owns its roles.
+  let tab = store.get("jp-tab", "gulf") === "remote" ? "remote" : "gulf";
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const inTab = (j, s, t) => t === "remote" ? j.region === "REMOTE" : j.region !== "REMOTE" && s.region.includes(j.region);
+  const age = j => now - Date.parse(j.posted || j.first_seen);
+  const selectTab = (t, focus) => {
+    tab = t; store.set("jp-tab", t);
+    tabs.forEach(b => { const on = b.dataset.tab === t; b.setAttribute("aria-selected", on); b.tabIndex = on ? 0 : -1; if (on && focus) b.focus(); });
+    list.setAttribute("aria-labelledby", "tab-" + t);
+    document.getElementById("where").hidden = t === "remote";
+    draw();
+  };
+  tabs.forEach((b, i) => {
+    b.addEventListener("click", () => selectTab(b.dataset.tab));
+    b.addEventListener("keydown", e => {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      e.preventDefault(); selectTab(tabs[(i + 1) % tabs.length].dataset.tab, true);
+    });
+  });
+
   function draw() {
     const s = state(); store.set("jp-filters", s);
-    const shown = D.jobs.filter(j =>
-      s.region.includes(j.region) &&
-      now - Date.parse(j.posted || j.first_seen) <= s.days * DAY &&
+    const match = (j, t) =>
+      inTab(j, s, t) &&
+      age(j) <= s.days * DAY &&
       (!s.senior || SENIOR.test(j.title)) && (!s.ai || AI.test(j.title)) &&
       (!s.salary || j.salary) && (!s.network || j.network) &&
       (!s.hideApplied || !applied.has(j.id)) &&
-      (!s.q || (j.title + " " + j.company).toLowerCase().includes(s.q))
-    ).sort((a, b) => s.sort === "fit"
-      ? (b.fit || 0) - (a.fit || 0) || Date.parse(b.posted || b.first_seen) - Date.parse(a.posted || a.first_seen)
-      : Date.parse(b.posted || b.first_seen) - Date.parse(a.posted || a.first_seen));
+      (!s.q || (j.title + " " + j.company).toLowerCase().includes(s.q));
+    const shown = D.jobs.filter(j => match(j, tab)).sort((a, b) => s.sort === "fit"
+      ? (b.fit || 0) - (a.fit || 0) || age(a) - age(b)
+      : age(a) - age(b));
     list.replaceChildren(...shown.map(card));
-    const older = D.jobs.filter(j => s.region.includes(j.region) && now - Date.parse(j.posted || j.first_seen) > s.days * DAY).length;
-    document.getElementById("count").textContent = `Showing ${shown.length} of ${D.jobs.length} roles` +
+    for (const b of tabs) b.textContent = `${b.dataset.tab === "gulf" ? "Gulf" : "Remote"} (${D.jobs.filter(j => match(j, b.dataset.tab)).length})`;
+    const total = D.jobs.filter(j => inTab(j, s, tab)).length;
+    const older = D.jobs.filter(j => inTab(j, s, tab) && age(j) > s.days * DAY).length;
+    document.getElementById("count").textContent = `Showing ${shown.length} of ${total} ${tab === "gulf" ? "Gulf" : "remote"} roles` +
       (older ? ` · ${older} more still open but posted earlier: widen "Posted"` : "");
-    if (!shown.length) list.appendChild(el("li", "empty", "No roles match these filters. Widen the date range or turn on more regions."));
+    if (!shown.length) list.appendChild(el("li", "empty", "No roles match these filters. Widen the date range or clear a filter."));
   }
 
   form.addEventListener("input", draw);
   form.addEventListener("submit", e => e.preventDefault());
-  draw();
+  selectTab(tab);
 })();
 </script>
 </body>

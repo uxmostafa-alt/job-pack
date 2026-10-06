@@ -1,4 +1,4 @@
-"""Fetch fresh product design roles (GCC + remote) from public job feeds and render docs/index.html.
+"""Fetch fresh product design roles (UAE, KSA and remote) from public job feeds and render docs/index.html.
 
 Standard library only. No LLM calls. Run: python3 fetch.py
 """
@@ -27,7 +27,7 @@ MAX_AGE_BOARD = timedelta(days=30)
 UA = {"User-Agent": "job-pack/1.0 (personal job digest; github.com/uxmostafa-alt/job-pack)"}
 
 # Cron strings in .github/workflows/refresh.yml, keyed by Cairo UTC offset in hours.
-SCHEDULES = {3: "40 4,16 * * *", 2: "40 5,17 * * *"}
+SCHEDULES = {3: "40 4,8,12,16 * * *", 2: "40 5,9,13,17 * * *"}
 
 # ---------- filters ----------
 
@@ -48,17 +48,16 @@ SENIOR_TITLE = re.compile(r"\b(senior|sr\.?|lead|staff|principal)\b", re.I)
 COUNTRY = {
     "AE": r"united arab emirates|\buae\b|dubai|abu dhabi|sharjah|ajman|ras al[- ]khaimah|fujairah|al ain|umm al[- ]quwain",
     "SA": r"saudi|\bksa\b|riyadh|jeddah|jiddah|dammam|khobar|dhahran|mecca|makkah|medina|madinah|\bneom\b|tabuk|jubail",
-    "GCC": r"qatar|doha|kuwait|bahrain|manama|\boman\b|muscat",
 }
 COUNTRY_RE = {k: re.compile(v, re.I) for k, v in COUNTRY.items()}
-CODES = {"ae": "AE", "are": "AE", "sa": "SA", "sau": "SA", "qa": "GCC", "kw": "GCC", "bh": "GCC", "om": "GCC"}
+CODES = {"ae": "AE", "are": "AE", "sa": "SA", "sau": "SA"}
 REMOTE_WORD = re.compile(r"\b(remote|anywhere|worldwide|global|distributed|work from home|wfh|fully remote)\b", re.I)
 REMOTE_OK = re.compile(r"\b(anywhere|worldwide|global|emea|mena|middle east|gcc|international)\b", re.I)
 FILLER = re.compile(r"\b(remote|fully|first|friendly|only|work from home|wfh|hybrid|location|locations|timezone|time zone|tz|or|and|in|the|of)\b|[\s,;:/|()\-–—+&.]+", re.I)
 
 
 def classify_place(text, country_code=None, remote=False):
-    """Return (region, label) where region is AE, SA, GCC, REMOTE, or None when the role does not fit."""
+    """Return (region, label) where region is AE, SA, REMOTE, or None when the role does not fit."""
     text = (text or "").strip()
     code = CODES.get((country_code or "").lower())
     for region, rx in COUNTRY_RE.items():
@@ -92,7 +91,7 @@ TAGS = [
 def fit(job, text):
     tags = [name for name, rx in TAGS if rx.search(text or "")]
     score = len(tags)
-    score += {"AE": 3, "SA": 2, "GCC": 1, "REMOTE": 1}.get(job["region"], 0)
+    score += {"AE": 3, "SA": 2, "REMOTE": 1}.get(job["region"], 0)
     score += 2 if SENIOR_TITLE.search(job["title"]) else 0
     score += 2 if AI_TITLE.search(job["title"]) else 0
     return tags, score
@@ -102,7 +101,7 @@ def fit(job, text):
 
 def get(url, data=None):
     req = urllib.request.Request(url, headers=UA, data=data)
-    with urllib.request.urlopen(req, timeout=25) as r:
+    with urllib.request.urlopen(req, timeout=40) as r:
         return r.read()
 
 
@@ -214,8 +213,8 @@ ATS = {"greenhouse": greenhouse, "lever": lever, "ashby": ashby, "workable": wor
 
 
 def workable_search(_):
-    """Workable's public job search across all its customers; many GCC startups hire through Workable."""
-    for place in ("United Arab Emirates", "Saudi Arabia", "Qatar"):
+    """Workable's public job search across all its customers; many UAE and KSA startups hire through Workable."""
+    for place in ("United Arab Emirates", "Saudi Arabia"):
         for q in ("product designer", "ux designer", "ui designer"):
             token = ""
             for _page in range(3):
@@ -295,10 +294,12 @@ def collect(companies):
 
     def run(task):
         key, fn, arg = task
-        try:
-            return key, list(fn(arg)), None
-        except Exception as e:  # one dead feed must not sink the run; it is reported on the page
-            return key, [], f"{type(e).__name__}: {e}"[:160]
+        for _ in range(2):  # big boards sometimes time out under parallel load; one retry
+            try:
+                return key, list(fn(arg)), None
+            except Exception as e:  # one dead feed must not sink the run; it is reported on the page
+                err = f"{type(e).__name__}: {e}"[:160]
+        return key, [], err
 
     with cf.ThreadPoolExecutor(24) as ex:
         return list(ex.map(run, tasks))
@@ -403,7 +404,7 @@ def main():
     (state / "jobs.json").write_text(json.dumps(jobs, ensure_ascii=False, indent=1))
     h = health(results)
     render(jobs, h)
-    regions = {r: sum(j["region"] == r for j in jobs) for r in ("AE", "SA", "GCC", "REMOTE")}
+    regions = {r: sum(j["region"] == r for j in jobs) for r in ("AE", "SA", "REMOTE")}
     print(f"{len(jobs)} jobs {regions}; failed feeds: {sum(v['failed'] for v in h.values())}/{sum(v['feeds'] for v in h.values())}")
     set_output(True)
     return 0

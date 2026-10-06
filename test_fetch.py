@@ -25,7 +25,8 @@ class PlaceTest(unittest.TestCase):
         self.assertEqual(fetch.classify_place("Dubai, United Arab Emirates")[0], "AE")
         self.assertEqual(fetch.classify_place("Riyadh")[0], "SA")
         self.assertEqual(fetch.classify_place("", "sa")[0], "SA")
-        self.assertEqual(fetch.classify_place("Doha, Qatar")[0], "GCC")
+        self.assertIsNone(fetch.classify_place("Doha, Qatar")[0])  # Gulf means UAE and KSA only
+        self.assertEqual(fetch.classify_place("Doha, Qatar; Dubai, UAE")[0], "AE")
         self.assertEqual(fetch.classify_place("Remote - Saudi Arabia", None, True)[0], "SA")
 
     def test_remote(self):
