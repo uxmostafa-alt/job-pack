@@ -42,7 +42,7 @@ button[aria-pressed="true"] { color: var(--ok); }
     <label><input type="checkbox" id="hideSent" checked> Hide sent</label>
     <span class="sub" id="status" aria-live="polite"></span>
   </div>
-  <h2 id="h-hiring">Recruiters at companies hiring now</h2>
+  <h2 id="h-hiring">People you know at companies hiring now</h2>
   <ol id="hiring"></ol>
   <h2 id="h-agency">Agency recruiters: ask about roles not posted yet</h2>
   <ol id="agency"></ol>
@@ -61,12 +61,36 @@ button[aria-pressed="true"] { color: var(--ok); }
   const norm = s => (s || "").toLowerCase().replace(/\|.*/, "").replace(/\b(group|networks?|technologies|technology|holding|llc|inc|ltd|fz|pjsc)\b/g, "").replace(/[^a-z0-9]/g, "");
   const same = (a, b) => a && b && (a === b || (a.length >= 4 && b.length >= 4 && (a.startsWith(b) || b.startsWith(a))));
   const first = n => n.split(/\s+/)[0];
-  const pitch = "I'm a Senior Product Designer in Dubai, 8+ years on UAE and KSA products. UAE resident, available now, no visa needed. Nusuk: 1.8M pilgrims, drop-off cut 45%, review 20 min to 6 min.";
-  const note = (r, roles) => roles.length
-    ? `Hi ${first(r.name)}, I saw the ${roles[0].title} role at ${r.company}. ${pitch} Can I send you my CV? Portfolio: moziyad.com`
-    : r.kind === "AGENCY"
-      ? `Hi ${first(r.name)}, ${pitch} PSI: 800+ agents, lead capture 34% to 67%. If you're working on senior product or UX design roles, posted or not yet, can I send you my CV? Portfolio: moziyad.com`
-      : `Hi ${first(r.name)}, ${pitch} Is ${r.company} planning any product design hires? Happy to send my CV. Portfolio: moziyad.com`;
+  // Notes in Mostafa's voice: spoken, short, one small ask. No achievement list.
+  const me = "I'm a senior product designer in Dubai, mostly enterprise and gov products, Arabic RTL";
+  const note = (r, roles) => {
+    const hi = `Hi ${first(r.name)}`, role = roles[0] && roles[0].title;
+    if (role && r.kind === "HIRE") return [hi,
+      "I know we don't know each other, figured a direct note beats a keyword filter",
+      `saw the ${role} role on your team, ${me}, AI assisted review flows lately`,
+      "worth a quick chat? happy to send my CV, the work's at moziyad.com"].join("\n");
+    if (role && (r.kind === "RECRUIT" || r.kind === "AGENCY")) return [hi,
+      "I know we don't really know each other, the market's gotten weird and ATS reads keywords, not people, so I'm trying the human way",
+      `saw the ${role} role at ${r.company}, ${me}`,
+      "would you be open to me sending my CV, or pointing me to whoever owns the role?",
+      "moziyad.com if you want a quick look"].join("\n");
+    if (role) return [hi,
+      "we haven't really talked before, I know, but applying through ATS lately feels like sending CVs into a black hole",
+      `saw ${r.company} is hiring a ${role}, ${me}`,
+      "would you be okay referring me, or telling me who to talk to? I'll send my CV and a short note so it's zero effort on your side",
+      "moziyad.com"].join("\n");
+    if (r.kind === "AGENCY") return [hi,
+      "we don't know each other, I know, but ATS filters people by keywords these days so I'd rather just talk to a human",
+      `${me}, UAE resident and free now`,
+      "if you're working on product or UX design roles, posted or not yet, I'd love to be on your list",
+      "happy to send my CV, moziyad.com has the work"].join("\n");
+    return [hi,
+      "I know this is a bit out of nowhere, the market's tough and ATS reads words, not work, so I'm reaching out to people directly",
+      me,
+      `is ${r.company} hiring any product designers soon? if yes, can I send my CV`,
+      "no pressure either way"].join("\n");
+  };
+  const KIND = { RECRUIT: "Recruiter", AGENCY: "Agency", HIRE: "Hiring manager", REFER: "Can refer", INTRO: "Can introduce", CLIENT: "Contact" };
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   let jobs = D.snapshot.jobs || [];
 
@@ -76,7 +100,7 @@ button[aria-pressed="true"] { color: var(--ok); }
     if (r.url) { const a = el("a", null, r.name); a.href = r.url; a.target = "_blank"; a.rel = "noopener noreferrer"; name.appendChild(a); }
     else name.textContent = r.name;
     li.appendChild(name);
-    li.appendChild(el("p", "line", [r.title, r.company, r.region, `strength ${r.strength}/5`].filter(Boolean).join(" · ")));
+    li.appendChild(el("p", "line", [KIND[r.kind], r.title, r.company, r.region, `strength ${r.strength}/5`].filter(Boolean).join(" · ")));
     if (roles.length) {
       const ul = el("ul", "roles");
       roles.slice(0, 4).forEach(j => { const i = el("li"); const a = el("a", null, j.title); a.href = j.url; a.target = "_blank"; a.rel = "noopener noreferrer"; i.appendChild(a); ul.appendChild(i); });
@@ -104,7 +128,8 @@ button[aria-pressed="true"] { color: var(--ok); }
       if (region && r.region !== region) continue;
       if (hide && sent.has(r.name + r.company)) continue;
       const roles = jobs.filter(j => same(norm(j.company), norm(r.company)));
-      groups[roles.length ? "hiring" : r.kind === "AGENCY" ? "agency" : "inhouse"].push([r, roles]);
+      const group = roles.length ? "hiring" : r.kind === "AGENCY" ? "agency" : r.kind === "RECRUIT" ? "inhouse" : null;
+      if (group) groups[group].push([r, roles]);
     }
     const rank = ([r]) => (r.region === "UAE" ? 20 : r.region === "KSA" ? 10 : 0) + (+r.strength || 0);
     for (const [id, list] of Object.entries(groups)) {

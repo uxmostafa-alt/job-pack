@@ -20,9 +20,11 @@ def main():
     if not m:
         sys.exit("No ldb-data block in the dashboard file; was it exported from a different tool?")
     people = json.loads(m.group(1))["people"]
+    # Recruiters always show; everyone else shows only when their company is hiring on the page.
+    order = ("RECRUIT", "AGENCY", "HIRE", "REFER", "INTRO", "CLIENT")
     recruiters = []
     for p in people:
-        kinds = [k for k in p.get("ty") or [] if k in ("AGENCY", "RECRUIT")]
+        kinds = sorted((k for k in p.get("ty") or [] if k in order), key=order.index)
         if not kinds or not p.get("n"):
             continue
         email = p.get("e") if re.fullmatch(r"[^@\s]+@[^@\s]+\.[a-z]{2,}", str(p.get("e") or ""), re.I) else None
@@ -34,7 +36,7 @@ def main():
     data = json.dumps({"recruiters": recruiters, "snapshot": jobs, "live": PAGE_URL}, ensure_ascii=False).replace("</", "<\\/")
     out = ROOT / "outreach.local.html"
     out.write_text((ROOT / "outreach_template.html").read_text().replace("__DATA__", data))
-    print(f"{len(recruiters)} recruiters written to {out}")
+    print(f"{len(recruiters)} people written to {out}")
 
 
 if __name__ == "__main__":
