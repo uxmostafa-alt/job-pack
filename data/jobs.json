@@ -168,6 +168,38 @@
   "network": false
  },
  {
+  "id": "linkedin:4474603760",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Lead Experience Designer",
+  "company": "Thoughtworks",
+  "url": "https://sa.linkedin.com/jobs/view/lead-experience-designer-at-thoughtworks-4474603760",
+  "region": "SA",
+  "location": "Riyadh Region",
+  "posted": "2026-10-05T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T15:35:19.429328+00:00",
+  "tags": [],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "linkedin:4475890067",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Lead Experience Designer",
+  "company": "Aceleradora Ágil",
+  "url": "https://sa.linkedin.com/jobs/view/lead-experience-designer-at-aceleradora-%C3%A1gil-4475890067",
+  "region": "SA",
+  "location": "Riyadh, Riyadh, Saudi Arabia",
+  "posted": "2026-10-05T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T15:35:19.429328+00:00",
+  "tags": [],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "linkedin:4457339528",
   "board": "linkedin",
   "source": "linkedin",
@@ -385,6 +417,22 @@
   "first_seen": "2026-10-06T15:35:19.429328+00:00",
   "tags": [],
   "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4472120154",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Lead Experience (CX) Designer",
+  "company": "Al Tayer Insignia",
+  "url": "https://ae.linkedin.com/jobs/view/lead-experience-cx-designer-at-al-tayer-insignia-4472120154",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-09-30T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T15:35:19.429328+00:00",
+  "tags": [],
+  "fit": 5,
   "network": false
  }
 ]
