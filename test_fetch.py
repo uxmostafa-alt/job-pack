@@ -9,7 +9,7 @@ class TitleTest(unittest.TestCase):
     def test_fits(self):
         for t in ["Senior Product Designer", "Product Designer", "UI/UX Designer", "Lead UX Designer",
                   "AI Product Designer", "Staff Product Designer, Payments", "Product Design Lead",
-                  "Senior UX/UI Designer (Arabic)", "Conversational AI Designer"]:
+                  "Senior UX/UI Designer (Arabic)", "Conversational AI Designer", "Lead Experience Designer", "Service Designer"]:
             self.assertTrue(fetch.title_fits(t), t)
 
     def test_rejects(self):

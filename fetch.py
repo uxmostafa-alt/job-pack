@@ -32,7 +32,7 @@ SCHEDULES = {3: "40 4,8,12,16 * * *", 2: "40 5,9,13,17 * * *"}
 # ---------- filters ----------
 
 TITLE_NEED = re.compile(r"designer|design lead|lead,? design|product design\b", re.I)
-TITLE_AREA = re.compile(r"\b(product|ux|ui|user experience|user interface|interaction|ai|conversational|design systems?)\b", re.I)
+TITLE_AREA = re.compile(r"\b(product|ux|ui|user experience|experience|service|user interface|interaction|ai|conversational|design systems?)\b", re.I)
 TITLE_BLOCK = re.compile(
     r"\b(junior|jr\.?|intern|internship|graduate|trainee|entry|graphic|motion|interior|fashion|industrial|"
     r"mechanical|civil|architect|architectural|landscape|game|level|instructional|packaging|print|jewel\w*|"
@@ -236,11 +236,11 @@ def li_field(pattern, card):
 def linkedin(_):
     """LinkedIn's public job search (no login), past week, UAE and KSA only.
 
-    Sequential and slow on purpose: about 18 small requests per run. If LinkedIn refuses a run,
+    Sequential and slow on purpose: about 24 small requests per run. If LinkedIn refuses a run,
     the feed is marked failed and the last good LinkedIn roles stay until the next run.
     """
     for place in ("United Arab Emirates", "Saudi Arabia"):
-        for q in ("product designer", "ux designer", "ui ux designer"):
+        for q in ("product designer", "ux designer", "ui ux designer", "experience designer"):
             for start in (0, 10, 20):
                 url = ("https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?"
                        + urllib.parse.urlencode({"keywords": q, "location": place, "f_TPR": "r604800", "start": start}))
