@@ -70,22 +70,22 @@
   "network": false
  },
  {
-  "id": "linkedin:4474048666",
+  "id": "linkedin:4476339772",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "Product Designer (UX/UI) – Banking",
-  "company": "99brightminds",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-ux-ui-%E2%80%93-banking-at-99brightminds-4474048666",
+  "title": "AI Product Designer",
+  "company": "AppliedAI",
+  "url": "https://ae.linkedin.com/jobs/view/ai-product-designer-at-appliedai-4476339772",
   "region": "AE",
-  "location": "Dubai, United Arab Emirates",
+  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
   "posted": "2026-10-06T00:00:00+00:00",
   "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
+  "first_seen": "2026-10-06T21:13:39.002262+00:00",
   "tags": [
-   "Fintech"
+   "AI"
   ],
-  "fit": 4,
-  "network": false
+  "fit": 8,
+  "network": true
  },
  {
   "id": "linkedin:4474632110",
@@ -401,22 +401,6 @@
   "first_seen": "2026-10-06T15:35:19.429328+00:00",
   "tags": [],
   "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4472310287",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer, Product Layer of the CTRM System",
-  "company": "Raw Ventures",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-product-layer-of-the-ctrm-system-at-raw-ventures-4472310287",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-09-30T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 3,
   "network": false
  },
  {
