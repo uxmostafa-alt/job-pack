@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Recruiter Desk</title>
+<style>
+:root { --bg: #f6f5f1; --paper: #fff; --ink: #1d1d1b; --muted: #5f5d57; --line: #dedbd2; --accent: #1f5f8b; --accent-ink: #fff; --chip: #eef1f4; --ok: #2f7a4f; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #151514; --paper: #1f1f1d; --ink: #ecebe6; --muted: #a9a69d; --line: #34332f; --accent: #7db7e0; --accent-ink: #10202b; --chip: #2a2c2f; --ok: #7fcf9f; }
+}
+:root[data-theme="dark"] { --bg: #151514; --paper: #1f1f1d; --ink: #ecebe6; --muted: #a9a69d; --line: #34332f; --accent: #7db7e0; --accent-ink: #10202b; --chip: #2a2c2f; --ok: #7fcf9f; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 20px 16px 48px; }
+h1 { font-size: 22px; margin: 0 0 4px; } h2 { font-size: 17px; margin: 24px 0 8px; }
+.sub { color: var(--muted); margin: 0; font-size: 14px; }
+.bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0; padding: 12px 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; }
+label { display: inline-flex; gap: 6px; align-items: center; }
+select { padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit; }
+ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 6px; }
+.card.sent { opacity: 0.5; }
+.name { font-weight: 700; } .name a { color: var(--accent); }
+.line { margin: 0; color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+.roles { margin: 0; padding-left: 18px; font-size: 14px; } .roles a { color: var(--accent); }
+.row { display: flex; flex-wrap: wrap; gap: 8px; }
+button { font: inherit; font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button[aria-pressed="true"] { color: var(--ok); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.empty { color: var(--muted); padding: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Recruiter Desk</h1>
+  <p class="sub" id="stamp">Private. Built from your LinkedIn export on this computer. Not published.</p>
+  <div class="bar" role="group" aria-label="Filters">
+    <label>Region <select id="region"><option value="">All</option><option>UAE</option><option>KSA</option></select></label>
+    <label><input type="checkbox" id="hideSent" checked> Hide sent</label>
+    <span class="sub" id="status" aria-live="polite"></span>
+  </div>
+  <h2 id="h-hiring">Recruiters at companies hiring now</h2>
+  <ol id="hiring"></ol>
+  <h2 id="h-agency">Agency recruiters: ask about roles not posted yet</h2>
+  <ol id="agency"></ol>
+  <h2 id="h-inhouse">In-house recruiters: no matching role on the page yet</h2>
+  <ol id="inhouse"></ol>
+</div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(() => {
+  const D = JSON.parse(document.getElementById("data").textContent);
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* storage blocked: state lasts this visit only */ } }
+  };
+  const sent = new Set(store.get("rd-sent", []));
+  const norm = s => (s || "").toLowerCase().replace(/\|.*/, "").replace(/\b(group|networks?|technologies|technology|holding|llc|inc|ltd|fz|pjsc)\b/g, "").replace(/[^a-z0-9]/g, "");
+  const same = (a, b) => a && b && (a === b || (a.length >= 4 && b.length >= 4 && (a.startsWith(b) || b.startsWith(a))));
+  const first = n => n.split(/\s+/)[0];
+  const pitch = "I'm a Senior Product Designer in Dubai, 8+ years on UAE and KSA products. UAE resident, available now, no visa needed. Nusuk: 1.8M pilgrims, drop-off cut 45%, review 20 min to 6 min.";
+  const note = (r, roles) => roles.length
+    ? `Hi ${first(r.name)}, I saw the ${roles[0].title} role at ${r.company}. ${pitch} Can I send you my CV? Portfolio: moziyad.com`
+    : r.kind === "AGENCY"
+      ? `Hi ${first(r.name)}, ${pitch} PSI: 800+ agents, lead capture 34% to 67%. If you're working on senior product or UX design roles, posted or not yet, can I send you my CV? Portfolio: moziyad.com`
+      : `Hi ${first(r.name)}, ${pitch} Is ${r.company} planning any product design hires? Happy to send my CV. Portfolio: moziyad.com`;
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  let jobs = D.snapshot.jobs || [];
+
+  function card(r, roles) {
+    const li = el("li", "card" + (sent.has(r.name + r.company) ? " sent" : ""));
+    const name = el("div", "name");
+    if (r.url) { const a = el("a", null, r.name); a.href = r.url; a.target = "_blank"; a.rel = "noopener noreferrer"; name.appendChild(a); }
+    else name.textContent = r.name;
+    li.appendChild(name);
+    li.appendChild(el("p", "line", [r.title, r.company, r.region, `strength ${r.strength}/5`].filter(Boolean).join(" · ")));
+    if (roles.length) {
+      const ul = el("ul", "roles");
+      roles.slice(0, 4).forEach(j => { const i = el("li"); const a = el("a", null, j.title); a.href = j.url; a.target = "_blank"; a.rel = "noopener noreferrer"; i.appendChild(a); ul.appendChild(i); });
+      li.appendChild(ul);
+    }
+    const row = el("div", "row");
+    const copy = el("button", "primary", "Copy note"); copy.type = "button";
+    copy.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(note(r, roles)); copy.textContent = "Copied"; }
+      catch { window.prompt("Copy this note:", note(r, roles)); }
+    });
+    const key = r.name + r.company, mark = el("button", null, sent.has(key) ? "Sent" : "Mark sent"); mark.type = "button";
+    mark.setAttribute("aria-pressed", sent.has(key));
+    mark.addEventListener("click", () => { sent.has(key) ? sent.delete(key) : sent.add(key); store.set("rd-sent", [...sent]); draw(); });
+    row.append(copy, mark);
+    if (r.email) { const m = el("button", null, "Copy email"); m.type = "button"; m.addEventListener("click", () => navigator.clipboard.writeText(r.email).catch(() => window.prompt("Email:", r.email))); row.appendChild(m); }
+    li.appendChild(row);
+    return li;
+  }
+
+  function draw() {
+    const region = document.getElementById("region").value, hide = document.getElementById("hideSent").checked;
+    const groups = { hiring: [], agency: [], inhouse: [] };
+    for (const r of D.recruiters) {
+      if (region && r.region !== region) continue;
+      if (hide && sent.has(r.name + r.company)) continue;
+      const roles = jobs.filter(j => same(norm(j.company), norm(r.company)));
+      groups[roles.length ? "hiring" : r.kind === "AGENCY" ? "agency" : "inhouse"].push([r, roles]);
+    }
+    const rank = ([r]) => (r.region === "UAE" ? 20 : r.region === "KSA" ? 10 : 0) + (+r.strength || 0);
+    for (const [id, list] of Object.entries(groups)) {
+      list.sort((a, b) => rank(b) - rank(a));
+      const ol = document.getElementById(id);
+      ol.replaceChildren(...list.map(([r, roles]) => card(r, roles)));
+      if (!list.length) ol.appendChild(el("li", "empty", "None right now."));
+      const h = document.getElementById("h-" + id); h.dataset.base ??= h.textContent; h.textContent = `${h.dataset.base} (${list.length})`;
+    }
+  }
+
+  document.getElementById("region").addEventListener("change", draw);
+  document.getElementById("hideSent").addEventListener("change", draw);
+  draw();
+  const status = document.getElementById("status");
+  status.textContent = `Jobs from saved snapshot (${jobs.length}). Checking live page…`;
+  fetch(D.live, { cache: "no-store" }).then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(live => { jobs = live.jobs; status.textContent = `Live jobs: ${jobs.length}, refreshed ${live.generated_cairo} Cairo`; draw(); })
+    .catch(() => { status.textContent = `Offline: using saved snapshot (${jobs.length} jobs)`; });
+})();
+</script>
+</body>
+</html>

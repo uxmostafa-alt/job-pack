@@ -343,6 +343,8 @@ def render(jobs, health_info):
     page = (ROOT / "template.html").read_text().replace("__DATA__", data)
     (ROOT / "docs").mkdir(exist_ok=True)
     (ROOT / "docs" / "index.html").write_text(page)
+    # Same data as the page, for the local recruiter desk (outreach.py) to join against.
+    (ROOT / "docs" / "jobs.json").write_text(json.dumps(payload, ensure_ascii=False))
     (ROOT / "docs" / ".nojekyll").write_text("")
 
 
