@@ -9,6 +9,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -20,11 +21,10 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).parent
 CAIRO = ZoneInfo("Africa/Cairo")
 NOW = datetime.now(timezone.utc)
-# Company boards list only open roles, so an old posting still listed is open; cap at 90 days to drop evergreen ads.
-# Remote job boards cannot confirm a role is still open, so they get a shorter cap.
-MAX_AGE_ATS = timedelta(days=90)
-MAX_AGE_BOARD = timedelta(days=30)
+# Roles older than a week are not worth applying to; the page filters further to 3 days or today.
+MAX_AGE = timedelta(days=7)
 UA = {"User-Agent": "job-pack/1.0 (personal job digest; github.com/uxmostafa-alt/job-pack)"}
+BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
 
 # Cron strings in .github/workflows/refresh.yml, keyed by Cairo UTC offset in hours.
 SCHEDULES = {3: "40 4,8,12,16 * * *", 2: "40 5,9,13,17 * * *"}
@@ -209,7 +209,58 @@ def recruitee(slug):
                   strip_html(j.get("description")))
 
 
-ATS = {"greenhouse": greenhouse, "lever": lever, "ashby": ashby, "workable": workable, "recruitee": recruitee}
+def smartrecruiters(company_id):
+    for country in ("ae", "sa"):
+        d = get_json(f"https://api.smartrecruiters.com/v1/companies/{company_id}/postings?limit=100&country={country}")
+        for j in d.get("content", []):
+            loc = j.get("location") or {}
+            yield job("smartrecruiters", f"smartrecruiters:{company_id}", j["id"], j["name"],
+                      (j.get("company") or {}).get("name") or company_id,
+                      f"https://jobs.smartrecruiters.com/{company_id}/{j['id']}",
+                      classify_place(loc.get("fullLocation") or loc.get("city", ""), loc.get("country"), loc.get("remote")),
+                      to_dt(j.get("releasedDate")))
+
+
+ATS = {"greenhouse": greenhouse, "lever": lever, "ashby": ashby, "workable": workable, "recruitee": recruitee,
+       "smartrecruiters": smartrecruiters}
+
+
+LI_CARD = re.compile(r"<li>(.*?)</li>", re.S)
+
+
+def li_field(pattern, card):
+    m = re.search(pattern, card, re.S)
+    return html.unescape(m.group(1)).strip() if m else ""
+
+
+def linkedin(_):
+    """LinkedIn's public job search (no login), past week, UAE and KSA only.
+
+    Sequential and slow on purpose: about 18 small requests per run. If LinkedIn refuses a run,
+    the feed is marked failed and the last good LinkedIn roles stay until the next run.
+    """
+    for place in ("United Arab Emirates", "Saudi Arabia"):
+        for q in ("product designer", "ux designer", "ui ux designer"):
+            for start in (0, 10, 20):
+                url = ("https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?"
+                       + urllib.parse.urlencode({"keywords": q, "location": place, "f_TPR": "r604800", "start": start}))
+                req = urllib.request.Request(url, headers={"User-Agent": BROWSER_UA, "Accept-Language": "en"})
+                with urllib.request.urlopen(req, timeout=40) as r:
+                    cards = LI_CARD.findall(r.read().decode("utf-8", "replace"))
+                for c in cards:
+                    jid = li_field(r'data-entity-urn="urn:li:jobPosting:(\d+)"', c)
+                    link = li_field(r'base-card__full-link[^>]*href="([^"]+)"', c).split("?")[0]
+                    title = li_field(r'base-search-card__title">(.*?)</h3>', c)
+                    if not (jid and link and title):
+                        continue
+                    company = re.sub(r"<[^>]+>", "", li_field(r'base-search-card__subtitle">(.*?)</h4>', c)).strip()
+                    loc = li_field(r'job-search-card__location">(.*?)</span>', c)
+                    salary = li_field(r'job-search-card__salary-info">(.*?)</span>', c) or None
+                    yield job("linkedin", "linkedin", jid, title, company, link, classify_place(loc),
+                              to_dt(li_field(r'datetime="(\d{4}-\d{2}-\d{2})"', c)), salary)
+                if len(cards) < 10:
+                    break
+                time.sleep(2)
 
 
 def workable_search(_):
@@ -285,7 +336,7 @@ def workingnomads(_):
                   classify_place(j.get("location"), None, True), to_dt(j.get("pub_date")), None, strip_html(j.get("description")))
 
 
-BOARDS = {"workable-search": workable_search, "remotive": remotive, "remoteok": remoteok, "himalayas": himalayas, "jobicy": jobicy, "wwr": wwr, "workingnomads": workingnomads}
+BOARDS = {"linkedin": linkedin, "workable-search": workable_search, "remotive": remotive, "remoteok": remoteok, "himalayas": himalayas, "jobicy": jobicy, "wwr": wwr, "workingnomads": workingnomads}
 
 # ---------- pipeline ----------
 
@@ -311,8 +362,7 @@ def keep(j):
     if not re.match(r"https?://", j["url"] or ""):
         return False
     posted = to_dt(j["posted"]) or to_dt(j.get("first_seen"))
-    limit = MAX_AGE_ATS if j.get("source") in ATS else MAX_AGE_BOARD
-    return posted is not None and NOW - posted <= limit
+    return posted is not None and NOW - posted <= MAX_AGE
 
 
 def dedupe_key(j):

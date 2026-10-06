@@ -47,10 +47,9 @@ class FreshnessTest(unittest.TestCase):
         return {"region": region, "title": title, "url": "https://x.test/j", "posted": posted, "first_seen": posted, "source": source}
 
     def test_window(self):
-        self.assertTrue(fetch.keep(self.job(80)))  # still listed on the company board, so still open
-        self.assertFalse(fetch.keep(self.job(91)))
-        self.assertTrue(fetch.keep(self.job(20, source="remotive")))
-        self.assertFalse(fetch.keep(self.job(31, source="remotive")))
+        self.assertTrue(fetch.keep(self.job(6)))
+        self.assertFalse(fetch.keep(self.job(8)))  # older than a week drops for every source
+        self.assertFalse(fetch.keep(self.job(8, source="linkedin")))
         self.assertFalse(fetch.keep(self.job(1, region=None)))
 
     def test_failed_feed_keeps_last_jobs_and_closed_roles_drop(self):
