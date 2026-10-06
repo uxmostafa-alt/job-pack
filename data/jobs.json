@@ -1,0 +1,232 @@
+[
+ {
+  "id": "himalayas:https://himalayas.app/companies/mailerlite/jobs/product-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Product Designer",
+  "company": "MailerLite",
+  "url": "https://himalayas.app/companies/mailerlite/jobs/product-designer",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-06T07:49:20+00:00",
+  "salary": "USD 62K–72K/yr",
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "AI",
+   "Design system"
+  ],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "himalayas:https://himalayas.app/companies/gitlab-com/jobs/product-design-expression-of-interest-form",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Product Design Expression of Interest Form",
+  "company": "GitLab",
+  "url": "https://himalayas.app/companies/gitlab-com/jobs/product-design-expression-of-interest-form",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-06T04:24:45+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "AI",
+   "Gov/Enterprise"
+  ],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "wwr:https://weworkremotely.com/remote-jobs/calm-com-senior-product-designer",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Senior Product Designer",
+  "company": "Calm.com",
+  "url": "https://weworkremotely.com/remote-jobs/calm-com-senior-product-designer",
+  "region": "REMOTE",
+  "location": "Anywhere in the World",
+  "posted": "2026-10-01T07:30:47+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
+  "id": "wwr:https://weworkremotely.com/remote-jobs/seat-geek-senior-ux-designer",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Senior UX Designer",
+  "company": "Seat Geek",
+  "url": "https://weworkremotely.com/remote-jobs/seat-geek-senior-ux-designer",
+  "region": "REMOTE",
+  "location": "Anywhere in the World",
+  "posted": "2026-09-30T15:13:43+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "wwr:https://weworkremotely.com/remote-jobs/cribl-sr-ux-designer-security",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Sr. UX Designer, Security",
+  "company": "Cribl",
+  "url": "https://weworkremotely.com/remote-jobs/cribl-sr-ux-designer-security",
+  "region": "REMOTE",
+  "location": "Anywhere in the World",
+  "posted": "2026-09-30T14:50:43+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
+  "id": "wwr:https://weworkremotely.com/remote-jobs/ixdf-interaction-design-foundation-education-designer-ux-ui-and-ai-1",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Education Designer: UX, UI, and AI",
+  "company": "IxDF - Interaction Design Foundation",
+  "url": "https://weworkremotely.com/remote-jobs/ixdf-interaction-design-foundation-education-designer-ux-ui-and-ai-1",
+  "region": "REMOTE",
+  "location": "Anywhere in the World",
+  "posted": "2026-09-28T09:18:18+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "greenhouse:8202750",
+  "board": "greenhouse:consensys",
+  "source": "greenhouse",
+  "title": "Lead Product Designer",
+  "company": "MetaMask",
+  "url": "https://job-boards.greenhouse.io/consensys/jobs/8202750",
+  "region": "REMOTE",
+  "location": "UNITED STATES - Remote, EMEA - Remote, CANADA - Remote, LATAM - Remote UNITED STATES - Remote",
+  "posted": "2026-09-17T15:55:31-04:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "AI",
+   "Fintech"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "greenhouse:4967016101",
+  "board": "greenhouse:bybit",
+  "source": "greenhouse",
+  "title": "UX/UI Designer",
+  "company": "Bybit",
+  "url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4967016101",
+  "region": "AE",
+  "location": "Abu Dhabi, UAE Abu Dhabi",
+  "posted": "2026-09-02T11:36:09-04:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "AI",
+   "Fintech"
+  ],
+  "fit": 7,
+  "network": true
+ },
+ {
+  "id": "greenhouse:4960742101",
+  "board": "greenhouse:bybit",
+  "source": "greenhouse",
+  "title": "Product Design Lead",
+  "company": "Bybit",
+  "url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4960742101",
+  "region": "AE",
+  "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia Abu Dhabi",
+  "posted": "2026-08-26T01:47:11-04:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "Fintech"
+  ],
+  "fit": 8,
+  "network": true
+ },
+ {
+  "id": "greenhouse:8651241002",
+  "board": "greenhouse:careem",
+  "source": "greenhouse",
+  "title": "Senior Product Designer (Design Systems)",
+  "company": "Careem",
+  "url": "https://boards.greenhouse.io/careem/jobs/8651241002?gh_jid=8651241002",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates Dubai",
+  "posted": "2026-07-31T03:51:59-04:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "Arabic/RTL",
+   "AI",
+   "Design system",
+   "Fintech"
+  ],
+  "fit": 11,
+  "network": true
+ },
+ {
+  "id": "greenhouse:8651240002",
+  "board": "greenhouse:careem",
+  "source": "greenhouse",
+  "title": "Senior Product Designer",
+  "company": "Careem",
+  "url": "https://boards.greenhouse.io/careem/jobs/8651240002?gh_jid=8651240002",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates Dubai",
+  "posted": "2026-07-29T10:21:31-04:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "Arabic/RTL",
+   "AI",
+   "Design system",
+   "Fintech"
+  ],
+  "fit": 11,
+  "network": true
+ },
+ {
+  "id": "greenhouse:4929391101",
+  "board": "greenhouse:bybit",
+  "source": "greenhouse",
+  "title": "Senior Product Design Specialist",
+  "company": "Bybit",
+  "url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4929391101",
+  "region": "AE",
+  "location": "Abu Dhabi, UAE Abu Dhabi",
+  "posted": "2026-07-23T06:08:38-04:00",
+  "salary": null,
+  "first_seen": "2026-10-06T14:38:40.849843+00:00",
+  "tags": [
+   "Arabic/RTL",
+   "AI",
+   "Fintech"
+  ],
+  "fit": 10,
+  "network": true
+ }
+]
