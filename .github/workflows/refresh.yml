@@ -1,0 +1,55 @@
+name: refresh
+
+# GitHub cron runs in UTC. Both lines fire every day; fetch.py keeps only the one that
+# matches Cairo's current offset, so the page lands by 08:00 and 20:00 Cairo all year.
+on:
+  schedule:
+    - cron: '40 4,16 * * *'  # 07:40 / 19:40 Cairo on summer time (UTC+3)
+    - cron: '40 5,17 * * *'  # 07:40 / 19:40 Cairo on winter time (UTC+2)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test filters
+        run: python3 -m unittest test_fetch
+
+      - name: Fetch jobs and render page
+        id: fetch
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+        run: python3 fetch.py
+
+      - name: Save state
+        if: steps.fetch.outputs.ran == 'yes'
+        run: |
+          git config user.name "job-pack-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          git diff --cached --quiet || git commit -m "Refresh $(TZ=Africa/Cairo date '+%Y-%m-%d %H:%M') Cairo"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.fetch.outputs.ran == 'yes'
+        with:
+          path: docs
+
+      - id: deploy
+        if: steps.fetch.outputs.ran == 'yes'
+        uses: actions/deploy-pages@v4
