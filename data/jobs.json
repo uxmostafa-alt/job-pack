@@ -1,5 +1,74 @@
 [
  {
+  "id": "jobicy:154773",
+  "board": "jobicy",
+  "source": "jobicy",
+  "title": "Senior Product Designer, Design Systems",
+  "company": "DuckDuckGo",
+  "url": "https://jobicy.com/jobs/154773-senior-product-designer-design-systems",
+  "region": "REMOTE",
+  "location": "Anywhere",
+  "posted": "2026-10-07T13:00:12+00:00",
+  "salary": null,
+  "first_seen": "2026-10-07T19:04:34.643040+00:00",
+  "tags": [
+   "AI",
+   "Design system"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "linkedin:4476554880",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer",
+  "company": "Jobgether",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-jobgether-4476554880",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-10-07T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-07T19:04:34.643040+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4468202383",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer, Global Public Sector",
+  "company": "Scale AI",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-scale-ai-4468202383",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-10-07T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-07T19:04:34.643040+00:00",
+  "tags": [
+   "Gov/Enterprise"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "linkedin:4457339528",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer",
+  "company": "Fuse Energy",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-10-07T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T15:35:19.429328+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
   "id": "himalayas:https://himalayas.app/companies/mailerlite/jobs/product-designer",
   "board": "himalayas",
   "source": "himalayas",
@@ -17,22 +86,6 @@
   ],
   "fit": 3,
   "network": false
- },
- {
-  "id": "linkedin:4466502640",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Staff Product Designer",
-  "company": "talabat",
-  "url": "https://ae.linkedin.com/jobs/view/staff-product-designer-at-talabat-4466502640",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-06T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
  },
  {
   "id": "linkedin:4476163329",
@@ -85,22 +138,6 @@
   "network": false
  },
  {
-  "id": "linkedin:4475544002",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI/UX Designer (Mobile)",
-  "company": "SOLANT",
-  "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-mobile-at-solant-4475544002",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-05T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
   "id": "linkedin:4475523895",
   "board": "linkedin",
   "source": "linkedin",
@@ -146,54 +183,6 @@
   "first_seen": "2026-10-06T15:35:19.429328+00:00",
   "tags": [],
   "fit": 4,
-  "network": false
- },
- {
-  "id": "linkedin:4474603760",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Lead Experience Designer",
-  "company": "Thoughtworks",
-  "url": "https://sa.linkedin.com/jobs/view/lead-experience-designer-at-thoughtworks-4474603760",
-  "region": "SA",
-  "location": "Riyadh Region",
-  "posted": "2026-10-05T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "linkedin:4475890067",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Lead Experience Designer",
-  "company": "Aceleradora Ágil",
-  "url": "https://sa.linkedin.com/jobs/view/lead-experience-designer-at-aceleradora-%C3%A1gil-4475890067",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-10-05T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "linkedin:4457339528",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Fuse Energy",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-04T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 3,
   "network": false
  },
  {
@@ -330,42 +319,6 @@
   "first_seen": "2026-10-06T15:35:19.429328+00:00",
   "tags": [],
   "fit": 3,
-  "network": false
- },
- {
-  "id": "wwr:https://weworkremotely.com/remote-jobs/seat-geek-senior-ux-designer",
-  "board": "wwr",
-  "source": "wwr",
-  "title": "Senior UX Designer",
-  "company": "Seat Geek",
-  "url": "https://weworkremotely.com/remote-jobs/seat-geek-senior-ux-designer",
-  "region": "REMOTE",
-  "location": "Anywhere in the World",
-  "posted": "2026-09-30T15:13:43+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T14:38:40.849843+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "wwr:https://weworkremotely.com/remote-jobs/cribl-sr-ux-designer-security",
-  "board": "wwr",
-  "source": "wwr",
-  "title": "Sr. UX Designer, Security",
-  "company": "Cribl",
-  "url": "https://weworkremotely.com/remote-jobs/cribl-sr-ux-designer-security",
-  "region": "REMOTE",
-  "location": "Anywhere in the World",
-  "posted": "2026-09-30T14:50:43+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T14:38:40.849843+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Gov/Enterprise"
-  ],
-  "fit": 6,
   "network": false
  }
 ]
