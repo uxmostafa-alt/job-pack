@@ -7,254 +7,269 @@
 <title>Job Pack</title>
 <style>
 :root {
-  --bg: #f6f5f1; --paper: #ffffff; --ink: #1d1d1b; --muted: #5f5d57; --line: #dedbd2;
-  --accent: #1f5f8b; --accent-ink: #ffffff; --new: #2f7a4f; --net: #7a4a9a; --warn: #9a5b12; --chip: #eef1f4;
+  --bg: #f7f7f5; --card: #ffffff; --ink: #191917; --muted: #5b5a55; --line: #e3e1da;
+  --brand: #14507a; --brand-ink: #ffffff; --soft: #eaf1f6; --good: #1d6b43; --good-soft: #e5f3ea; --warn-soft: #fff1d6; --warn: #7a4a00;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #151514; --paper: #1f1f1d; --ink: #ecebe6; --muted: #a9a69d; --line: #34332f;
-    --accent: #7db7e0; --accent-ink: #10202b; --new: #7fcf9f; --net: #c9a3e6; --warn: #e2a45a; --chip: #2a2c2f;
+    --bg: #121211; --card: #1c1c1a; --ink: #f1f0eb; --muted: #aaa89f; --line: #34332f;
+    --brand: #8cc3ea; --brand-ink: #0c1c28; --soft: #1e2a33; --good: #7fd0a0; --good-soft: #1b2e23; --warn-soft: #3a2d10; --warn: #f0c070;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #151514; --paper: #1f1f1d; --ink: #ecebe6; --muted: #a9a69d; --line: #34332f;
-  --accent: #7db7e0; --accent-ink: #10202b; --new: #7fcf9f; --net: #c9a3e6; --warn: #e2a45a; --chip: #2a2c2f;
+  --bg: #121211; --card: #1c1c1a; --ink: #f1f0eb; --muted: #aaa89f; --line: #34332f;
+  --brand: #8cc3ea; --brand-ink: #0c1c28; --soft: #1e2a33; --good: #7fd0a0; --good-soft: #1b2e23; --warn-soft: #3a2d10; --warn: #f0c070;
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
-.wrap { max-width: 980px; margin: 0 auto; padding: 20px 16px 48px; }
-header h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
-.sub { color: var(--muted); margin: 0; font-size: 14px; }
-details.health { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
-details.health ul { margin: 6px 0 0; padding-left: 18px; }
-.tabs { display: flex; gap: 4px; margin: 18px 0 0; border-bottom: 1px solid var(--line); }
-.tabs button { border: 1px solid transparent; border-bottom: 0; border-radius: 8px 8px 0 0; background: none; padding: 9px 16px; font-size: 15px; color: var(--muted); margin-bottom: -1px; }
-.tabs button[aria-selected="true"] { background: var(--paper); color: var(--ink); border-color: var(--line); }
-form.filters { margin: 12px 0 8px; padding: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; display: grid; gap: 12px; }
-fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
-legend { font-weight: 600; font-size: 13px; padding: 0; margin-bottom: 6px; float: left; width: 100%; }
-label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
-input[type="search"], select { padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit; }
-input[type="search"] { flex: 1 1 220px; min-width: 0; }
-.count { color: var(--muted); font-size: 14px; margin: 10px 2px; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px 64px; }
+h1 { font-size: 24px; line-height: 1.2; margin: 24px 0 4px; letter-spacing: -0.01em; }
+.sub { margin: 0; color: var(--muted); font-size: 15px; }
+.alert { margin: 12px 0 0; padding: 10px 14px; border-radius: 10px; background: var(--warn-soft); color: var(--warn); font-size: 15px; }
+button, select, input[type="search"] { font: inherit; color: var(--ink); }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+
+/* Tabs */
+.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 20px 0 14px; padding: 5px; background: var(--line); border-radius: 14px; }
+.tabs button { border: 0; background: transparent; padding: 12px 8px; border-radius: 10px; font-size: 17px; font-weight: 600; color: var(--muted); min-height: 48px; }
+.tabs button[aria-selected="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+.tabs .n { font-weight: 500; color: var(--muted); margin-left: 4px; }
+
+/* Filters */
+.filters { display: grid; gap: 12px; margin-bottom: 8px; }
+.group { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.group > .lbl { font-size: 14px; font-weight: 600; color: var(--muted); min-width: 64px; }
+.pill { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 8px 14px; min-height: 40px; font-size: 15px; }
+.pill[aria-pressed="true"], .pill[aria-checked="true"] { background: var(--brand); border-color: var(--brand); color: var(--brand-ink); font-weight: 600; }
+.pill .c { opacity: .75; margin-left: 4px; font-size: 14px; }
+input[type="search"] { width: 100%; padding: 12px 14px; min-height: 48px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+details.more { border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+details.more > summary { padding: 12px 14px; min-height: 48px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; }
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::after { content: "+"; color: var(--muted); }
+details.more[open] > summary::after { content: "–"; }
+.opts { padding: 4px 14px 14px; display: grid; gap: 4px; }
+.opts label { display: flex; gap: 12px; align-items: center; min-height: 44px; }
+.opts input[type="checkbox"] { width: 22px; height: 22px; accent-color: var(--brand); }
+.opts select { padding: 10px 12px; min-height: 44px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+
+/* List */
+.count { margin: 16px 2px 4px; color: var(--muted); font-size: 15px; }
+.day { margin: 22px 2px 8px; font-size: 14px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
 ol.jobs { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; }
-.card.applied { opacity: 0.55; }
-.card h2 { font-size: 17px; margin: 0; line-height: 1.3; }
-.card h2 a { color: var(--accent); text-decoration: none; }
-.card h2 a:hover, .card h2 a:focus-visible { text-decoration: underline; }
-.line { margin: 0; color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
-.badges, .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
-.b { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 99px; background: var(--chip); color: var(--ink); }
-.b.new { color: var(--new); } .b.net { color: var(--net); } .b.sal { color: var(--warn); }
-.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
-button { font: inherit; font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
-button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-a.apply { font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 8px; background: var(--accent); color: var(--accent-ink); text-decoration: none; }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-.empty { padding: 28px; text-align: center; color: var(--muted); background: var(--paper); border: 1px dashed var(--line); border-radius: 10px; }
-footer { margin-top: 28px; font-size: 12px; color: var(--muted); }
+.job { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 12px; }
+.job.done { opacity: .6; }
+.job h3 { margin: 0; font-size: 18px; line-height: 1.3; }
+.job h3 a { color: var(--ink); text-decoration: none; }
+.job h3 a:hover { text-decoration: underline; }
+.co { margin: 2px 0 0; font-size: 16px; }
+.meta { margin: 6px 0 0; color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.tag { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: var(--soft); color: var(--brand); }
+.tag.new { background: var(--good-soft); color: var(--good); }
+.tag.sal { background: var(--warn-soft); color: var(--warn); }
+.act { display: flex; gap: 8px; }
+a.apply { flex: 1; text-align: center; background: var(--brand); color: var(--brand-ink); text-decoration: none; font-weight: 700; padding: 12px 16px; border-radius: 10px; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; }
+a.apply:hover { filter: brightness(1.08); }
+button.done-btn { border: 1px solid var(--line); background: transparent; border-radius: 10px; padding: 12px 14px; min-height: 48px; font-weight: 600; }
+button.done-btn[aria-pressed="true"] { color: var(--good); border-color: var(--good); }
+.empty { padding: 28px 18px; text-align: center; background: var(--card); border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); }
+.empty p { margin: 0 0 12px; }
+.empty button { background: var(--brand); color: var(--brand-ink); border: 0; border-radius: 10px; padding: 12px 18px; font-weight: 700; min-height: 48px; }
+footer { margin-top: 36px; font-size: 14px; color: var(--muted); }
 footer a { color: inherit; }
+footer summary { cursor: pointer; padding: 8px 0; }
+footer ul { margin: 6px 0 12px; padding-left: 18px; }
+@media (min-width: 640px) {
+  .job { grid-template-columns: 1fr auto; align-items: center; }
+  .act { flex-direction: column; min-width: 150px; }
+}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>Job Pack</h1>
+    <p class="sub">Senior Product Designer · UAE and Saudi Arabia, plus remote</p>
     <p class="sub" id="stamp"></p>
-    <details class="health"><summary id="health-sum"></summary><ul id="health-list"></ul></details>
   </header>
 
   <div class="tabs" role="tablist" aria-label="Job type">
-    <button type="button" role="tab" id="tab-gulf" data-tab="gulf" aria-controls="jobs"></button>
-    <button type="button" role="tab" id="tab-remote" data-tab="remote" aria-controls="jobs"></button>
+    <button type="button" role="tab" id="tab-gulf" data-tab="gulf" aria-controls="panel"></button>
+    <button type="button" role="tab" id="tab-remote" data-tab="remote" aria-controls="panel"></button>
   </div>
 
-  <form class="filters" id="filters" aria-label="Filter jobs">
-    <fieldset id="where">
-      <legend>Where</legend>
-      <label><input type="checkbox" name="region" value="AE" checked> UAE</label>
-      <label><input type="checkbox" name="region" value="SA" checked> KSA</label>
-    </fieldset>
-    <fieldset>
-      <legend>Show</legend>
-      <label>Posted
-        <select name="days">
-          <option value="1">today (last 24 hours)</option>
-          <option value="3">last 3 days</option>
-          <option value="7" selected>last 7 days</option>
-        </select>
-      </label>
-      <label><input type="checkbox" name="senior"> Senior / Lead title</label>
-      <label><input type="checkbox" name="ai"> AI in title</label>
-      <label><input type="checkbox" name="salary"> Salary listed</label>
-      <label><input type="checkbox" name="network"> Network company</label>
-      <label><input type="checkbox" name="hideApplied" checked> Hide applied</label>
-    </fieldset>
-    <fieldset>
-      <input type="search" name="q" placeholder="Search title or company" aria-label="Search title or company">
-      <label>Sort
-        <select name="sort">
-          <option value="new">Newest</option>
-          <option value="fit">Best fit</option>
-        </select>
-      </label>
-    </fieldset>
-  </form>
+  <div class="filters">
+    <div class="group" role="radiogroup" aria-label="Posted" id="posted"></div>
+    <div class="group" id="countries" role="group" aria-label="Country"></div>
+    <input type="search" id="q" placeholder="Search title or company" aria-label="Search title or company" enterkeyhint="search">
+    <details class="more" id="more">
+      <summary><span>More filters</span><span id="more-n"></span></summary>
+      <div class="opts">
+        <label><input type="checkbox" id="f-senior"> Senior, Lead or Staff only</label>
+        <label><input type="checkbox" id="f-ai"> AI in the title</label>
+        <label><input type="checkbox" id="f-salary"> Salary listed</label>
+        <label><input type="checkbox" id="f-network"> Companies where I know someone</label>
+        <label><input type="checkbox" id="f-applied"> Show roles I marked applied</label>
+        <label>Sort <select id="f-sort"><option value="new">Newest first</option><option value="fit">Best match first</option></select></label>
+      </div>
+    </details>
+  </div>
 
   <p class="count" id="count" aria-live="polite"></p>
-  <ol class="jobs" id="jobs" role="tabpanel"></ol>
+  <div id="panel" role="tabpanel"></div>
 
   <footer>
-    Each title links to the original posting. Remote listings via
-    <a href="https://remotive.com" rel="noopener">Remotive</a>,
-    <a href="https://remoteok.com" rel="noopener">Remote OK</a>,
-    <a href="https://himalayas.app" rel="noopener">Himalayas</a>,
-    <a href="https://jobicy.com" rel="noopener">Jobicy</a>,
-    <a href="https://weworkremotely.com" rel="noopener">We Work Remotely</a> and
-    <a href="https://www.workingnomads.com" rel="noopener">Working Nomads</a>.
-    Gulf roles come from LinkedIn's public job search and straight from company Greenhouse, Lever, Ashby, Workable, Recruitee and SmartRecruiters boards.
+    <details>
+      <summary id="health-sum">Sources</summary>
+      <ul id="health-list"></ul>
+      <p>Every role links to the original posting. Gulf roles come from LinkedIn's public job search and company career boards (Greenhouse, Lever, Ashby, Workable, Recruitee, SmartRecruiters). Remote roles come from
+        <a href="https://remotive.com" rel="noopener">Remotive</a>, <a href="https://remoteok.com" rel="noopener">Remote OK</a>, <a href="https://himalayas.app" rel="noopener">Himalayas</a>,
+        <a href="https://jobicy.com" rel="noopener">Jobicy</a>, <a href="https://weworkremotely.com" rel="noopener">We Work Remotely</a> and <a href="https://www.workingnomads.com" rel="noopener">Working Nomads</a>.
+        Refreshes about 07:40, 11:40, 15:40 and 19:40 Cairo time.</p>
+    </details>
   </footer>
 </div>
 
-<script type="application/json" id="data">{"generated": "2026-10-08T21:23:24.222817+00:00", "generated_cairo": "Fri 09 Oct 2026, 00:23", "health": {"ashby": {"feeds": 76, "failed": 0, "jobs": 4557}, "greenhouse": {"feeds": 73, "failed": 0, "jobs": 9903}, "lever": {"feeds": 20, "failed": 0, "jobs": 717}, "recruitee": {"feeds": 6, "failed": 0, "jobs": 83}, "smartrecruiters": {"feeds": 2, "failed": 0, "jobs": 77}, "workable": {"feeds": 3, "failed": 0, "jobs": 105}, "linkedin": {"feeds": 1, "failed": 0, "jobs": 208}, "workable-search": {"feeds": 1, "failed": 0, "jobs": 106}, "remotive": {"feeds": 1, "failed": 0, "jobs": 38}, "remoteok": {"feeds": 1, "failed": 0, "jobs": 100}, "himalayas": {"feeds": 1, "failed": 0, "jobs": 56}, "jobicy": {"feeds": 1, "failed": 0, "jobs": 85}, "wwr": {"feeds": 1, "failed": 0, "jobs": 29}, "workingnomads": {"feeds": 1, "failed": 0, "jobs": 54}}, "jobs": [{"id": "himalayas:https://himalayas.app/companies/timeleft/jobs/senior-mobile-product-designer", "board": "himalayas", "source": "himalayas", "title": "Senior Mobile Product Designer", "company": "Timeleft", "url": "https://himalayas.app/companies/timeleft/jobs/senior-mobile-product-designer", "region": "REMOTE", "location": "Worldwide", "posted": "2026-10-08T16:00:46+00:00", "salary": null, "first_seen": "2026-10-08T19:00:30.788426+00:00", "tags": ["AI", "Design system"], "fit": 5, "network": false}, {"id": "linkedin:4476973643", "board": "linkedin", "source": "linkedin", "title": "Product Designer Global Public Sector", "company": "TALENTMATE", "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-talentmate-4476973643", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-08T00:00:00+00:00", "salary": null, "first_seen": "2026-10-08T11:36:42.351233+00:00", "tags": ["Gov/Enterprise"], "fit": 4, "network": false}, {"id": "linkedin:4475780862", "board": "linkedin", "source": "linkedin", "title": "Lead UX Designer", "company": "Air Arabia", "url": "https://ae.linkedin.com/jobs/view/lead-ux-designer-at-air-arabia-4475780862", "region": "AE", "location": "Sharjah, Sharjah Emirate, United Arab Emirates", "posted": "2026-10-08T00:00:00+00:00", "salary": null, "first_seen": "2026-10-08T11:36:42.351233+00:00", "tags": [], "fit": 5, "network": false}, {"id": "linkedin:4477125238", "board": "linkedin", "source": "linkedin", "title": "Product Designer", "company": "Salt", "url": "https://ae.linkedin.com/jobs/view/product-designer-at-salt-4477125238", "region": "AE", "location": "Dubai, United Arab Emirates", "posted": "2026-10-08T00:00:00+00:00", "salary": null, "first_seen": "2026-10-08T11:36:42.351233+00:00", "tags": [], "fit": 3, "network": false}, {"id": "jobicy:154773", "board": "jobicy", "source": "jobicy", "title": "Senior Product Designer, Design Systems", "company": "DuckDuckGo", "url": "https://jobicy.com/jobs/154773-senior-product-designer-design-systems", "region": "REMOTE", "location": "Anywhere", "posted": "2026-10-07T13:00:12+00:00", "salary": null, "first_seen": "2026-10-07T19:04:34.643040+00:00", "tags": ["AI", "Design system"], "fit": 5, "network": false}, {"id": "linkedin:4476554880", "board": "linkedin", "source": "linkedin", "title": "Product Designer", "company": "Jobgether", "url": "https://ae.linkedin.com/jobs/view/product-designer-at-jobgether-4476554880", "region": "AE", "location": "United Arab Emirates", "posted": "2026-10-07T00:00:00+00:00", "salary": null, "first_seen": "2026-10-07T19:04:34.643040+00:00", "tags": [], "fit": 3, "network": false}, {"id": "linkedin:4468202383", "board": "linkedin", "source": "linkedin", "title": "Product Designer, Global Public Sector", "company": "Scale AI", "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-scale-ai-4468202383", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-07T00:00:00+00:00", "salary": null, "first_seen": "2026-10-07T19:04:34.643040+00:00", "tags": ["Gov/Enterprise"], "fit": 4, "network": false}, {"id": "linkedin:4457339528", "board": "linkedin", "source": "linkedin", "title": "Product Designer", "company": "Fuse Energy", "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-07T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 3, "network": false}, {"id": "linkedin:4476339772", "board": "linkedin", "source": "linkedin", "title": "AI Product Designer", "company": "AppliedAI", "url": "https://ae.linkedin.com/jobs/view/ai-product-designer-at-appliedai-4476339772", "region": "AE", "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates", "posted": "2026-10-06T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T21:13:39.002262+00:00", "tags": ["AI"], "fit": 8, "network": true}, {"id": "linkedin:4474632110", "board": "linkedin", "source": "linkedin", "title": "Lead Product Designer", "company": "Cercli", "url": "https://ae.linkedin.com/jobs/view/lead-product-designer-at-cercli-4474632110", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-05T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 5, "network": false}, {"id": "linkedin:4475523895", "board": "linkedin", "source": "linkedin", "title": "UI / UX Designer", "company": "Spinneys", "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-at-spinneys-4475523895", "region": "AE", "location": "Dubai, United Arab Emirates", "posted": "2026-10-05T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 3, "network": false}, {"id": "linkedin:4474240516", "board": "linkedin", "source": "linkedin", "title": "UX & Product Design Lead", "company": "Holo", "url": "https://ae.linkedin.com/jobs/view/ux-product-design-lead-at-holo-4474240516", "region": "AE", "location": "Dubai, United Arab Emirates", "posted": "2026-10-05T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 7, "network": true}, {"id": "linkedin:4473619320", "board": "linkedin", "source": "linkedin", "title": "Product Designer (Mid to Senior)", "company": "Socium - Teams Done Differently", "url": "https://sa.linkedin.com/jobs/view/product-designer-mid-to-senior-at-socium-teams-done-differently-4473619320", "region": "SA", "location": "Riyadh, Saudi Arabia", "posted": "2026-10-05T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 4, "network": false}, {"id": "linkedin:4446426107", "board": "linkedin", "source": "linkedin", "title": "Senior Product Designer", "company": "Careem", "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-careem-4446426107", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-03T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 7, "network": true}, {"id": "linkedin:4447144019", "board": "linkedin", "source": "linkedin", "title": "Senior Product Designer (Design Systems)", "company": "Careem", "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-design-systems-at-careem-4447144019", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-03T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": ["Design system"], "fit": 8, "network": true}, {"id": "linkedin:4473128519", "board": "linkedin", "source": "linkedin", "title": "Lead, AI Creative Designer", "company": "First Abu Dhabi Bank (FAB)", "url": "https://ae.linkedin.com/jobs/view/lead-ai-creative-designer-at-first-abu-dhabi-bank-fab-4473128519", "region": "AE", "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates", "posted": "2026-10-02T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": ["AI"], "fit": 8, "network": false}]}</script>
+<script type="application/json" id="data">{"generated": "2026-10-08T21:34:39.605933+00:00", "generated_cairo": "Fri 09 Oct 2026, 00:34", "health": {"ashby": {"feeds": 76, "failed": 0, "jobs": 4556}, "greenhouse": {"feeds": 73, "failed": 0, "jobs": 9902}, "lever": {"feeds": 20, "failed": 0, "jobs": 717}, "recruitee": {"feeds": 6, "failed": 0, "jobs": 83}, "smartrecruiters": {"feeds": 2, "failed": 0, "jobs": 77}, "workable": {"feeds": 3, "failed": 0, "jobs": 105}, "linkedin": {"feeds": 1, "failed": 0, "jobs": 208}, "workable-search": {"feeds": 1, "failed": 0, "jobs": 105}, "remotive": {"feeds": 1, "failed": 0, "jobs": 38}, "remoteok": {"feeds": 1, "failed": 0, "jobs": 100}, "himalayas": {"feeds": 1, "failed": 0, "jobs": 59}, "jobicy": {"feeds": 1, "failed": 0, "jobs": 85}, "wwr": {"feeds": 1, "failed": 0, "jobs": 29}, "workingnomads": {"feeds": 1, "failed": 0, "jobs": 54}}, "jobs": [{"id": "himalayas:https://himalayas.app/companies/timeleft/jobs/senior-mobile-product-designer", "board": "himalayas", "source": "himalayas", "title": "Senior Mobile Product Designer", "company": "Timeleft", "url": "https://himalayas.app/companies/timeleft/jobs/senior-mobile-product-designer", "region": "REMOTE", "location": "Worldwide", "posted": "2026-10-08T16:00:46+00:00", "salary": null, "first_seen": "2026-10-08T19:00:30.788426+00:00", "tags": ["AI", "Design system"], "fit": 5, "network": false}, {"id": "linkedin:4476973643", "board": "linkedin", "source": "linkedin", "title": "Product Designer Global Public Sector", "company": "TALENTMATE", "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-talentmate-4476973643", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-08T00:00:00+00:00", "salary": null, "first_seen": "2026-10-08T11:36:42.351233+00:00", "tags": ["Gov/Enterprise"], "fit": 4, "network": false}, {"id": "linkedin:4475780862", "board": "linkedin", "source": "linkedin", "title": "Lead UX Designer", "company": "Air Arabia", "url": "https://ae.linkedin.com/jobs/view/lead-ux-designer-at-air-arabia-4475780862", "region": "AE", "location": "Sharjah, Sharjah Emirate, United Arab Emirates", "posted": "2026-10-08T00:00:00+00:00", "salary": null, "first_seen": "2026-10-08T11:36:42.351233+00:00", "tags": [], "fit": 5, "network": false}, {"id": "linkedin:4477125238", "board": "linkedin", "source": "linkedin", "title": "Product Designer", "company": "Salt", "url": "https://ae.linkedin.com/jobs/view/product-designer-at-salt-4477125238", "region": "AE", "location": "Dubai, United Arab Emirates", "posted": "2026-10-08T00:00:00+00:00", "salary": null, "first_seen": "2026-10-08T11:36:42.351233+00:00", "tags": [], "fit": 3, "network": false}, {"id": "jobicy:154773", "board": "jobicy", "source": "jobicy", "title": "Senior Product Designer, Design Systems", "company": "DuckDuckGo", "url": "https://jobicy.com/jobs/154773-senior-product-designer-design-systems", "region": "REMOTE", "location": "Anywhere", "posted": "2026-10-07T13:00:12+00:00", "salary": null, "first_seen": "2026-10-07T19:04:34.643040+00:00", "tags": ["AI", "Design system"], "fit": 5, "network": false}, {"id": "linkedin:4476554880", "board": "linkedin", "source": "linkedin", "title": "Product Designer", "company": "Jobgether", "url": "https://ae.linkedin.com/jobs/view/product-designer-at-jobgether-4476554880", "region": "AE", "location": "United Arab Emirates", "posted": "2026-10-07T00:00:00+00:00", "salary": null, "first_seen": "2026-10-07T19:04:34.643040+00:00", "tags": [], "fit": 3, "network": false}, {"id": "linkedin:4468202383", "board": "linkedin", "source": "linkedin", "title": "Product Designer, Global Public Sector", "company": "Scale AI", "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-scale-ai-4468202383", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-07T00:00:00+00:00", "salary": null, "first_seen": "2026-10-07T19:04:34.643040+00:00", "tags": ["Gov/Enterprise"], "fit": 4, "network": false}, {"id": "linkedin:4457339528", "board": "linkedin", "source": "linkedin", "title": "Product Designer", "company": "Fuse Energy", "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-07T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 3, "network": false}, {"id": "linkedin:4476339772", "board": "linkedin", "source": "linkedin", "title": "AI Product Designer", "company": "AppliedAI", "url": "https://ae.linkedin.com/jobs/view/ai-product-designer-at-appliedai-4476339772", "region": "AE", "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates", "posted": "2026-10-06T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T21:13:39.002262+00:00", "tags": ["AI"], "fit": 8, "network": true}, {"id": "linkedin:4474632110", "board": "linkedin", "source": "linkedin", "title": "Lead Product Designer", "company": "Cercli", "url": "https://ae.linkedin.com/jobs/view/lead-product-designer-at-cercli-4474632110", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-05T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 5, "network": false}, {"id": "linkedin:4475523895", "board": "linkedin", "source": "linkedin", "title": "UI / UX Designer", "company": "Spinneys", "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-at-spinneys-4475523895", "region": "AE", "location": "Dubai, United Arab Emirates", "posted": "2026-10-05T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 3, "network": false}, {"id": "linkedin:4474240516", "board": "linkedin", "source": "linkedin", "title": "UX & Product Design Lead", "company": "Holo", "url": "https://ae.linkedin.com/jobs/view/ux-product-design-lead-at-holo-4474240516", "region": "AE", "location": "Dubai, United Arab Emirates", "posted": "2026-10-05T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 7, "network": true}, {"id": "linkedin:4473619320", "board": "linkedin", "source": "linkedin", "title": "Product Designer (Mid to Senior)", "company": "Socium - Teams Done Differently", "url": "https://sa.linkedin.com/jobs/view/product-designer-mid-to-senior-at-socium-teams-done-differently-4473619320", "region": "SA", "location": "Riyadh, Saudi Arabia", "posted": "2026-10-05T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 4, "network": false}, {"id": "linkedin:4446426107", "board": "linkedin", "source": "linkedin", "title": "Senior Product Designer", "company": "Careem", "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-careem-4446426107", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-03T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": [], "fit": 7, "network": true}, {"id": "linkedin:4447144019", "board": "linkedin", "source": "linkedin", "title": "Senior Product Designer (Design Systems)", "company": "Careem", "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-design-systems-at-careem-4447144019", "region": "AE", "location": "Dubai, Dubai, United Arab Emirates", "posted": "2026-10-03T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": ["Design system"], "fit": 8, "network": true}, {"id": "linkedin:4473128519", "board": "linkedin", "source": "linkedin", "title": "Lead, AI Creative Designer", "company": "First Abu Dhabi Bank (FAB)", "url": "https://ae.linkedin.com/jobs/view/lead-ai-creative-designer-at-first-abu-dhabi-bank-fab-4473128519", "region": "AE", "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates", "posted": "2026-10-02T00:00:00+00:00", "salary": null, "first_seen": "2026-10-06T15:35:19.429328+00:00", "tags": ["AI"], "fit": 8, "network": false}]}</script>
 <script>
 (() => {
   const D = JSON.parse(document.getElementById("data").textContent);
-  const REGION = { AE: "UAE", SA: "KSA", REMOTE: "Remote" };
-  const SENIOR = /\b(senior|sr\.?|lead|staff|principal)\b/i;
-  const AI = /\b(ai|ml|genai|llm|conversational|machine learning|agentic)\b/i;
-  const now = Date.now(), DAY = 864e5;
+  const $ = id => document.getElementById(id);
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const store = {
     get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
-    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* storage blocked: state lasts this visit only */ } }
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* storage blocked: choices last this visit only */ } }
   };
-  const applied = new Set(store.get("jp-applied", []));
-  const form = document.getElementById("filters");
-  const list = document.getElementById("jobs");
+  const SENIOR = /\b(senior|sr\.?|lead|staff|principal)\b/i;
+  const AI = /\b(ai|ml|genai|llm|conversational|machine learning|agentic)\b/i;
+  const SOURCE = { linkedin: "LinkedIn", remotive: "Remotive", remoteok: "Remote OK", himalayas: "Himalayas", jobicy: "Jobicy", wwr: "We Work Remotely", workingnomads: "Working Nomads" };
+  const RANGES = [{ id: "today", label: "Today", max: 0 }, { id: "3d", label: "3 days", max: 2 }, { id: "7d", label: "7 days", max: 7 }];
+  const REGION = { AE: "UAE", SA: "KSA" };
 
-  // Header: refresh time and per-source health.
-  document.getElementById("stamp").textContent =
-    `Refreshed ${D.generated_cairo} Cairo · refreshes 07:40, 11:40, 15:40 and 19:40 Cairo`;
-  const staleH = (Date.now() - Date.parse(D.generated)) / 36e5;
-  if (staleH > 8) {
-    const warn = document.createElement("p");
-    warn.className = "sub"; warn.setAttribute("role", "alert");
-    warn.textContent = `This page is ${Math.floor(staleH)}h old. The scheduled refresh is late; roles may be stale.`;
-    document.getElementById("stamp").after(warn);
-  }
-  const h = Object.entries(D.health);
-  const failed = h.filter(([, v]) => v.failed).length;
-  document.getElementById("health-sum").textContent =
-    `Sources: ${h.length - failed} ok${failed ? `, ${failed} with failures` : ""}`;
-  for (const [name, v] of h) {
-    const li = document.createElement("li");
-    li.textContent = `${name}: ${v.feeds} feed${v.feeds > 1 ? "s" : ""}, ${v.jobs} listings read` + (v.failed ? `, ${v.failed} failed (last good jobs kept)` : "");
-    document.getElementById("health-list").appendChild(li);
-  }
-
-  // Restore saved filters (per device).
-  const saved = store.get("jp-filters", null);
-  if (saved) for (const el of form.elements) {
-    if (!el.name || !(el.name in saved)) continue;
-    if (el.type === "checkbox") el.checked = el.name === "region" ? saved.region.includes(el.value) : !!saved[el.name];
-    else el.value = saved[el.name];
-  }
-
+  // Calendar days in Cairo, so "Today" means today for the reader, not the last 24 hours.
+  const cairoDay = t => new Intl.DateTimeFormat("en-CA", { timeZone: "Africa/Cairo" }).format(t);
+  const dayNum = t => Date.parse(cairoDay(t) + "T00:00:00Z") / 864e5;
+  const today = dayNum(new Date());
+  D.jobs.forEach(j => { j._age = Math.max(0, today - dayNum(new Date(j.posted || j.first_seen))); });
   const pretty = s => /^[a-z0-9.\-]+$/.test(s) ? s.replace(/\.com$/, "").replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase()) : s;
-  const ago = ms => { const d = Math.floor(ms / DAY), hr = Math.floor(ms / 36e5); return d >= 1 ? `${d}d ago` : hr >= 1 ? `${hr}h ago` : "just now"; };
-  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const when = a => a === 0 ? "Today" : a === 1 ? "Yesterday" : `${a} days ago`;
 
-  function state() {
-    const f = new FormData(form);
-    return { region: f.getAll("region"), days: +f.get("days"), senior: !!f.get("senior"), ai: !!f.get("ai"),
-      salary: !!f.get("salary"), network: !!f.get("network"), hideApplied: !!f.get("hideApplied"),
-      q: (f.get("q") || "").trim().toLowerCase(), sort: f.get("sort") };
+  const applied = new Set(store.get("jp-applied", []));
+  const S = Object.assign({ tab: "gulf", range: "7d", countries: ["AE", "SA"], senior: false, ai: false, salary: false, network: false, showApplied: false, sort: "new", q: "" }, store.get("jp-state2", {}));
+  if (location.hash === "#remote") S.tab = "remote"; else if (location.hash === "#gulf") S.tab = "gulf";
+  const save = () => store.set("jp-state2", S);
+
+  // Header
+  const gen = new Date(D.generated), ageH = (Date.now() - gen) / 36e5;
+  $("stamp").textContent = `Updated ${ageH < 1 ? "less than an hour ago" : Math.floor(ageH) + "h ago"} · ${D.generated_cairo} Cairo`;
+  if (ageH > 8) {
+    const a = el("p", "alert", `This page is ${Math.floor(ageH)}h old. The refresh is late, so some roles may be gone.`);
+    a.setAttribute("role", "alert"); $("stamp").after(a);
+  }
+  const h = Object.entries(D.health), failed = h.filter(([, v]) => v.failed).length;
+  $("health-sum").textContent = failed ? `Sources: ${failed} had problems on the last refresh` : "Sources: all working";
+  for (const [name, v] of h) $("health-list").appendChild(el("li", null, `${SOURCE[name] || name}: ${v.jobs} read` + (v.failed ? `, ${v.failed} failed (last good roles kept)` : "")));
+
+  const rangeMax = () => RANGES.find(r => r.id === S.range).max;
+  const base = j => (S.tab === "remote" ? j.region === "REMOTE" : j.region !== "REMOTE")
+    && (!S.senior || SENIOR.test(j.title)) && (!S.ai || AI.test(j.title)) && (!S.salary || j.salary)
+    && (!S.network || j.network) && (S.showApplied || !applied.has(j.id))
+    && (!S.q || (j.title + " " + j.company).toLowerCase().includes(S.q.toLowerCase()));
+  const inCountries = j => S.tab === "remote" || S.countries.includes(j.region);
+
+  function pill(parent, role, label, count, on, onClick) {
+    const b = el("button", "pill"); b.type = "button"; b.append(label);
+    if (count != null) b.append(el("span", "c", String(count)));
+    b.setAttribute(role === "radio" ? "aria-checked" : "aria-pressed", on);
+    if (role === "radio") b.setAttribute("role", "radio");
+    b.addEventListener("click", onClick); parent.appendChild(b);
   }
 
   function card(j) {
-    const posted = Date.parse(j.posted || j.first_seen);
-    const li = el("li", "card" + (applied.has(j.id) ? " applied" : ""));
-    const badges = el("ul", "badges");
-    if (now - Date.parse(j.first_seen) < 12 * 36e5) badges.appendChild(el("li", "b new", "NEW"));
-    badges.appendChild(el("li", "b", REGION[j.region]));
-    if (j.network) badges.appendChild(el("li", "b net", "Network"));
-    if (j.salary) badges.appendChild(el("li", "b sal", j.salary));
-    li.appendChild(badges);
-
-    const h2 = el("h2"), a = el("a", null, j.title);
-    if (/^https?:\/\//.test(j.url)) { a.href = j.url; a.target = "_blank"; a.rel = "noopener noreferrer"; }
-    h2.appendChild(a); li.appendChild(h2);
-    li.appendChild(el("p", "line", `${pretty(j.company)} · ${j.location}`));
-
-    const when = el("time", null, (j.posted ? "" : "first seen ") + ago(now - posted));
-    when.dateTime = j.posted || j.first_seen;
-    when.title = new Date(posted).toLocaleString();
-    const facts = el("p", "line"); facts.append(when, ` · via ${j.source}`);
-    li.appendChild(facts);
-
-    if (j.tags && j.tags.length) {
-      const tags = el("ul", "tags");
-      j.tags.forEach(t => tags.appendChild(el("li", "b", t)));
-      li.appendChild(tags);
-    }
-    const row = el("div", "row");
-    const go = el("a", "apply", "Apply on original posting"); go.href = a.href || "#"; go.target = "_blank"; go.rel = "noopener noreferrer";
-    go.setAttribute("aria-label", `Apply: ${j.title} at ${pretty(j.company)}`);
-    const btn = el("button", null, applied.has(j.id) ? "Applied" : "Mark applied");
-    btn.type = "button"; btn.setAttribute("aria-pressed", applied.has(j.id));
-    btn.addEventListener("click", () => {
-      applied.has(j.id) ? applied.delete(j.id) : applied.add(j.id);
-      store.set("jp-applied", [...applied]); draw();
-    });
-    row.append(go, btn); li.appendChild(row);
+    const li = el("li", "job" + (applied.has(j.id) ? " done" : ""));
+    const main = el("div");
+    const h3 = el("h3"), a = el("a", null, j.title);
+    const safe = /^https?:\/\//.test(j.url);
+    if (safe) { a.href = j.url; a.target = "_blank"; a.rel = "noopener noreferrer"; }
+    h3.appendChild(a); main.appendChild(h3);
+    main.appendChild(el("p", "co", `${pretty(j.company)} · ${j.location.replace(/,?\s*(United Arab Emirates|Saudi Arabia)$/i, "").replace(/(.+?)(, \1)+/g, "$1") || (REGION[j.region] || "Remote")}${REGION[j.region] ? ", " + REGION[j.region] : ""}`));
+    const meta = el("p", "meta");
+    if (Date.now() - Date.parse(j.first_seen) < 10 * 36e5) meta.appendChild(el("span", "tag new", "NEW"));
+    meta.appendChild(el("span", null, when(j._age) + (j.posted ? "" : " (first seen)")));
+    meta.appendChild(el("span", null, "via " + (SOURCE[j.source] || "company site")));
+    if (j.salary) meta.appendChild(el("span", "tag sal", j.salary));
+    if (j.network) meta.appendChild(el("span", "tag", "You know someone"));
+    main.appendChild(meta); li.appendChild(main);
+    const act = el("div", "act");
+    const go = el("a", "apply", "Apply ↗"); if (safe) { go.href = j.url; go.target = "_blank"; go.rel = "noopener noreferrer"; }
+    go.setAttribute("aria-label", `Apply: ${j.title} at ${pretty(j.company)} (opens original posting)`);
+    const done = el("button", "done-btn", applied.has(j.id) ? "✓ Applied" : "Mark applied"); done.type = "button";
+    done.setAttribute("aria-pressed", applied.has(j.id));
+    done.addEventListener("click", () => { applied.has(j.id) ? applied.delete(j.id) : applied.add(j.id); store.set("jp-applied", [...applied]); draw(); });
+    act.append(go, done); li.appendChild(act);
     return li;
   }
 
-  // Gulf and Remote never mix: each tab owns its roles.
-  let tab = store.get("jp-tab", "gulf") === "remote" ? "remote" : "gulf";
-  const tabs = [...document.querySelectorAll('[role="tab"]')];
-  const inTab = (j, s, t) => t === "remote" ? j.region === "REMOTE" : j.region !== "REMOTE" && s.region.includes(j.region);
-  const age = j => now - Date.parse(j.posted || j.first_seen);
-  const selectTab = (t, focus) => {
-    tab = t; store.set("jp-tab", t);
-    tabs.forEach(b => { const on = b.dataset.tab === t; b.setAttribute("aria-selected", on); b.tabIndex = on ? 0 : -1; if (on && focus) b.focus(); });
-    list.setAttribute("aria-labelledby", "tab-" + t);
-    document.getElementById("where").hidden = t === "remote";
-    draw();
-  };
-  tabs.forEach((b, i) => {
-    b.addEventListener("click", () => selectTab(b.dataset.tab));
-    b.addEventListener("keydown", e => {
-      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
-      e.preventDefault(); selectTab(tabs[(i + 1) % tabs.length].dataset.tab, true);
-    });
-  });
-
   function draw() {
-    const s = state(); store.set("jp-filters", s);
-    const match = (j, t) =>
-      inTab(j, s, t) &&
-      age(j) <= s.days * DAY &&
-      (!s.senior || SENIOR.test(j.title)) && (!s.ai || AI.test(j.title)) &&
-      (!s.salary || j.salary) && (!s.network || j.network) &&
-      (!s.hideApplied || !applied.has(j.id)) &&
-      (!s.q || (j.title + " " + j.company).toLowerCase().includes(s.q));
-    const shown = D.jobs.filter(j => match(j, tab)).sort((a, b) => s.sort === "fit"
-      ? (b.fit || 0) - (a.fit || 0) || age(a) - age(b)
-      : age(a) - age(b));
-    list.replaceChildren(...shown.map(card));
-    for (const b of tabs) b.textContent = `${b.dataset.tab === "gulf" ? "Gulf" : "Remote"} (${D.jobs.filter(j => match(j, b.dataset.tab)).length})`;
-    const total = D.jobs.filter(j => inTab(j, s, tab)).length;
-    const older = D.jobs.filter(j => inTab(j, s, tab) && age(j) > s.days * DAY).length;
-    document.getElementById("count").textContent = `Showing ${shown.length} of ${total} ${tab === "gulf" ? "Gulf" : "remote"} roles` +
-      (older ? ` · ${older} more still open but posted earlier: widen "Posted"` : "");
-    if (!shown.length) list.appendChild(el("li", "empty", "No roles match these filters. Widen the date range or clear a filter."));
+    save();
+    document.querySelectorAll('[role="tab"]').forEach(b => {
+      const on = b.dataset.tab === S.tab, n = D.jobs.filter(j => (b.dataset.tab === "remote" ? j.region === "REMOTE" : j.region !== "REMOTE") && j._age <= rangeMax() && (S.showApplied || !applied.has(j.id))).length;
+      b.setAttribute("aria-selected", on); b.tabIndex = on ? 0 : -1;
+      b.replaceChildren(b.dataset.tab === "gulf" ? "Gulf" : "Remote", el("span", "n", String(n)));
+    });
+    $("panel").setAttribute("aria-labelledby", "tab-" + S.tab);
+
+    // Date range pills show how many roles each range would give.
+    $("posted").replaceChildren(el("span", "lbl", "Posted"));
+    for (const r of RANGES) pill($("posted"), "radio", r.label, D.jobs.filter(j => base(j) && inCountries(j) && j._age <= r.max).length, S.range === r.id, () => { S.range = r.id; draw(); });
+    // Country pills (Gulf only).
+    const cEl = $("countries"); cEl.hidden = S.tab === "remote"; cEl.replaceChildren(el("span", "lbl", "Country"));
+    for (const c of ["AE", "SA"]) pill(cEl, "toggle", REGION[c], D.jobs.filter(j => base(j) && j.region === c && j._age <= rangeMax()).length, S.countries.includes(c), () => {
+      S.countries = S.countries.includes(c) ? S.countries.filter(x => x !== c) : [...S.countries, c];
+      if (!S.countries.length) S.countries = [c]; draw();
+    });
+    const active = ["senior", "ai", "salary", "network", "showApplied"].filter(k => S[k]).length;
+    $("more-n").textContent = active ? `${active} on` : "";
+
+    const shown = D.jobs.filter(j => base(j) && inCountries(j) && j._age <= rangeMax())
+      .sort((a, b) => S.sort === "fit" ? (b.fit || 0) - (a.fit || 0) || a._age - b._age : a._age - b._age || (b.fit || 0) - (a.fit || 0));
+    const panel = $("panel"); panel.replaceChildren();
+    $("count").textContent = shown.length ? `${shown.length} ${S.tab === "gulf" ? "Gulf" : "remote"} role${shown.length > 1 ? "s" : ""}` : "";
+    if (!shown.length) {
+      const wider = D.jobs.filter(j => base(j) && inCountries(j) && j._age <= 7).length;
+      const box = el("div", "empty");
+      box.appendChild(el("p", null, wider && S.range !== "7d" ? `No ${S.tab === "gulf" ? "Gulf" : "remote"} roles in this range. ${wider} in the last 7 days.` : "No roles match. Try clearing the search or a filter."));
+      if (wider && S.range !== "7d") { const b = el("button", null, "Show last 7 days"); b.type = "button"; b.addEventListener("click", () => { S.range = "7d"; draw(); }); box.appendChild(b); }
+      panel.appendChild(box); return;
+    }
+    // Group by day so the newest roles are the first thing you see.
+    let ol = null, last = null;
+    for (const j of shown) {
+      const key = S.sort === "new" ? Math.min(j._age, 2) : "all";
+      if (key !== last) {
+        if (S.sort === "new") panel.appendChild(el("h2", "day", key === 0 ? "Today" : key === 1 ? "Yesterday" : "Earlier this week"));
+        ol = el("ol", "jobs"); panel.appendChild(ol); last = key;
+      }
+      ol.appendChild(card(j));
+    }
   }
 
-  form.addEventListener("input", draw);
-  form.addEventListener("submit", e => e.preventDefault());
-  selectTab(tab);
+  // Controls
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const pick = (t, focus) => { S.tab = t; history.replaceState(null, "", "#" + t); draw(); if (focus) $("tab-" + t).focus(); };
+  tabs.forEach(b => {
+    b.addEventListener("click", () => pick(b.dataset.tab));
+    b.addEventListener("keydown", e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); pick(S.tab === "gulf" ? "remote" : "gulf", true); } });
+  });
+  $("q").value = S.q; $("q").addEventListener("input", e => { S.q = e.target.value.trim(); draw(); });
+  for (const [id, k] of [["f-senior", "senior"], ["f-ai", "ai"], ["f-salary", "salary"], ["f-network", "network"], ["f-applied", "showApplied"]]) {
+    $(id).checked = S[k]; $(id).addEventListener("change", e => { S[k] = e.target.checked; draw(); });
+  }
+  $("f-sort").value = S.sort; $("f-sort").addEventListener("change", e => { S.sort = e.target.value; draw(); });
+  draw();
 })();
 </script>
 </body>
