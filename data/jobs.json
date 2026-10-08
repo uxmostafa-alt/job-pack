@@ -1,5 +1,24 @@
 [
  {
+  "id": "himalayas:https://himalayas.app/companies/timeleft/jobs/senior-mobile-product-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Senior Mobile Product Designer",
+  "company": "Timeleft",
+  "url": "https://himalayas.app/companies/timeleft/jobs/senior-mobile-product-designer",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-08T16:00:46+00:00",
+  "salary": null,
+  "first_seen": "2026-10-08T19:00:30.788426+00:00",
+  "tags": [
+   "AI",
+   "Design system"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
   "id": "linkedin:4476973643",
   "board": "linkedin",
   "source": "linkedin",
@@ -40,22 +59,6 @@
   "title": "Product Designer",
   "company": "Salt",
   "url": "https://ae.linkedin.com/jobs/view/product-designer-at-salt-4477125238",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-08T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-08T11:36:42.351233+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4475905182",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Service Designer ( CX )",
-  "company": "Raqmiyat",
-  "url": "https://ae.linkedin.com/jobs/view/service-designer-cx-at-raqmiyat-4475905182",
   "region": "AE",
   "location": "Dubai, United Arab Emirates",
   "posted": "2026-10-08T00:00:00+00:00",
