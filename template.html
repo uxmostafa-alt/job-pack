@@ -136,6 +136,13 @@ footer a { color: inherit; }
   // Header: refresh time and per-source health.
   document.getElementById("stamp").textContent =
     `Refreshed ${D.generated_cairo} Cairo · refreshes 07:40, 11:40, 15:40 and 19:40 Cairo`;
+  const staleH = (Date.now() - Date.parse(D.generated)) / 36e5;
+  if (staleH > 8) {
+    const warn = document.createElement("p");
+    warn.className = "sub"; warn.setAttribute("role", "alert");
+    warn.textContent = `This page is ${Math.floor(staleH)}h old. The scheduled refresh is late; roles may be stale.`;
+    document.getElementById("stamp").after(warn);
+  }
   const h = Object.entries(D.health);
   const failed = h.filter(([, v]) => v.failed).length;
   document.getElementById("health-sum").textContent =

@@ -1,11 +1,11 @@
 name: refresh
 
-# GitHub cron runs in UTC. Both lines fire every day; fetch.py keeps only the one that
-# matches Cairo's current offset, so runs land at 07:40, 11:40, 15:40 and 19:40 Cairo all year.
+# GitHub drops and delays scheduled runs, so this fires every 30 minutes (cheap: it exits in seconds
+# when nothing is due). fetch.py refreshes only when the latest slot (07:40, 11:40, 15:40, 19:40 Cairo)
+# has not been served, so a dropped trigger is caught up by the next one.
 on:
   schedule:
-    - cron: '40 4,8,12,16 * * *'  # Cairo summer time (UTC+3)
-    - cron: '40 5,9,13,17 * * *'  # Cairo winter time (UTC+2)
+    - cron: '10,40 4-20 * * *'
   workflow_dispatch:
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
       - name: Fetch jobs and render page
         id: fetch
         env:
-          SCHEDULE: ${{ github.event.schedule }}
+          SCHEDULED: ${{ github.event_name == 'schedule' && '1' || '0' }}
         run: python3 fetch.py
 
       - name: Save state

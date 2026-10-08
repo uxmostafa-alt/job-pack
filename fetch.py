@@ -26,8 +26,9 @@ MAX_AGE = timedelta(days=7)
 UA = {"User-Agent": "job-pack/1.0 (personal job digest; github.com/uxmostafa-alt/job-pack)"}
 BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
 
-# Cron strings in .github/workflows/refresh.yml, keyed by Cairo UTC offset in hours.
-SCHEDULES = {3: "40 4,8,12,16 * * *", 2: "40 5,9,13,17 * * *"}
+# Refresh slots in Cairo local time. GitHub drops or delays scheduled runs, so the workflow fires every
+# 30 minutes and a run only refreshes when the latest slot has not been served yet (self-healing catch-up).
+SLOTS = ((7, 40), (11, 40), (15, 40), (19, 40))
 
 # ---------- filters ----------
 
@@ -432,11 +433,29 @@ def set_output(ran):
             f.write(f"ran={'yes' if ran else 'no'}\n")
 
 
+def latest_slot():
+    """Most recent refresh slot that has already passed, as an aware datetime."""
+    now = NOW.astimezone(CAIRO)
+    for day in (0, 1):
+        d = now - timedelta(days=day)
+        for h, m in reversed(SLOTS):
+            slot = d.replace(hour=h, minute=m, second=0, microsecond=0)
+            if slot <= now:
+                return slot
+
+
+def slot_served(snapshot):
+    """True when the published page was generated after the latest slot."""
+    try:
+        return datetime.fromisoformat(json.loads(snapshot.read_text())["generated"]) >= latest_slot()
+    except (OSError, ValueError, KeyError):
+        return False
+
+
 def main():
-    sched = os.environ.get("SCHEDULE")
-    offset = int(NOW.astimezone(CAIRO).utcoffset().total_seconds() // 3600)
-    if sched and SCHEDULES.get(offset) != sched:
-        print(f"Skip: cron '{sched}' does not match Cairo UTC+{offset}")
+    # Manual runs (workflow_dispatch) always refresh; scheduled triggers refresh only when a slot is unserved.
+    if os.environ.get("SCHEDULED") == "1" and slot_served(ROOT / "docs" / "jobs.json"):
+        print("Skip: current slot already served")
         set_output(False)
         return 0
     companies = json.loads((ROOT / "companies.json").read_text())

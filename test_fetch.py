@@ -66,5 +66,21 @@ class FreshnessTest(unittest.TestCase):
         self.assertIsNone(fetch.to_dt("not a date"))
 
 
+class SlotTest(unittest.TestCase):
+    def at(self, hh, mm):
+        from datetime import datetime
+        fetch.NOW = datetime(2026, 10, 9, hh, mm, tzinfo=fetch.CAIRO).astimezone(fetch.timezone.utc)
+
+    def test_latest_slot(self):
+        self.at(11, 55)
+        self.assertEqual((fetch.latest_slot().hour, fetch.latest_slot().minute, fetch.latest_slot().day), (11, 40, 9))
+        self.at(6, 0)  # before the first slot: yesterday's last slot
+        self.assertEqual((fetch.latest_slot().hour, fetch.latest_slot().day), (19, 8))
+
+    def tearDown(self):
+        from datetime import datetime
+        fetch.NOW = datetime.now(fetch.timezone.utc)
+
+
 if __name__ == "__main__":
     unittest.main()
