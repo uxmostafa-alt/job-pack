@@ -1,19 +1,19 @@
 [
  {
-  "id": "himalayas:https://himalayas.app/companies/timeleft/jobs/senior-mobile-product-designer",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Senior Mobile Product Designer",
-  "company": "Timeleft",
-  "url": "https://himalayas.app/companies/timeleft/jobs/senior-mobile-product-designer",
+  "id": "greenhouse:6146092004",
+  "board": "greenhouse:grafanalabs",
+  "source": "greenhouse",
+  "title": "Senior Product Designer, Knowledge Graph | NASA | Remote",
+  "company": "Grafana Labs",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146092004",
   "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-08T16:00:46+00:00",
+  "location": "Canada (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-10-09T04:47:01-04:00",
   "salary": null,
-  "first_seen": "2026-10-08T19:00:30.788426+00:00",
+  "first_seen": "2026-10-09T11:16:45.531726+00:00",
   "tags": [
    "AI",
-   "Design system"
+   "Gov/Enterprise"
   ],
   "fit": 5,
   "network": false
@@ -252,23 +252,5 @@
   ],
   "fit": 8,
   "network": true
- },
- {
-  "id": "linkedin:4473128519",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Lead, AI Creative Designer",
-  "company": "First Abu Dhabi Bank (FAB)",
-  "url": "https://ae.linkedin.com/jobs/view/lead-ai-creative-designer-at-first-abu-dhabi-bank-fab-4473128519",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-02T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 8,
-  "network": false
  }
 ]
