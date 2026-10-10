@@ -1,14 +1,66 @@
 [
  {
-  "id": "greenhouse:6146092004",
+  "id": "linkedin:4475270922",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UI/UX Product Designer",
+  "company": "Virtusa",
+  "url": "https://ae.linkedin.com/jobs/view/ui-ux-product-designer-at-virtusa-4475270922",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-10-10T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-10T10:33:30.986065+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4477217175",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Senior Product Design",
+  "company": "Abu Dhabi Securities Brokerage- Egypt",
+  "url": "https://ae.linkedin.com/jobs/view/senior-product-design-at-abu-dhabi-securities-brokerage-egypt-4477217175",
+  "region": "AE",
+  "location": "Abu Dhabi Emirate, United Arab Emirates",
+  "posted": "2026-10-10T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-10T10:33:30.986065+00:00",
+  "tags": [],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "remoteok:1137474",
+  "board": "remoteok",
+  "source": "remoteok",
+  "title": "Product Design Lead",
+  "company": "Fuel50",
+  "url": "https://remoteOK.com/remote-jobs/remote-product-design-lead-fuel50-1137474",
+  "region": "REMOTE",
+  "location": "Remote, region not stated",
+  "posted": "2026-10-09T08:00:04+00:00",
+  "salary": null,
+  "first_seen": "2026-10-10T10:33:30.986065+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
+  "id": "greenhouse:6146091004",
   "board": "greenhouse:grafanalabs",
   "source": "greenhouse",
   "title": "Senior Product Designer, Knowledge Graph | NASA | Remote",
   "company": "Grafana Labs",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146092004",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146091004",
   "region": "REMOTE",
-  "location": "Canada (Remote) Canada (Remote) / EMEA / USA (Remote)",
-  "posted": "2026-10-09T04:47:01-04:00",
+  "location": "United States (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-10-09T04:46:57-04:00",
   "salary": null,
   "first_seen": "2026-10-09T11:16:45.531726+00:00",
   "tags": [
@@ -32,6 +84,22 @@
   "first_seen": "2026-10-09T17:32:30.723955+00:00",
   "tags": [],
   "fit": 5,
+  "network": true
+ },
+ {
+  "id": "linkedin:4476838548",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Senior UI/UX Designer (m/f/d)",
+  "company": "Halian | Managed Services, Recruitment Agency & Contract Staffing",
+  "url": "https://ae.linkedin.com/jobs/view/senior-ui-ux-designer-m-f-d-at-halian-managed-services-recruitment-agency-contract-staffing-4476838548",
+  "region": "AE",
+  "location": "Abu Dhabi Emirate, United Arab Emirates",
+  "posted": "2026-10-09T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-10T10:33:30.986065+00:00",
+  "tags": [],
+  "fit": 7,
   "network": true
  },
  {
@@ -236,39 +304,5 @@
   "tags": [],
   "fit": 4,
   "network": false
- },
- {
-  "id": "linkedin:4446426107",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer",
-  "company": "Careem",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-careem-4446426107",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-03T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
- },
- {
-  "id": "linkedin:4447144019",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer (Design Systems)",
-  "company": "Careem",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-design-systems-at-careem-4447144019",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-03T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [
-   "Design system"
-  ],
-  "fit": 8,
-  "network": true
  }
 ]
