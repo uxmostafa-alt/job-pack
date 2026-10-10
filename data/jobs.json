@@ -16,22 +16,6 @@
   "network": false
  },
  {
-  "id": "linkedin:4477217175",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Design",
-  "company": "Abu Dhabi Securities Brokerage- Egypt",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-design-at-abu-dhabi-securities-brokerage-egypt-4477217175",
-  "region": "AE",
-  "location": "Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-10T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-10T10:33:30.986065+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
   "id": "remoteok:1137474",
   "board": "remoteok",
   "source": "remoteok",
@@ -101,24 +85,6 @@
   "tags": [],
   "fit": 7,
   "network": true
- },
- {
-  "id": "linkedin:4476973643",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer Global Public Sector",
-  "company": "TALENTMATE",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-talentmate-4476973643",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-08T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-08T11:36:42.351233+00:00",
-  "tags": [
-   "Gov/Enterprise"
-  ],
-  "fit": 4,
-  "network": false
  },
  {
   "id": "linkedin:4475780862",
