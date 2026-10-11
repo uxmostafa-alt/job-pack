@@ -1,5 +1,24 @@
 [
  {
+  "id": "himalayas:https://himalayas.app/companies/thrivecart/jobs/ai-product-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "AI Product Designer",
+  "company": "ThriveCart",
+  "url": "https://himalayas.app/companies/thrivecart/jobs/ai-product-designer",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-11T06:56:32+00:00",
+  "salary": null,
+  "first_seen": "2026-10-11T10:46:20.041530+00:00",
+  "tags": [
+   "AI",
+   "Fintech"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
   "id": "linkedin:4475270922",
   "board": "linkedin",
   "source": "linkedin",
