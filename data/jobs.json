@@ -1,5 +1,25 @@
 [
  {
+  "id": "himalayas:https://himalayas.app/companies/vald/jobs/product-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Product Designer",
+  "company": "VALD",
+  "url": "https://himalayas.app/companies/vald/jobs/product-designer",
+  "region": "AE",
+  "location": "France / Germany / Ireland / Lebanon / United Arab Emirates",
+  "posted": "2026-10-12T13:53:56+00:00",
+  "salary": null,
+  "first_seen": "2026-10-12T21:14:04.632976+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
   "id": "himalayas:https://himalayas.app/companies/emetlab/jobs/ui-ux-designer",
   "board": "himalayas",
   "source": "himalayas",
@@ -170,15 +190,15 @@
   "network": false
  },
  {
-  "id": "greenhouse:6146091004",
+  "id": "greenhouse:6146092004",
   "board": "greenhouse:grafanalabs",
   "source": "greenhouse",
   "title": "Senior Product Designer, Knowledge Graph | NASA | Remote",
   "company": "Grafana Labs",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146091004",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146092004",
   "region": "REMOTE",
-  "location": "United States (Remote) Canada (Remote) / EMEA / USA (Remote)",
-  "posted": "2026-10-09T04:46:57-04:00",
+  "location": "Canada (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-10-09T04:47:01-04:00",
   "salary": null,
   "first_seen": "2026-10-09T11:16:45.531726+00:00",
   "tags": [
