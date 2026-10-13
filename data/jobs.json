@@ -342,23 +342,5 @@
   "tags": [],
   "fit": 3,
   "network": false
- },
- {
-  "id": "linkedin:4476339772",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI Product Designer",
-  "company": "AppliedAI",
-  "url": "https://ae.linkedin.com/jobs/view/ai-product-designer-at-appliedai-4476339772",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-06T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T21:13:39.002262+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 8,
-  "network": true
  }
 ]
