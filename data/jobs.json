@@ -20,26 +20,6 @@
   "network": false
  },
  {
-  "id": "himalayas:https://himalayas.app/companies/emetlab/jobs/ui-ux-designer",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "UI/UX Designer",
-  "company": "Emetlab",
-  "url": "https://himalayas.app/companies/emetlab/jobs/ui-ux-designer",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-12T07:39:37+00:00",
-  "salary": null,
-  "first_seen": "2026-10-12T11:52:46.870249+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Gov/Enterprise"
-  ],
-  "fit": 4,
-  "network": false
- },
- {
   "id": "linkedin:4476022032",
   "board": "linkedin",
   "source": "linkedin",
@@ -190,15 +170,15 @@
   "network": false
  },
  {
-  "id": "greenhouse:6146092004",
+  "id": "greenhouse:6146091004",
   "board": "greenhouse:grafanalabs",
   "source": "greenhouse",
   "title": "Senior Product Designer, Knowledge Graph | NASA | Remote",
   "company": "Grafana Labs",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146092004",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146091004",
   "region": "REMOTE",
-  "location": "Canada (Remote) Canada (Remote) / EMEA / USA (Remote)",
-  "posted": "2026-10-09T04:47:01-04:00",
+  "location": "United States (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-10-09T04:46:57-04:00",
   "salary": null,
   "first_seen": "2026-10-09T11:16:45.531726+00:00",
   "tags": [
