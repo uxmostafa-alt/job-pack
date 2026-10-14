@@ -1,22 +1,57 @@
 [
  {
-  "id": "himalayas:https://himalayas.app/companies/vald/jobs/product-designer",
+  "id": "greenhouse:5005426101",
+  "board": "greenhouse:bybit",
+  "source": "greenhouse",
+  "title": "Senior Product Design Specialist",
+  "company": "Bybit",
+  "url": "https://job-boards.eu.greenhouse.io/bybit/jobs/5005426101",
+  "region": "AE",
+  "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia Abu Dhabi",
+  "posted": "2026-10-14T03:27:22-04:00",
+  "salary": null,
+  "first_seen": "2026-10-14T09:28:11.618513+00:00",
+  "tags": [
+   "Arabic/RTL",
+   "AI",
+   "Fintech"
+  ],
+  "fit": 10,
+  "network": true
+ },
+ {
+  "id": "himalayas:https://himalayas.app/companies/deed/jobs/ui-ux-designer",
   "board": "himalayas",
   "source": "himalayas",
-  "title": "Product Designer",
-  "company": "VALD",
-  "url": "https://himalayas.app/companies/vald/jobs/product-designer",
-  "region": "AE",
-  "location": "France / Germany / Ireland / Lebanon / United Arab Emirates",
-  "posted": "2026-10-12T13:53:56+00:00",
+  "title": "UI/UX Designer",
+  "company": "Deed",
+  "url": "https://himalayas.app/companies/deed/jobs/ui-ux-designer",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-14T00:38:51+00:00",
   "salary": null,
-  "first_seen": "2026-10-12T21:14:04.632976+00:00",
+  "first_seen": "2026-10-14T09:28:11.618513+00:00",
   "tags": [
-   "AI",
    "Design system",
-   "Gov/Enterprise"
+   "Fintech"
   ],
-  "fit": 6,
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "himalayas:https://himalayas.app/companies/growe-talents/jobs/ui-ux-designer-igaming",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "UI/UX Designer (IGaming)",
+  "company": "Growe Talents",
+  "url": "https://himalayas.app/companies/growe-talents/jobs/ui-ux-designer-igaming",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-13T21:22:52+00:00",
+  "salary": null,
+  "first_seen": "2026-10-14T09:28:11.618513+00:00",
+  "tags": [],
+  "fit": 1,
   "network": false
  },
  {
@@ -170,15 +205,15 @@
   "network": false
  },
  {
-  "id": "greenhouse:6146091004",
+  "id": "greenhouse:6146092004",
   "board": "greenhouse:grafanalabs",
   "source": "greenhouse",
   "title": "Senior Product Designer, Knowledge Graph | NASA | Remote",
   "company": "Grafana Labs",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146091004",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146092004",
   "region": "REMOTE",
-  "location": "United States (Remote) Canada (Remote) / EMEA / USA (Remote)",
-  "posted": "2026-10-09T04:46:57-04:00",
+  "location": "Canada (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-10-09T04:47:01-04:00",
   "salary": null,
   "first_seen": "2026-10-09T11:16:45.531726+00:00",
   "tags": [
@@ -271,56 +306,6 @@
    "Design system"
   ],
   "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4476554880",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Jobgether",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-jobgether-4476554880",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-10-07T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-07T19:04:34.643040+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4468202383",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer, Global Public Sector",
-  "company": "Scale AI",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-scale-ai-4468202383",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-07T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-07T19:04:34.643040+00:00",
-  "tags": [
-   "Gov/Enterprise"
-  ],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "linkedin:4457339528",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Fuse Energy",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-07T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 3,
   "network": false
  }
 ]
