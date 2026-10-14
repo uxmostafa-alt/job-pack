@@ -39,22 +39,6 @@
   "network": false
  },
  {
-  "id": "himalayas:https://himalayas.app/companies/growe-talents/jobs/ui-ux-designer-igaming",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "UI/UX Designer (IGaming)",
-  "company": "Growe Talents",
-  "url": "https://himalayas.app/companies/growe-talents/jobs/ui-ux-designer-igaming",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-13T21:22:52+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T09:28:11.618513+00:00",
-  "tags": [],
-  "fit": 1,
-  "network": false
- },
- {
   "id": "linkedin:4476022032",
   "board": "linkedin",
   "source": "linkedin",
@@ -287,25 +271,6 @@
    "AI"
   ],
   "fit": 6,
-  "network": false
- },
- {
-  "id": "jobicy:154773",
-  "board": "jobicy",
-  "source": "jobicy",
-  "title": "Senior Product Designer, Design Systems",
-  "company": "DuckDuckGo",
-  "url": "https://jobicy.com/jobs/154773-senior-product-designer-design-systems",
-  "region": "REMOTE",
-  "location": "Anywhere",
-  "posted": "2026-10-07T13:00:12+00:00",
-  "salary": null,
-  "first_seen": "2026-10-07T19:04:34.643040+00:00",
-  "tags": [
-   "AI",
-   "Design system"
-  ],
-  "fit": 5,
   "network": false
  }
 ]
