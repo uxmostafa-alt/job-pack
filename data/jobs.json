@@ -20,25 +20,6 @@
   "network": true
  },
  {
-  "id": "himalayas:https://himalayas.app/companies/deed/jobs/ui-ux-designer",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "UI/UX Designer",
-  "company": "Deed",
-  "url": "https://himalayas.app/companies/deed/jobs/ui-ux-designer",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-14T00:38:51+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T09:28:11.618513+00:00",
-  "tags": [
-   "Design system",
-   "Fintech"
-  ],
-  "fit": 3,
-  "network": false
- },
- {
   "id": "linkedin:4479546331",
   "board": "linkedin",
   "source": "linkedin",
@@ -466,39 +447,5 @@
   "tags": [],
   "fit": 7,
   "network": true
- },
- {
-  "id": "linkedin:4475780862",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Lead UX Designer",
-  "company": "Air Arabia",
-  "url": "https://ae.linkedin.com/jobs/view/lead-ux-designer-at-air-arabia-4475780862",
-  "region": "AE",
-  "location": "Sharjah, Sharjah Emirate, United Arab Emirates",
-  "posted": "2026-10-08T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-08T11:36:42.351233+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4477125238",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI Product Designer",
-  "company": "Salt",
-  "url": "https://ae.linkedin.com/jobs/view/ai-product-designer-at-salt-4477125238",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-08T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-08T11:36:42.351233+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 6,
-  "network": false
  }
 ]
