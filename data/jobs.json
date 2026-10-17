@@ -1,25 +1,5 @@
 [
  {
-  "id": "himalayas:https://himalayas.app/companies/defuse-labs/jobs/senior-product-designer-full-stack",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Senior Product Designer (Full-Stack)",
-  "company": "Defuse Labs",
-  "url": "https://himalayas.app/companies/defuse-labs/jobs/senior-product-designer-full-stack",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-16T01:14:15+00:00",
-  "salary": null,
-  "first_seen": "2026-10-16T08:58:33.888031+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Fintech"
-  ],
-  "fit": 6,
-  "network": false
- },
- {
   "id": "greenhouse:5005426101",
   "board": "greenhouse:bybit",
   "source": "greenhouse",
