@@ -1,5 +1,89 @@
 [
  {
+  "id": "linkedin:4466252816",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "AI Designer",
+  "company": "Puffy",
+  "url": "https://ae.linkedin.com/jobs/view/ai-designer-at-puffy-4466252816",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-10-16T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-17T18:25:56.626443+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
+  "id": "linkedin:4465961538",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "AI Image Designer",
+  "company": "Puffy",
+  "url": "https://ae.linkedin.com/jobs/view/ai-image-designer-at-puffy-4465961538",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-10-16T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-17T18:25:56.626443+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
+  "id": "linkedin:4479342671",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Principal Product Designer",
+  "company": "Noon - Education for Everyone",
+  "url": "https://sa.linkedin.com/jobs/view/principal-product-designer-at-noon-education-for-everyone-4479342671",
+  "region": "SA",
+  "location": "Riyadh, Saudi Arabia",
+  "posted": "2026-10-16T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-17T18:25:56.626443+00:00",
+  "tags": [],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "linkedin:4477361538",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UI UX designer",
+  "company": "Wipro",
+  "url": "https://sa.linkedin.com/jobs/view/ui-ux-designer-at-wipro-4477361538",
+  "region": "SA",
+  "location": "Dhahran, Saudi Arabia",
+  "posted": "2026-10-16T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-17T18:25:56.626443+00:00",
+  "tags": [],
+  "fit": 4,
+  "network": true
+ },
+ {
+  "id": "linkedin:4457339528",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer",
+  "company": "Fuse Energy",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-10-15T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T15:35:19.429328+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
   "id": "greenhouse:5005426101",
   "board": "greenhouse:bybit",
   "source": "greenhouse",
@@ -17,22 +101,6 @@
    "Fintech"
   ],
   "fit": 10,
-  "network": true
- },
- {
-  "id": "linkedin:4479546331",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer, BNPL Consumer Experience",
-  "company": "Tabby | تابي",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-bnpl-consumer-experience-at-tabby-%D8%AA%D8%A7%D8%A8%D9%8A-4479546331",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-14T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [],
-  "fit": 7,
   "network": true
  },
  {
@@ -132,24 +200,6 @@
   "network": false
  },
  {
-  "id": "linkedin:4479294532",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Fintech Product Designer",
-  "company": "Sharp Minds",
-  "url": "https://ae.linkedin.com/jobs/view/fintech-product-designer-at-sharp-minds-4479294532",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-14T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [
-   "Fintech"
-  ],
-  "fit": 4,
-  "network": false
- },
- {
   "id": "linkedin:4476675001",
   "board": "linkedin",
   "source": "linkedin",
@@ -165,22 +215,6 @@
    "AI"
   ],
   "fit": 8,
-  "network": false
- },
- {
-  "id": "linkedin:4478440612",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Principal Product Designer",
-  "company": "Noon - Education for Everyone",
-  "url": "https://sa.linkedin.com/jobs/view/principal-product-designer-at-noon-education-for-everyone-4478440612",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-10-14T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [],
-  "fit": 4,
   "network": false
  },
  {
@@ -264,12 +298,12 @@
   "network": false
  },
  {
-  "id": "linkedin:4477580728",
+  "id": "linkedin:4478519899",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "UI UX Designer",
-  "company": "InfoVision Middle East",
-  "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-at-infovision-middle-east-4477580728",
+  "title": "Product Designer",
+  "company": "Parfums de Marly",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-parfums-de-marly-4478519899",
   "region": "AE",
   "location": "Dubai, United Arab Emirates",
   "posted": "2026-10-12T00:00:00+00:00",
@@ -280,12 +314,12 @@
   "network": false
  },
  {
-  "id": "linkedin:4478519899",
+  "id": "linkedin:4477580728",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Parfums de Marly",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-parfums-de-marly-4478519899",
+  "title": "UI UX Designer",
+  "company": "InfoVision Middle East",
+  "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-at-infovision-middle-east-4477580728",
   "region": "AE",
   "location": "Dubai, United Arab Emirates",
   "posted": "2026-10-12T00:00:00+00:00",
@@ -309,24 +343,6 @@
   "first_seen": "2026-10-14T18:53:38.827604+00:00",
   "tags": [],
   "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4475679694",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Creative Designer — Generative AI",
-  "company": "Confidential",
-  "url": "https://ae.linkedin.com/jobs/view/creative-designer-%E2%80%94-generative-ai-at-confidential-4475679694",
-  "region": "AE",
-  "location": "Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-12T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-12T11:52:46.870249+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 6,
   "network": false
  },
  {
