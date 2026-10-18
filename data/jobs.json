@@ -1,25 +1,5 @@
 [
  {
-  "id": "himalayas:https://himalayas.app/companies/clera/jobs/senior-product-designer-9329874859",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Senior Product Designer",
-  "company": "Clera",
-  "url": "https://himalayas.app/companies/clera/jobs/senior-product-designer-9329874859",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-18T00:29:53+00:00",
-  "salary": null,
-  "first_seen": "2026-10-18T08:48:26.226858+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Gov/Enterprise"
-  ],
-  "fit": 6,
-  "network": false
- },
- {
   "id": "himalayas:https://himalayas.app/companies/bridges-for-enterprise/jobs/ui-ux-designer",
   "board": "himalayas",
   "source": "himalayas",
@@ -120,6 +100,24 @@
   "first_seen": "2026-10-06T15:35:19.429328+00:00",
   "tags": [],
   "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4477064175",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "AI-Powered Designer",
+  "company": "Kristina Zanic Consultants",
+  "url": "https://ae.linkedin.com/jobs/view/ai-powered-designer-at-kristina-zanic-consultants-4477064175",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-10-15T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-18T16:51:22.765753+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 6,
   "network": false
  },
  {
