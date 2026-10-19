@@ -1,21 +1,20 @@
 [
  {
-  "id": "himalayas:https://himalayas.app/companies/bridges-for-enterprise/jobs/ui-ux-designer",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "UI/UX Designer",
-  "company": "Bridges for Enterprise",
-  "url": "https://himalayas.app/companies/bridges-for-enterprise/jobs/ui-ux-designer",
+  "id": "wwr:https://weworkremotely.com/remote-jobs/current-senior-product-designer-webflow-temp-to-perm",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Senior Product Designer (Webflow) Temp to Perm",
+  "company": "Current",
+  "url": "https://weworkremotely.com/remote-jobs/current-senior-product-designer-webflow-temp-to-perm",
   "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-18T00:06:37+00:00",
+  "location": "Anywhere in the World",
+  "posted": "2026-10-19T07:31:25+00:00",
   "salary": null,
-  "first_seen": "2026-10-18T08:48:26.226858+00:00",
+  "first_seen": "2026-10-19T09:49:16.364286+00:00",
   "tags": [
-   "Design system",
-   "Gov/Enterprise"
+   "Design system"
   ],
-  "fit": 3,
+  "fit": 4,
   "network": false
  },
  {
@@ -316,70 +315,6 @@
   "first_seen": "2026-10-14T18:53:38.827604+00:00",
   "tags": [],
   "fit": 2,
-  "network": false
- },
- {
-  "id": "linkedin:4477571271",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Design Lead",
-  "company": "Genius HRTech Services L.L.C - FZ - Dubai",
-  "url": "https://ae.linkedin.com/jobs/view/product-design-lead-at-genius-hrtech-services-l-l-c-fz-dubai-4477571271",
-  "region": "AE",
-  "location": "Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-12T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4478519899",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Parfums de Marly",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-parfums-de-marly-4478519899",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-12T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4477580728",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI UX Designer",
-  "company": "InfoVision Middle East",
-  "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-at-infovision-middle-east-4477580728",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-12T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4476026007",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Design Lead",
-  "company": "Amana Talent",
-  "url": "https://ae.linkedin.com/jobs/view/product-design-lead-at-amana-talent-4476026007",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-12T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [],
-  "fit": 5,
   "network": false
  }
 ]
