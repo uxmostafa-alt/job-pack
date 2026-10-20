@@ -284,37 +284,5 @@
   "tags": [],
   "fit": 2,
   "network": false
- },
- {
-  "id": "linkedin:4476083888",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Design Lead",
-  "company": "Salt",
-  "url": "https://ae.linkedin.com/jobs/view/product-design-lead-at-salt-4476083888",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-13T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4478766377",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Almosafer",
-  "url": "https://sa.linkedin.com/jobs/view/product-designer-at-almosafer-4478766377",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-10-13T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-14T18:53:38.827604+00:00",
-  "tags": [],
-  "fit": 2,
-  "network": false
  }
 ]
