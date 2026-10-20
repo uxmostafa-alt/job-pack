@@ -1,5 +1,25 @@
 [
  {
+  "id": "workable:a01902d9-ad44-4574-a96f-c51d8a98e6d4",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Product (UX/UI) Designer",
+  "company": "99brightminds",
+  "url": "https://jobs.workable.com/view/kLCKKRMBJVmcoL9yWKqWVb/product-(ux%2Fui)-designer-in-dubai-at-99brightminds",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-10-20T12:20:02.256000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-20T14:28:17.758187+00:00",
+  "tags": [
+   "Design system",
+   "Gov/Enterprise",
+   "Fintech"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
   "id": "wwr:https://weworkremotely.com/remote-jobs/current-senior-product-designer-webflow-temp-to-perm",
   "board": "wwr",
   "source": "wwr",
