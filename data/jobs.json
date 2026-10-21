@@ -1,5 +1,21 @@
 [
  {
+  "id": "linkedin:4482061389",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Senior Product Designer II",
+  "company": "Floward",
+  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-ii-at-floward-4482061389",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-10-21T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-21T14:38:39.984083+00:00",
+  "tags": [],
+  "fit": 7,
+  "network": true
+ },
+ {
   "id": "linkedin:4478984333",
   "board": "linkedin",
   "source": "linkedin",
@@ -47,40 +63,6 @@
   "first_seen": "2026-10-21T09:18:59.400406+00:00",
   "tags": [],
   "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4478987400",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior UI/UX Designer – Security Operations & AI Dashboards | 12+ years |",
-  "company": "REACH Group",
-  "url": "https://ae.linkedin.com/jobs/view/senior-ui-ux-designer-%E2%80%93-security-operations-ai-dashboards-12%2B-years-at-reach-group-4478987400",
-  "region": "AE",
-  "location": "Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-21T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-21T09:18:59.400406+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 8,
-  "network": false
- },
- {
-  "id": "linkedin:4478972901",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI/UX Designer",
-  "company": "Kaizen Consulting",
-  "url": "https://sa.linkedin.com/jobs/view/ui-ux-designer-at-kaizen-consulting-4478972901",
-  "region": "SA",
-  "location": "Riyadh, Saudi Arabia",
-  "posted": "2026-10-21T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-21T09:18:59.400406+00:00",
-  "tags": [],
-  "fit": 2,
   "network": false
  },
  {
