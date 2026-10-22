@@ -16,6 +16,22 @@
   "network": true
  },
  {
+  "id": "linkedin:4479436065",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Lead Product Designer (B2C)",
+  "company": "Talent Seed",
+  "url": "https://ae.linkedin.com/jobs/view/lead-product-designer-b2c-at-talent-seed-4479436065",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-10-21T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-22T09:21:49.836913+00:00",
+  "tags": [],
+  "fit": 5,
+  "network": false
+ },
+ {
   "id": "linkedin:4478984333",
   "board": "linkedin",
   "source": "linkedin",
@@ -138,22 +154,6 @@
   "network": false
  },
  {
-  "id": "linkedin:4478671891",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "User Interface Designer",
-  "company": "MJQ Investment LLC",
-  "url": "https://ae.linkedin.com/jobs/view/user-interface-designer-at-mjq-investment-llc-4478671891",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-20T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-20T18:42:16.656074+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
   "id": "linkedin:4478685539",
   "board": "linkedin",
   "source": "linkedin",
@@ -254,24 +254,6 @@
   "network": false
  },
  {
-  "id": "linkedin:4480989921",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI Designer UI + Display (MENA, Dubai)",
-  "company": "Algomarketing",
-  "url": "https://ae.linkedin.com/jobs/view/ai-designer-ui-%2B-display-mena-dubai-at-algomarketing-4480989921",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-10-19T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-20T18:42:16.656074+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 6,
-  "network": false
- },
- {
   "id": "linkedin:4480933680",
   "board": "linkedin",
   "source": "linkedin",
@@ -354,23 +336,5 @@
   "tags": [],
   "fit": 4,
   "network": true
- },
- {
-  "id": "linkedin:4477064175",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI-Powered Designer",
-  "company": "Kristina Zanic Consultants",
-  "url": "https://ae.linkedin.com/jobs/view/ai-powered-designer-at-kristina-zanic-consultants-4477064175",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-15T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-18T16:51:22.765753+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 6,
-  "network": false
  }
 ]
