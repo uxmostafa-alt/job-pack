@@ -1,5 +1,62 @@
 [
  {
+  "id": "jobicy:153973",
+  "board": "jobicy",
+  "source": "jobicy",
+  "title": "Senior Product Designer",
+  "company": "RevenueCat",
+  "url": "https://jobicy.com/jobs/153973-senior-product-designer-13",
+  "region": "REMOTE",
+  "location": "EMEA,  LATAM,  Canada,  USA",
+  "posted": "2026-10-24T03:50:11+00:00",
+  "salary": null,
+  "first_seen": "2026-10-24T08:49:57.825141+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
+  "id": "himalayas:https://himalayas.app/companies/agentplace/jobs/agentic-ux-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Agentic UX Designer",
+  "company": "Agentplace",
+  "url": "https://himalayas.app/companies/agentplace/jobs/agentic-ux-designer?utm_source=api",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-23T23:55:25+00:00",
+  "salary": "USD 2K/yr",
+  "first_seen": "2026-10-24T08:49:57.825141+00:00",
+  "tags": [
+   "AI",
+   "Fintech"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "himalayas:https://himalayas.app/companies/prism-studio/jobs/lead-ux-ui-designer-8750788806",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Lead UX/UI Designer",
+  "company": "Prism Studio",
+  "url": "https://himalayas.app/companies/prism-studio/jobs/lead-ux-ui-designer-8750788806?utm_source=api",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-23T21:46:39+00:00",
+  "salary": null,
+  "first_seen": "2026-10-24T08:49:57.825141+00:00",
+  "tags": [
+   "Design system"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "smartrecruiters:744000157408964",
   "board": "smartrecruiters:DeliveryHero",
   "source": "smartrecruiters",
