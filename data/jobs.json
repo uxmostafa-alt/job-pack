@@ -1,5 +1,23 @@
 [
  {
+  "id": "himalayas:https://himalayas.app/companies/luupli-ltd/jobs/senior-ux-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Senior UX Designer",
+  "company": "Luupli Ltd",
+  "url": "https://himalayas.app/companies/luupli-ltd/jobs/senior-ux-designer?utm_source=api",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-25T12:02:27+00:00",
+  "salary": null,
+  "first_seen": "2026-10-25T17:37:12.097510+00:00",
+  "tags": [
+   "Design system"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "himalayas:https://himalayas.app/companies/revpanda/jobs/sr-ui-ux-designer-6194227814",
   "board": "himalayas",
   "source": "himalayas",
