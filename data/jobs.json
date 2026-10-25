@@ -1,5 +1,37 @@
 [
  {
+  "id": "himalayas:https://himalayas.app/companies/revpanda/jobs/sr-ui-ux-designer-6194227814",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Sr UI/UX Designer",
+  "company": "Revpanda",
+  "url": "https://himalayas.app/companies/revpanda/jobs/sr-ui-ux-designer-6194227814?utm_source=api",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-25T05:41:07+00:00",
+  "salary": null,
+  "first_seen": "2026-10-25T13:41:05.871347+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4446426107",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Senior Product Designer",
+  "company": "Careem",
+  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-careem-4446426107",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-10-25T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T15:35:19.429328+00:00",
+  "tags": [],
+  "fit": 7,
+  "network": true
+ },
+ {
   "id": "jobicy:153973",
   "board": "jobicy",
   "source": "jobicy",
@@ -36,43 +68,6 @@
   ],
   "fit": 8,
   "network": true
- },
- {
-  "id": "himalayas:https://himalayas.app/companies/agentplace/jobs/agentic-ux-designer",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Agentic UX Designer",
-  "company": "Agentplace",
-  "url": "https://himalayas.app/companies/agentplace/jobs/agentic-ux-designer?utm_source=api",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-23T23:55:25+00:00",
-  "salary": "USD 2K/yr",
-  "first_seen": "2026-10-24T08:49:57.825141+00:00",
-  "tags": [
-   "AI",
-   "Fintech"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "himalayas:https://himalayas.app/companies/prism-studio/jobs/lead-ux-ui-designer-8750788806",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Lead UX/UI Designer",
-  "company": "Prism Studio",
-  "url": "https://himalayas.app/companies/prism-studio/jobs/lead-ux-ui-designer-8750788806?utm_source=api",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-23T21:46:39+00:00",
-  "salary": null,
-  "first_seen": "2026-10-24T08:49:57.825141+00:00",
-  "tags": [
-   "Design system"
-  ],
-  "fit": 4,
-  "network": false
  },
  {
   "id": "smartrecruiters:744000157408964",
@@ -168,24 +163,6 @@
   "first_seen": "2026-10-23T09:18:14.021477+00:00",
   "tags": [],
   "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4480657070",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Principal AI Product Designer",
-  "company": "Socium - Teams Done Differently",
-  "url": "https://ae.linkedin.com/jobs/view/principal-ai-product-designer-at-socium-teams-done-differently-4480657070",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-23T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-24T16:55:49.744108+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 8,
   "network": false
  },
  {
@@ -342,22 +319,6 @@
   "first_seen": "2026-10-21T09:18:59.400406+00:00",
   "tags": [],
   "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4478685539",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Technical Designer",
-  "company": "Larustic",
-  "url": "https://ae.linkedin.com/jobs/view/product-technical-designer-at-larustic-4478685539",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-10-20T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-20T18:42:16.656074+00:00",
-  "tags": [],
-  "fit": 3,
   "network": false
  },
  {
