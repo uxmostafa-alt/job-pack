@@ -1,5 +1,24 @@
 [
  {
+  "id": "workable:f6068121-2953-464f-b3e0-5bdbf4aefc6a",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Senior UX Designer",
+  "company": "Brainlake Advertising LLC",
+  "url": "https://jobs.workable.com/view/wo4dvdyuw1BjXPA9MsGRqo/hybrid-senior-ux-designer-in-dubai-at-brainlake-advertising-llc",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-10-26T10:49:55.923000+00:00",
+  "salary": null,
+  "first_seen": "2026-10-26T16:45:59.329433+00:00",
+  "tags": [
+   "Design system",
+   "Fintech"
+  ],
+  "fit": 7,
+  "network": false
+ },
+ {
   "id": "himalayas:https://himalayas.app/companies/zup-innovation/jobs/lider-product-designer-ux",
   "board": "himalayas",
   "source": "himalayas",
@@ -60,24 +79,6 @@
   "salary": null,
   "first_seen": "2026-10-26T10:02:08.750117+00:00",
   "tags": [],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "himalayas:https://himalayas.app/companies/luupli-ltd/jobs/senior-ux-designer",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Senior UX Designer",
-  "company": "Luupli Ltd",
-  "url": "https://himalayas.app/companies/luupli-ltd/jobs/senior-ux-designer?utm_source=api",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-25T12:02:27+00:00",
-  "salary": null,
-  "first_seen": "2026-10-25T17:37:12.097510+00:00",
-  "tags": [
-   "Design system"
-  ],
   "fit": 4,
   "network": false
  },
