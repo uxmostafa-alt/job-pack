@@ -1,5 +1,23 @@
 [
  {
+  "id": "himalayas:https://himalayas.app/companies/parallelhq/jobs/senior-product-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Senior Product Designer",
+  "company": "Parallel",
+  "url": "https://himalayas.app/companies/parallelhq/jobs/senior-product-designer?utm_source=api",
+  "region": "REMOTE",
+  "location": "Worldwide",
+  "posted": "2026-10-27T01:42:45+00:00",
+  "salary": "INR 2500K–3500K/yr",
+  "first_seen": "2026-10-27T09:45:48.680927+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "workable:f6068121-2953-464f-b3e0-5bdbf4aefc6a",
   "board": "workable-search",
   "source": "workable",
@@ -16,22 +34,6 @@
    "Fintech"
   ],
   "fit": 7,
-  "network": false
- },
- {
-  "id": "himalayas:https://himalayas.app/companies/zup-innovation/jobs/lider-product-designer-ux",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Líder Product Designer - UX",
-  "company": "Zup Innovation",
-  "url": "https://himalayas.app/companies/zup-innovation/jobs/lider-product-designer-ux?utm_source=api",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-26T03:22:31+00:00",
-  "salary": null,
-  "first_seen": "2026-10-26T10:02:08.750117+00:00",
-  "tags": [],
-  "fit": 1,
   "network": false
  },
  {
@@ -370,56 +372,6 @@
    "Fintech"
   ],
   "fit": 6,
-  "network": false
- },
- {
-  "id": "linkedin:4480734051",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Lead Product Designer",
-  "company": "Cercli",
-  "url": "https://ae.linkedin.com/jobs/view/lead-product-designer-at-cercli-4480734051",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-20T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-21T09:18:59.400406+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4481560314",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Almosafer",
-  "url": "https://sa.linkedin.com/jobs/view/product-designer-at-almosafer-4481560314",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-10-20T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-20T18:42:16.656074+00:00",
-  "tags": [],
-  "fit": 2,
-  "network": false
- },
- {
-  "id": "linkedin:4480460513",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI-Native Learning Experience Designer - Math (Remote or Onsite in Riyadh)",
-  "company": "Noon - Education for Everyone",
-  "url": "https://sa.linkedin.com/jobs/view/ai-native-learning-experience-designer-math-remote-or-onsite-in-riyadh-at-noon-education-for-everyone-4480460513",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-10-20T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-20T18:42:16.656074+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 5,
   "network": false
  }
 ]
