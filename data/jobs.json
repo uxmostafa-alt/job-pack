@@ -1,20 +1,20 @@
 [
  {
-  "id": "himalayas:https://himalayas.app/companies/parallelhq/jobs/senior-product-designer",
+  "id": "himalayas:https://himalayas.app/companies/tarmeez-capital/jobs/ux-ui-designer",
   "board": "himalayas",
   "source": "himalayas",
-  "title": "Senior Product Designer",
-  "company": "Parallel",
-  "url": "https://himalayas.app/companies/parallelhq/jobs/senior-product-designer?utm_source=api",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-10-27T01:42:45+00:00",
-  "salary": "INR 2500K–3500K/yr",
-  "first_seen": "2026-10-27T09:45:48.680927+00:00",
+  "title": "UX/UI Designer",
+  "company": "Tarmeez Capital",
+  "url": "https://himalayas.app/companies/tarmeez-capital/jobs/ux-ui-designer?utm_source=api",
+  "region": "SA",
+  "location": "Saudi Arabia",
+  "posted": "2026-10-28T07:26:47+00:00",
+  "salary": null,
+  "first_seen": "2026-10-28T10:31:06.165246+00:00",
   "tags": [
-   "AI"
+   "Design system"
   ],
-  "fit": 4,
+  "fit": 3,
   "network": false
  },
  {
@@ -146,22 +146,6 @@
   "first_seen": "2026-10-27T20:39:02.088200+00:00",
   "tags": [],
   "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4483740339",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Lead Experience Designer",
-  "company": "Aceleradora Ágil",
-  "url": "https://sa.linkedin.com/jobs/view/lead-experience-designer-at-aceleradora-%C3%A1gil-4483740339",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-10-26T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-27T20:39:02.088200+00:00",
-  "tags": [],
-  "fit": 4,
   "network": false
  },
  {
@@ -313,71 +297,5 @@
   ],
   "fit": 6,
   "network": true
- },
- {
-  "id": "linkedin:4482061389",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer II",
-  "company": "Floward",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-ii-at-floward-4482061389",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-21T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-21T14:38:39.984083+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
- },
- {
-  "id": "linkedin:4479436065",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Lead Product Designer (B2C)",
-  "company": "Talent Seed",
-  "url": "https://ae.linkedin.com/jobs/view/lead-product-designer-b2c-at-talent-seed-4479436065",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-21T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-22T09:21:49.836913+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4480766816",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Design Systems Designer",
-  "company": "NEXT Ventures",
-  "url": "https://ae.linkedin.com/jobs/view/senior-design-systems-designer-at-next-ventures-4480766816",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-21T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-21T09:18:59.400406+00:00",
-  "tags": [
-   "Design system"
-  ],
-  "fit": 6,
-  "network": false
- },
- {
-  "id": "linkedin:4482044732",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer Role",
-  "company": "Dev-Test- India3",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-role-at-dev-test-india3-4482044732",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-21T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-21T09:18:59.400406+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
  }
 ]
