@@ -39,6 +39,24 @@
   "network": true
  },
  {
+  "id": "linkedin:4468202383",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer, Global Public Sector",
+  "company": "Scale",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-scale-4468202383",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-10-29T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-07T19:04:34.643040+00:00",
+  "tags": [
+   "Gov/Enterprise"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "linkedin:4481457217",
   "board": "linkedin",
   "source": "linkedin",
@@ -53,22 +71,6 @@
   "tags": [],
   "fit": 7,
   "network": true
- },
- {
-  "id": "linkedin:4484940399",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer / Business Transformation Consultant",
-  "company": "Saisons Brother Holding Jobs",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-business-transformation-consultant-at-saisons-brother-holding-jobs-4484940399",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-10-29T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-29T10:51:06.506153+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
  },
  {
   "id": "greenhouse:8319366",
@@ -87,22 +89,6 @@
   ],
   "fit": 4,
   "network": false
- },
- {
-  "id": "linkedin:4480626389",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UX/UI Designer",
-  "company": "Etihad",
-  "url": "https://ae.linkedin.com/jobs/view/ux-ui-designer-at-etihad-4480626389",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-28T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-23T09:18:14.021477+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": true
  },
  {
   "id": "linkedin:4481849726",
@@ -167,6 +153,22 @@
   "posted": "2026-10-26T00:00:00+00:00",
   "salary": null,
   "first_seen": "2026-10-27T20:39:02.088200+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4481408715",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer / Business Transformation Consultant",
+  "company": "The Dealmaker",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-business-transformation-consultant-at-the-dealmaker-4481408715",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-10-26T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-29T17:23:57.485671+00:00",
   "tags": [],
   "fit": 3,
   "network": false
@@ -269,6 +271,22 @@
   "first_seen": "2026-10-24T16:55:49.744108+00:00",
   "tags": [],
   "fit": 7,
+  "network": true
+ },
+ {
+  "id": "linkedin:4480634123",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UX/UI Designer",
+  "company": "Etihad",
+  "url": "https://ae.linkedin.com/jobs/view/ux-ui-designer-at-etihad-4480634123",
+  "region": "AE",
+  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
+  "posted": "2026-10-23T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-25T13:41:05.871347+00:00",
+  "tags": [],
+  "fit": 5,
   "network": true
  },
  {
