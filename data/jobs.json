@@ -203,22 +203,6 @@
   "network": true
  },
  {
-  "id": "linkedin:4481849726",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI/UX Designer",
-  "company": "Hyper Lychee Labs",
-  "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-at-hyper-lychee-labs-4481849726",
-  "region": "AE",
-  "location": "Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-27T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-27T20:39:02.088200+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
   "id": "workable:f6068121-2953-464f-b3e0-5bdbf4aefc6a",
   "board": "workable-search",
   "source": "workable",
@@ -283,26 +267,6 @@
   "first_seen": "2026-10-27T20:39:02.088200+00:00",
   "tags": [],
   "fit": 5,
-  "network": false
- },
- {
-  "id": "jobicy:153973",
-  "board": "jobicy",
-  "source": "jobicy",
-  "title": "Senior Product Designer",
-  "company": "RevenueCat",
-  "url": "https://jobicy.com/jobs/153973-senior-product-designer-13",
-  "region": "REMOTE",
-  "location": "EMEA,  LATAM,  Canada,  USA",
-  "posted": "2026-10-24T03:50:11+00:00",
-  "salary": null,
-  "first_seen": "2026-10-24T08:49:57.825141+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Gov/Enterprise"
-  ],
-  "fit": 6,
   "network": false
  }
 ]
