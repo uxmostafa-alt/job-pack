@@ -1,5 +1,24 @@
 [
  {
+  "id": "ashby:5f7c8bb0-810a-4ea4-ad6a-2d7c2e2dbdcb",
+  "board": "ashby:kraken.com",
+  "source": "ashby",
+  "title": "Staff Product Designer - AI Products",
+  "company": "kraken.com",
+  "url": "https://jobs.ashbyhq.com/kraken.com/5f7c8bb0-810a-4ea4-ad6a-2d7c2e2dbdcb",
+  "region": "AE",
+  "location": "United Kingdom / Brazil / United Arab Emirates / Ireland / Peru / Sweden / Colombia / Argentina / Romania / Cyprus / Switzerland / Portugal / Lithuania / South Africa / Czech Republic / Canada / Hungary / Mexico / Chile / Poland / Spain / Bulgaria / United Kingdom",
+  "posted": "2026-11-03T17:32:17.961000+00:00",
+  "salary": null,
+  "first_seen": "2026-11-03T19:27:15.435471+00:00",
+  "tags": [
+   "AI",
+   "Fintech"
+  ],
+  "fit": 9,
+  "network": false
+ },
+ {
   "id": "greenhouse:6241784004",
   "board": "greenhouse:grafanalabs",
   "source": "greenhouse",
