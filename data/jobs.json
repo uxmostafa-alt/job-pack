@@ -1,5 +1,37 @@
 [
  {
+  "id": "linkedin:4469454345",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer",
+  "company": "talabat",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-talabat-4469454345",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-11-04T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-14T18:53:38.827604+00:00",
+  "tags": [],
+  "fit": 5,
+  "network": true
+ },
+ {
+  "id": "linkedin:4485508879",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Senior Product Designer",
+  "company": "Deel",
+  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-deel-4485508879",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-11-04T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-04T19:41:49.274203+00:00",
+  "tags": [],
+  "fit": 5,
+  "network": false
+ },
+ {
   "id": "linkedin:4486331074",
   "board": "linkedin",
   "source": "linkedin",
@@ -64,17 +96,33 @@
   "network": false
  },
  {
-  "id": "linkedin:4487262182",
+  "id": "linkedin:4485086695",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "AI & Web3 Creative Experience Designer",
-  "company": "De Art",
-  "url": "https://sa.linkedin.com/jobs/view/ai-web3-creative-experience-designer-at-de-art-4487262182",
+  "title": "UI/UX Designer",
+  "company": "Elite Consultancy Company Limited",
+  "url": "https://sa.linkedin.com/jobs/view/ui-ux-designer-at-elite-consultancy-company-limited-4485086695",
   "region": "SA",
   "location": "Riyadh, Riyadh, Saudi Arabia",
   "posted": "2026-11-04T00:00:00+00:00",
   "salary": null,
-  "first_seen": "2026-11-04T12:01:38.586239+00:00",
+  "first_seen": "2026-11-04T19:41:49.274203+00:00",
+  "tags": [],
+  "fit": 2,
+  "network": false
+ },
+ {
+  "id": "linkedin:4487511736",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "AI Virtual World Designer",
+  "company": "De Art",
+  "url": "https://sa.linkedin.com/jobs/view/ai-virtual-world-designer-at-de-art-4487511736",
+  "region": "SA",
+  "location": "Riyadh, Riyadh, Saudi Arabia",
+  "posted": "2026-11-04T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-04T19:41:49.274203+00:00",
   "tags": [
    "AI"
   ],
@@ -135,22 +183,6 @@
    "AI"
   ],
   "fit": 8,
-  "network": false
- },
- {
-  "id": "linkedin:4484615683",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer",
-  "company": "Deel",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-deel-4484615683",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-11-03T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-03T11:51:28.152514+00:00",
-  "tags": [],
-  "fit": 5,
   "network": false
  },
  {
@@ -399,24 +431,6 @@
   "salary": null,
   "first_seen": "2026-10-30T10:49:52.345181+00:00",
   "tags": [],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "greenhouse:8319366",
-  "board": "greenhouse:wikimedia",
-  "source": "greenhouse",
-  "title": "Senior UX Designer",
-  "company": "Wikimedia Foundation",
-  "url": "https://job-boards.greenhouse.io/wikimedia/jobs/8319366",
-  "region": "REMOTE",
-  "location": "Remote, region not stated",
-  "posted": "2026-10-28T13:22:47-04:00",
-  "salary": null,
-  "first_seen": "2026-10-29T10:51:06.506153+00:00",
-  "tags": [
-   "Design system"
-  ],
   "fit": 4,
   "network": false
  }
