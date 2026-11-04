@@ -1,5 +1,87 @@
 [
  {
+  "id": "linkedin:4486331074",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Lead Product Designer",
+  "company": "Cercli",
+  "url": "https://ae.linkedin.com/jobs/view/lead-product-designer-at-cercli-4486331074",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-11-04T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-04T12:01:38.586239+00:00",
+  "tags": [],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "linkedin:4479436065",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Lead Product Designer (B2C)",
+  "company": "Talent Seed",
+  "url": "https://ae.linkedin.com/jobs/view/lead-product-designer-b2c-at-talent-seed-4479436065",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-11-04T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-22T09:21:49.836913+00:00",
+  "tags": [],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "linkedin:4485075752",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Design Lead",
+  "company": "Salt",
+  "url": "https://ae.linkedin.com/jobs/view/product-design-lead-at-salt-4485075752",
+  "region": "AE",
+  "location": "Abu Dhabi Emirate, United Arab Emirates",
+  "posted": "2026-11-04T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-04T12:01:38.586239+00:00",
+  "tags": [],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "linkedin:4487242354",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer",
+  "company": "Almosafer",
+  "url": "https://sa.linkedin.com/jobs/view/product-designer-at-almosafer-4487242354",
+  "region": "SA",
+  "location": "Riyadh, Riyadh, Saudi Arabia",
+  "posted": "2026-11-04T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-04T12:01:38.586239+00:00",
+  "tags": [],
+  "fit": 2,
+  "network": false
+ },
+ {
+  "id": "linkedin:4487262182",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "AI & Web3 Creative Experience Designer",
+  "company": "De Art",
+  "url": "https://sa.linkedin.com/jobs/view/ai-web3-creative-experience-designer-at-de-art-4487262182",
+  "region": "SA",
+  "location": "Riyadh, Riyadh, Saudi Arabia",
+  "posted": "2026-11-04T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-04T12:01:38.586239+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
   "id": "ashby:5f7c8bb0-810a-4ea4-ad6a-2d7c2e2dbdcb",
   "board": "ashby:kraken.com",
   "source": "ashby",
@@ -19,25 +101,6 @@
   "network": false
  },
  {
-  "id": "greenhouse:6241784004",
-  "board": "greenhouse:grafanalabs",
-  "source": "greenhouse",
-  "title": "Senior Product Designer, Knowledge Graph | NASA/EMEA | Remote",
-  "company": "Grafana Labs",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6241784004",
-  "region": "REMOTE",
-  "location": "Spain (Remote) Canada (Remote) / EMEA / USA (Remote)",
-  "posted": "2026-11-03T06:26:29-05:00",
-  "salary": null,
-  "first_seen": "2026-11-03T11:51:28.152514+00:00",
-  "tags": [
-   "AI",
-   "Gov/Enterprise"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
   "id": "himalayas:https://himalayas.app/companies/clera/jobs/senior-product-designer-9163035966",
   "board": "himalayas",
   "source": "himalayas",
@@ -54,6 +117,24 @@
    "Design system"
   ],
   "fit": 5,
+  "network": false
+ },
+ {
+  "id": "linkedin:4486307266",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Staff Product Designer - AI Products",
+  "company": "Kraken",
+  "url": "https://ae.linkedin.com/jobs/view/staff-product-designer-ai-products-at-kraken-4486307266",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-11-03T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-04T12:01:38.586239+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 8,
   "network": false
  },
  {
@@ -87,6 +168,22 @@
   "tags": [],
   "fit": 3,
   "network": false
+ },
+ {
+  "id": "linkedin:4481619012",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Senior Product Design Specialist",
+  "company": "Bybit",
+  "url": "https://ae.linkedin.com/jobs/view/senior-product-design-specialist-at-bybit-4481619012",
+  "region": "AE",
+  "location": "Abu Dhabi Emirate, United Arab Emirates",
+  "posted": "2026-11-03T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-23T09:18:14.021477+00:00",
+  "tags": [],
+  "fit": 7,
+  "network": true
  },
  {
   "id": "linkedin:4474240516",
@@ -134,24 +231,6 @@
   "first_seen": "2026-11-02T21:54:42.925470+00:00",
   "tags": [],
   "fit": 5,
-  "network": true
- },
- {
-  "id": "linkedin:4485449961",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI/UX Product Designer (Design Systems – Figma) - Immediate Joiners",
-  "company": "TASC Outsourcing",
-  "url": "https://ae.linkedin.com/jobs/view/ui-ux-product-designer-design-systems-%E2%80%93-figma-immediate-joiners-at-tasc-outsourcing-4485449961",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-11-02T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-02T21:54:42.925470+00:00",
-  "tags": [
-   "Design system"
-  ],
-  "fit": 6,
   "network": true
  },
  {
