@@ -1,5 +1,78 @@
 [
  {
+  "id": "linkedin:4485819092",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UI/UX Designer",
+  "company": "Kaizen Consulting",
+  "url": "https://sa.linkedin.com/jobs/view/ui-ux-designer-at-kaizen-consulting-4485819092",
+  "region": "SA",
+  "location": "Riyadh, Saudi Arabia",
+  "posted": "2026-11-05T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-05T12:13:08.054385+00:00",
+  "tags": [],
+  "fit": 2,
+  "network": false
+ },
+ {
+  "id": "greenhouse:6250115004",
+  "board": "greenhouse:grafanalabs",
+  "source": "greenhouse",
+  "title": "Senior Product Designer, Knowledge Graph | Sweden | Remote",
+  "company": "Grafana Labs",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250115004",
+  "region": "REMOTE",
+  "location": "Sweden (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-11-04T16:17:13-05:00",
+  "salary": null,
+  "first_seen": "2026-11-05T12:13:08.054385+00:00",
+  "tags": [
+   "AI",
+   "Gov/Enterprise"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "greenhouse:6250126004",
+  "board": "greenhouse:grafanalabs",
+  "source": "greenhouse",
+  "title": "Senior Product Designer, Knowledge Graph | Spain | Remote",
+  "company": "Grafana Labs",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250126004",
+  "region": "REMOTE",
+  "location": "Spain (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-11-04T16:17:08-05:00",
+  "salary": null,
+  "first_seen": "2026-11-05T12:13:08.054385+00:00",
+  "tags": [
+   "AI",
+   "Gov/Enterprise"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "greenhouse:6250123004",
+  "board": "greenhouse:grafanalabs",
+  "source": "greenhouse",
+  "title": "Senior Product Designer, Knowledge Graph | Germany | Remote",
+  "company": "Grafana Labs",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250123004",
+  "region": "REMOTE",
+  "location": "Germany (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-11-04T16:16:59-05:00",
+  "salary": null,
+  "first_seen": "2026-11-05T12:13:08.054385+00:00",
+  "tags": [
+   "AI",
+   "Gov/Enterprise"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
   "id": "linkedin:4469454345",
   "board": "linkedin",
   "source": "linkedin",
@@ -96,40 +169,6 @@
   "network": false
  },
  {
-  "id": "linkedin:4485086695",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI/UX Designer",
-  "company": "Elite Consultancy Company Limited",
-  "url": "https://sa.linkedin.com/jobs/view/ui-ux-designer-at-elite-consultancy-company-limited-4485086695",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-11-04T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-04T19:41:49.274203+00:00",
-  "tags": [],
-  "fit": 2,
-  "network": false
- },
- {
-  "id": "linkedin:4487511736",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI Virtual World Designer",
-  "company": "De Art",
-  "url": "https://sa.linkedin.com/jobs/view/ai-virtual-world-designer-at-de-art-4487511736",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-11-04T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-04T19:41:49.274203+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
   "id": "ashby:5f7c8bb0-810a-4ea4-ad6a-2d7c2e2dbdcb",
   "board": "ashby:kraken.com",
   "source": "ashby",
@@ -146,6 +185,44 @@
    "Fintech"
   ],
   "fit": 9,
+  "network": false
+ },
+ {
+  "id": "greenhouse:6146095004",
+  "board": "greenhouse:grafanalabs",
+  "source": "greenhouse",
+  "title": "Senior Product Designer, Knowledge Graph | Ireland | Remote",
+  "company": "Grafana Labs",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146095004",
+  "region": "REMOTE",
+  "location": "Republic of Ireland (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-11-03T06:26:04-05:00",
+  "salary": null,
+  "first_seen": "2026-11-03T11:51:28.152514+00:00",
+  "tags": [
+   "AI",
+   "Gov/Enterprise"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "greenhouse:6146093004",
+  "board": "greenhouse:grafanalabs",
+  "source": "greenhouse",
+  "title": "Senior Product Designer, Knowledge Graph | United Kingdom | Remote",
+  "company": "Grafana Labs",
+  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6146093004",
+  "region": "REMOTE",
+  "location": "United Kingdom (Remote) Canada (Remote) / EMEA / USA (Remote)",
+  "posted": "2026-11-03T06:25:57-05:00",
+  "salary": null,
+  "first_seen": "2026-11-03T11:51:28.152514+00:00",
+  "tags": [
+   "AI",
+   "Gov/Enterprise"
+  ],
+  "fit": 5,
   "network": false
  },
  {
@@ -344,94 +421,5 @@
   "tags": [],
   "fit": 5,
   "network": true
- },
- {
-  "id": "ashby:7e605a51-4b83-4b29-9db0-1c6b67625119",
-  "board": "ashby:easygenerator",
-  "source": "ashby",
-  "title": "Senior Product Designer, Visual and Design Systems",
-  "company": "easygenerator",
-  "url": "https://jobs.ashbyhq.com/easygenerator/7e605a51-4b83-4b29-9db0-1c6b67625119",
-  "region": "AE",
-  "location": "Dubai / United Arab Emirates",
-  "posted": "2026-10-29T09:05:25.803000+00:00",
-  "salary": null,
-  "first_seen": "2026-10-29T10:51:06.506153+00:00",
-  "tags": [
-   "AI",
-   "Design system"
-  ],
-  "fit": 9,
-  "network": true
- },
- {
-  "id": "ashby:df5bb9e6-7c59-48ec-8590-ae94b275727b",
-  "board": "ashby:easygenerator",
-  "source": "ashby",
-  "title": "Senior Product Designer",
-  "company": "easygenerator",
-  "url": "https://jobs.ashbyhq.com/easygenerator/df5bb9e6-7c59-48ec-8590-ae94b275727b",
-  "region": "AE",
-  "location": "Dubai / United Arab Emirates",
-  "posted": "2026-10-29T08:51:42.479000+00:00",
-  "salary": null,
-  "first_seen": "2026-10-29T10:51:06.506153+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Gov/Enterprise"
-  ],
-  "fit": 10,
-  "network": true
- },
- {
-  "id": "linkedin:4468202383",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer, Global Public Sector",
-  "company": "Scale",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-global-public-sector-at-scale-4468202383",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-10-29T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-07T19:04:34.643040+00:00",
-  "tags": [
-   "Gov/Enterprise"
-  ],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "linkedin:4481457217",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior UX Service Designer - Guest 360",
-  "company": "Etihad",
-  "url": "https://ae.linkedin.com/jobs/view/senior-ux-service-designer-guest-360-at-etihad-4481457217",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-29T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-27T20:39:02.088200+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
- },
- {
-  "id": "linkedin:4483008152",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer",
-  "company": "SmartChoice International GCC",
-  "url": "https://sa.linkedin.com/jobs/view/senior-product-designer-at-smartchoice-international-gcc-4483008152",
-  "region": "SA",
-  "location": "Riyadh, Saudi Arabia",
-  "posted": "2026-10-29T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-30T10:49:52.345181+00:00",
-  "tags": [],
-  "fit": 4,
-  "network": false
  }
 ]
