@@ -1,16 +1,32 @@
 [
  {
-  "id": "linkedin:4485819092",
+  "id": "linkedin:4485831642",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "UI/UX Designer",
-  "company": "Kaizen Consulting",
-  "url": "https://sa.linkedin.com/jobs/view/ui-ux-designer-at-kaizen-consulting-4485819092",
-  "region": "SA",
-  "location": "Riyadh, Saudi Arabia",
+  "title": "Senior UI/UX Designer",
+  "company": "Presight",
+  "url": "https://ae.linkedin.com/jobs/view/senior-ui-ux-designer-at-presight-4485831642",
+  "region": "AE",
+  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
   "posted": "2026-11-05T00:00:00+00:00",
   "salary": null,
-  "first_seen": "2026-11-05T12:13:08.054385+00:00",
+  "first_seen": "2026-11-05T20:14:44.581786+00:00",
+  "tags": [],
+  "fit": 7,
+  "network": true
+ },
+ {
+  "id": "linkedin:4486750791",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Learning Experience Designer - Math (Remote or Onsite in Riyadh)",
+  "company": "Noon - Education for Everyone",
+  "url": "https://sa.linkedin.com/jobs/view/learning-experience-designer-math-remote-or-onsite-in-riyadh-at-noon-education-for-everyone-4486750791",
+  "region": "SA",
+  "location": "Riyadh, Riyadh, Saudi Arabia",
+  "posted": "2026-11-05T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-05T20:14:44.581786+00:00",
   "tags": [],
   "fit": 2,
   "network": false
@@ -221,25 +237,6 @@
   "tags": [
    "AI",
    "Gov/Enterprise"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "himalayas:https://himalayas.app/companies/clera/jobs/senior-product-designer-9163035966",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Senior Product Designer",
-  "company": "Clera",
-  "url": "https://himalayas.app/companies/clera/jobs/senior-product-designer-9163035966?utm_source=api",
-  "region": "REMOTE",
-  "location": "Worldwide",
-  "posted": "2026-11-03T02:18:15+00:00",
-  "salary": null,
-  "first_seen": "2026-11-03T11:51:28.152514+00:00",
-  "tags": [
-   "AI",
-   "Design system"
   ],
   "fit": 5,
   "network": false
