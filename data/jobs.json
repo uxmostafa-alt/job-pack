@@ -386,37 +386,5 @@
   "tags": [],
   "fit": 5,
   "network": false
- },
- {
-  "id": "linkedin:4484853846",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Principal Product Designer",
-  "company": "Inception42",
-  "url": "https://ae.linkedin.com/jobs/view/principal-product-designer-at-inception42-4484853846",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-10-30T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-30T16:59:34.104013+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
- },
- {
-  "id": "linkedin:3940826947",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Revolut",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-revolut-3940826947",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-10-30T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-09T17:32:30.723955+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": true
  }
 ]
