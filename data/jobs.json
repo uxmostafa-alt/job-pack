@@ -1,5 +1,64 @@
 [
  {
+  "id": "jobicy:159604",
+  "board": "jobicy",
+  "source": "jobicy",
+  "title": "UX Designer - Infrastructure",
+  "company": "Canonical",
+  "url": "https://jobicy.com/jobs/159604-ux-designer-infrastructure",
+  "region": "REMOTE",
+  "location": "EMEA",
+  "posted": "2026-11-07T15:23:28+00:00",
+  "salary": null,
+  "first_seen": "2026-11-07T20:50:36.980134+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "jobicy:159602",
+  "board": "jobicy",
+  "source": "jobicy",
+  "title": "UX Designer - Design systems",
+  "company": "Canonical",
+  "url": "https://jobicy.com/jobs/159602-ux-designer-design-systems",
+  "region": "REMOTE",
+  "location": "EMEA",
+  "posted": "2026-11-07T15:23:25+00:00",
+  "salary": null,
+  "first_seen": "2026-11-07T20:50:36.980134+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "workable:a5420de4-e5f3-4682-af75-c60a3e12eb8b",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
+  "company": "The Greater Change",
+  "url": "https://jobs.workable.com/view/mpAmP1BooXXoxiQbx5jrVn/product-designer-(ambient-intelligence-%26-multi-modal-ux)-in-dubai-at-the-greater-change",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-11-07T08:02:43.852000+00:00",
+  "salary": null,
+  "first_seen": "2026-11-07T10:59:27.013910+00:00",
+  "tags": [
+   "AI",
+   "Design system"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
   "id": "jobicy:154773",
   "board": "jobicy",
   "source": "jobicy",
@@ -16,22 +75,6 @@
    "Design system"
   ],
   "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4488705395",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
-  "company": "The Greater Change",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-ambient-intelligence-multi-modal-ux-at-the-greater-change-4488705395",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-11-07T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-07T10:59:27.013910+00:00",
-  "tags": [],
-  "fit": 3,
   "network": false
  },
  {
