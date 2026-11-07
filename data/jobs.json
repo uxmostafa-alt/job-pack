@@ -1,16 +1,51 @@
 [
  {
-  "id": "linkedin:4487347303",
+  "id": "jobicy:154773",
+  "board": "jobicy",
+  "source": "jobicy",
+  "title": "Senior Product Designer, Design Systems",
+  "company": "DuckDuckGo",
+  "url": "https://jobicy.com/jobs/154773-senior-product-designer-design-systems",
+  "region": "REMOTE",
+  "location": "Anywhere",
+  "posted": "2026-11-07T03:15:15+00:00",
+  "salary": null,
+  "first_seen": "2026-10-07T19:04:34.643040+00:00",
+  "tags": [
+   "AI",
+   "Design system"
+  ],
+  "fit": 5,
+  "network": false
+ },
+ {
+  "id": "linkedin:4488705395",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
+  "company": "The Greater Change",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-ambient-intelligence-multi-modal-ux-at-the-greater-change-4488705395",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-11-07T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-07T10:59:27.013910+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4487386523",
   "board": "linkedin",
   "source": "linkedin",
   "title": "UI Designer (Remote)",
   "company": "Joblet-AI",
-  "url": "https://ae.linkedin.com/jobs/view/ui-designer-remote-at-joblet-ai-4487347303",
+  "url": "https://ae.linkedin.com/jobs/view/ui-designer-remote-at-joblet-ai-4487386523",
   "region": "AE",
   "location": "United Arab Emirates",
-  "posted": "2026-11-06T00:00:00+00:00",
+  "posted": "2026-11-07T00:00:00+00:00",
   "salary": null,
-  "first_seen": "2026-11-06T19:18:12.526033+00:00",
+  "first_seen": "2026-11-07T10:59:27.013910+00:00",
   "tags": [],
   "fit": 3,
   "network": false
@@ -46,22 +81,6 @@
   "tags": [],
   "fit": 7,
   "network": true
- },
- {
-  "id": "linkedin:4486750791",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Learning Experience Designer - Math (Remote or Onsite in Riyadh)",
-  "company": "Noon - Education for Everyone",
-  "url": "https://sa.linkedin.com/jobs/view/learning-experience-designer-math-remote-or-onsite-in-riyadh-at-noon-education-for-everyone-4486750791",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
-  "posted": "2026-11-05T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-05T20:14:44.581786+00:00",
-  "tags": [],
-  "fit": 2,
-  "network": false
  },
  {
   "id": "greenhouse:6250115004",
