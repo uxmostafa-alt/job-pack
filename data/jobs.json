@@ -1,5 +1,21 @@
 [
  {
+  "id": "linkedin:4487634520",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UX/UI Designer",
+  "company": "Whizmo",
+  "url": "https://ae.linkedin.com/jobs/view/ux-ui-designer-at-whizmo-4487634520",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-11-08T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-08T17:13:36.168724+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
   "id": "jobicy:159604",
   "board": "jobicy",
   "source": "jobicy",
@@ -40,25 +56,6 @@
   "network": false
  },
  {
-  "id": "workable:a5420de4-e5f3-4682-af75-c60a3e12eb8b",
-  "board": "workable-search",
-  "source": "workable",
-  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
-  "company": "The Greater Change",
-  "url": "https://jobs.workable.com/view/mpAmP1BooXXoxiQbx5jrVn/product-designer-(ambient-intelligence-%26-multi-modal-ux)-in-dubai-at-the-greater-change",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-11-07T08:02:43.852000+00:00",
-  "salary": null,
-  "first_seen": "2026-11-07T10:59:27.013910+00:00",
-  "tags": [
-   "AI",
-   "Design system"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
   "id": "jobicy:154773",
   "board": "jobicy",
   "source": "jobicy",
@@ -78,19 +75,35 @@
   "network": false
  },
  {
-  "id": "linkedin:4487386523",
+  "id": "linkedin:4488705395",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "UI Designer (Remote)",
-  "company": "Joblet-AI",
-  "url": "https://ae.linkedin.com/jobs/view/ui-designer-remote-at-joblet-ai-4487386523",
+  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
+  "company": "The Greater Change",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-ambient-intelligence-multi-modal-ux-at-the-greater-change-4488705395",
   "region": "AE",
-  "location": "United Arab Emirates",
+  "location": "Dubai, Dubai, United Arab Emirates",
   "posted": "2026-11-07T00:00:00+00:00",
   "salary": null,
   "first_seen": "2026-11-07T10:59:27.013910+00:00",
   "tags": [],
   "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4486669130",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Senior UI/UX Designer",
+  "company": "700apps",
+  "url": "https://sa.linkedin.com/jobs/view/senior-ui-ux-designer-at-700apps-4486669130",
+  "region": "SA",
+  "location": "Riyadh, Riyadh, Saudi Arabia",
+  "posted": "2026-11-07T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-08T17:13:36.168724+00:00",
+  "tags": [],
+  "fit": 4,
   "network": false
  },
  {
