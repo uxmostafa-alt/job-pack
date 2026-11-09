@@ -432,53 +432,5 @@
   "tags": [],
   "fit": 5,
   "network": false
- },
- {
-  "id": "linkedin:4484355845",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Landmark Group",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-landmark-group-4484355845",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-11-02T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-02T21:54:42.925470+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": true
- },
- {
-  "id": "linkedin:4469806141",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Lead Product Designer, Platform",
-  "company": "Fanatics Momentum",
-  "url": "https://ae.linkedin.com/jobs/view/lead-product-designer-platform-at-fanatics-momentum-4469806141",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-11-02T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-11T16:37:47.504052+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4423947992",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer (Platform)",
-  "company": "Revolut",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-platform-at-revolut-4423947992",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-11-02T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-11T16:37:47.504052+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": true
  }
 ]
