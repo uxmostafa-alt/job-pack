@@ -1,16 +1,82 @@
 [
  {
-  "id": "linkedin:4487634520",
+  "id": "linkedin:4489147297",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "UX/UI Designer",
-  "company": "Whizmo",
-  "url": "https://ae.linkedin.com/jobs/view/ux-ui-designer-at-whizmo-4487634520",
+  "title": "Staff Product Designer - AI Products",
+  "company": "Ink Foundation",
+  "url": "https://ae.linkedin.com/jobs/view/staff-product-designer-ai-products-at-ink-foundation-4489147297",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-11-09T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-09T22:57:36.844308+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 8,
+  "network": false
+ },
+ {
+  "id": "linkedin:4457339528",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer",
+  "company": "Fuse Energy",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-11-09T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-10-06T15:35:19.429328+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4487131889",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Senior Product Designer",
+  "company": "Globant",
+  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-globant-4487131889",
   "region": "AE",
   "location": "Dubai, United Arab Emirates",
+  "posted": "2026-11-09T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-09T22:57:36.844308+00:00",
+  "tags": [],
+  "fit": 7,
+  "network": true
+ },
+ {
+  "id": "linkedin:4489146040",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Lead Experience Designer",
+  "company": "Aceleradora Ágil",
+  "url": "https://sa.linkedin.com/jobs/view/lead-experience-designer-at-aceleradora-%C3%A1gil-4489146040",
+  "region": "SA",
+  "location": "Riyadh, Riyadh, Saudi Arabia",
+  "posted": "2026-11-09T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-09T22:57:36.844308+00:00",
+  "tags": [],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "linkedin:4488880046",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer Ambient Intelligence And Multi-Modal UX",
+  "company": "The Greater Change",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-ambient-intelligence-and-multi-modal-ux-at-the-greater-change-4488880046",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
   "posted": "2026-11-08T00:00:00+00:00",
   "salary": null,
-  "first_seen": "2026-11-08T17:13:36.168724+00:00",
+  "first_seen": "2026-11-09T22:57:36.844308+00:00",
   "tags": [],
   "fit": 3,
   "network": false
@@ -56,25 +122,6 @@
   "network": false
  },
  {
-  "id": "workable:a5420de4-e5f3-4682-af75-c60a3e12eb8b",
-  "board": "workable-search",
-  "source": "workable",
-  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
-  "company": "The Greater Change",
-  "url": "https://jobs.workable.com/view/mpAmP1BooXXoxiQbx5jrVn/product-designer-(ambient-intelligence-%26-multi-modal-ux)-in-dubai-at-the-greater-change",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-11-07T08:02:43.852000+00:00",
-  "salary": null,
-  "first_seen": "2026-11-07T10:59:27.013910+00:00",
-  "tags": [
-   "AI",
-   "Design system"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
   "id": "jobicy:154773",
   "board": "jobicy",
   "source": "jobicy",
@@ -91,6 +138,22 @@
    "Design system"
   ],
   "fit": 5,
+  "network": false
+ },
+ {
+  "id": "linkedin:4488705395",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
+  "company": "The Greater Change",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-ambient-intelligence-multi-modal-ux-at-the-greater-change-4488705395",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-11-07T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-07T10:59:27.013910+00:00",
+  "tags": [],
+  "fit": 3,
   "network": false
  },
  {
