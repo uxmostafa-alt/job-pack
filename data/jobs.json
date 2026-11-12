@@ -1,5 +1,37 @@
 [
  {
+  "id": "linkedin:4489073557",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UI Designer (Remote)",
+  "company": "Joblet-AI",
+  "url": "https://ae.linkedin.com/jobs/view/ui-designer-remote-at-joblet-ai-4489073557",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-11-12T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-12T12:34:44.250249+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4488285931",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UI/UX Designer",
+  "company": "Batuhan Ergün Mimarlık",
+  "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-at-batuhan-erg%C3%BCn-mimarl%C4%B1k-4488285931",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-11-12T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-12T12:34:44.250249+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
   "id": "linkedin:4487457824",
   "board": "linkedin",
   "source": "linkedin",
@@ -11,72 +43,6 @@
   "posted": "2026-11-10T00:00:00+00:00",
   "salary": null,
   "first_seen": "2026-11-10T12:31:21.507420+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4487983553",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI Designer (Remote)",
-  "company": "Joblet-AI",
-  "url": "https://ae.linkedin.com/jobs/view/ui-designer-remote-at-joblet-ai-4487983553",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-11-10T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-10T12:31:21.507420+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4489443475",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI/UX Designer",
-  "company": "AgileGrid Solutions",
-  "url": "https://sa.linkedin.com/jobs/view/ui-ux-designer-at-agilegrid-solutions-4489443475",
-  "region": "SA",
-  "location": "Saudi Arabia",
-  "posted": "2026-11-10T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-10T12:31:21.507420+00:00",
-  "tags": [],
-  "fit": 2,
-  "network": false
- },
- {
-  "id": "linkedin:4489147297",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Staff Product Designer - AI Products",
-  "company": "Ink Foundation",
-  "url": "https://ae.linkedin.com/jobs/view/staff-product-designer-ai-products-at-ink-foundation-4489147297",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-11-09T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-09T22:57:36.844308+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 8,
-  "network": false
- },
- {
-  "id": "linkedin:4457339528",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Fuse Energy",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-11-09T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
   "tags": [],
   "fit": 3,
   "network": false
@@ -98,19 +64,19 @@
   "network": true
  },
  {
-  "id": "linkedin:4489146040",
+  "id": "linkedin:4457339528",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "Lead Experience Designer",
-  "company": "Aceleradora Ágil",
-  "url": "https://sa.linkedin.com/jobs/view/lead-experience-designer-at-aceleradora-%C3%A1gil-4489146040",
-  "region": "SA",
-  "location": "Riyadh, Riyadh, Saudi Arabia",
+  "title": "Product Designer",
+  "company": "Fuse Energy",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
   "posted": "2026-11-09T00:00:00+00:00",
   "salary": null,
-  "first_seen": "2026-11-09T22:57:36.844308+00:00",
+  "first_seen": "2026-10-06T15:35:19.429328+00:00",
   "tags": [],
-  "fit": 4,
+  "fit": 3,
   "network": false
  },
  {
@@ -170,25 +136,6 @@
   "network": false
  },
  {
-  "id": "workable:a5420de4-e5f3-4682-af75-c60a3e12eb8b",
-  "board": "workable-search",
-  "source": "workable",
-  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
-  "company": "The Greater Change",
-  "url": "https://jobs.workable.com/view/mpAmP1BooXXoxiQbx5jrVn/product-designer-(ambient-intelligence-%26-multi-modal-ux)-in-dubai-at-the-greater-change",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-11-07T08:02:43.852000+00:00",
-  "salary": null,
-  "first_seen": "2026-11-07T10:59:27.013910+00:00",
-  "tags": [
-   "AI",
-   "Design system"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
   "id": "jobicy:154773",
   "board": "jobicy",
   "source": "jobicy",
@@ -208,6 +155,22 @@
   "network": false
  },
  {
+  "id": "linkedin:4488705395",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "Product Designer (Ambient Intelligence & Multi-Modal UX)",
+  "company": "The Greater Change",
+  "url": "https://ae.linkedin.com/jobs/view/product-designer-ambient-intelligence-multi-modal-ux-at-the-greater-change-4488705395",
+  "region": "AE",
+  "location": "Dubai, Dubai, United Arab Emirates",
+  "posted": "2026-11-07T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-07T10:59:27.013910+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
   "id": "linkedin:4486669130",
   "board": "linkedin",
   "source": "linkedin",
@@ -221,95 +184,6 @@
   "first_seen": "2026-11-08T17:13:36.168724+00:00",
   "tags": [],
   "fit": 4,
-  "network": false
- },
- {
-  "id": "linkedin:4488044851",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer, MENA",
-  "company": "Brain Co.",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-mena-at-brain-co-4488044851",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-11-05T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-06T19:18:12.526033+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4485831642",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior UI/UX Designer",
-  "company": "Presight",
-  "url": "https://ae.linkedin.com/jobs/view/senior-ui-ux-designer-at-presight-4485831642",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-11-05T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-05T20:14:44.581786+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
- },
- {
-  "id": "greenhouse:6250115004",
-  "board": "greenhouse:grafanalabs",
-  "source": "greenhouse",
-  "title": "Senior Product Designer, Knowledge Graph | Sweden | Remote",
-  "company": "Grafana Labs",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250115004",
-  "region": "REMOTE",
-  "location": "Sweden (Remote) Canada (Remote) / EMEA / USA (Remote)",
-  "posted": "2026-11-04T16:17:13-05:00",
-  "salary": null,
-  "first_seen": "2026-11-05T12:13:08.054385+00:00",
-  "tags": [
-   "AI",
-   "Gov/Enterprise"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "greenhouse:6250126004",
-  "board": "greenhouse:grafanalabs",
-  "source": "greenhouse",
-  "title": "Senior Product Designer, Knowledge Graph | Spain | Remote",
-  "company": "Grafana Labs",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250126004",
-  "region": "REMOTE",
-  "location": "Spain (Remote) Canada (Remote) / EMEA / USA (Remote)",
-  "posted": "2026-11-04T16:17:08-05:00",
-  "salary": null,
-  "first_seen": "2026-11-05T12:13:08.054385+00:00",
-  "tags": [
-   "AI",
-   "Gov/Enterprise"
-  ],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "greenhouse:6250123004",
-  "board": "greenhouse:grafanalabs",
-  "source": "greenhouse",
-  "title": "Senior Product Designer, Knowledge Graph | Germany | Remote",
-  "company": "Grafana Labs",
-  "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6250123004",
-  "region": "REMOTE",
-  "location": "Germany (Remote) Canada (Remote) / EMEA / USA (Remote)",
-  "posted": "2026-11-04T16:16:59-05:00",
-  "salary": null,
-  "first_seen": "2026-11-05T12:13:08.054385+00:00",
-  "tags": [
-   "AI",
-   "Gov/Enterprise"
-  ],
-  "fit": 5,
   "network": false
  }
 ]
