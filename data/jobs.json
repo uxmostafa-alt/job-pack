@@ -1,18 +1,54 @@
 [
  {
-  "id": "linkedin:4489073557",
+  "id": "linkedin:4489528056",
   "board": "linkedin",
   "source": "linkedin",
   "title": "UI Designer (Remote)",
   "company": "Joblet-AI",
-  "url": "https://ae.linkedin.com/jobs/view/ui-designer-remote-at-joblet-ai-4489073557",
+  "url": "https://ae.linkedin.com/jobs/view/ui-designer-remote-at-joblet-ai-4489528056",
   "region": "AE",
   "location": "United Arab Emirates",
-  "posted": "2026-11-12T00:00:00+00:00",
+  "posted": "2026-11-13T00:00:00+00:00",
   "salary": null,
-  "first_seen": "2026-11-12T12:34:44.250249+00:00",
+  "first_seen": "2026-11-13T12:06:08.136736+00:00",
   "tags": [],
   "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4488911873",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "AI Designer",
+  "company": "Puffy",
+  "url": "https://ae.linkedin.com/jobs/view/ai-designer-at-puffy-4488911873",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-11-13T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-13T12:06:08.136736+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 6,
+  "network": false
+ },
+ {
+  "id": "linkedin:4488916606",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "AI Image Designer",
+  "company": "Puffy",
+  "url": "https://ae.linkedin.com/jobs/view/ai-image-designer-at-puffy-4488916606",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-11-13T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-13T12:06:08.136736+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 6,
   "network": false
  },
  {
@@ -32,22 +68,6 @@
   "network": false
  },
  {
-  "id": "linkedin:4487131889",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer",
-  "company": "Globant",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-globant-4487131889",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-11-09T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-09T22:57:36.844308+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
- },
- {
   "id": "linkedin:4457339528",
   "board": "linkedin",
   "source": "linkedin",
@@ -64,20 +84,20 @@
   "network": false
  },
  {
-  "id": "linkedin:4488880046",
+  "id": "linkedin:4487131889",
   "board": "linkedin",
   "source": "linkedin",
-  "title": "Product Designer Ambient Intelligence And Multi-Modal UX",
-  "company": "The Greater Change",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-ambient-intelligence-and-multi-modal-ux-at-the-greater-change-4488880046",
+  "title": "Senior Product Designer",
+  "company": "Globant",
+  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-globant-4487131889",
   "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-11-08T00:00:00+00:00",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-11-09T00:00:00+00:00",
   "salary": null,
   "first_seen": "2026-11-09T22:57:36.844308+00:00",
   "tags": [],
-  "fit": 3,
-  "network": false
+  "fit": 7,
+  "network": true
  },
  {
   "id": "jobicy:159604",
