@@ -68,22 +68,6 @@
   "network": false
  },
  {
-  "id": "linkedin:4488209429",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer",
-  "company": "Denara Group",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-denara-group-4488209429",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-11-11T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-14T11:23:38.683473+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
   "id": "linkedin:4487457824",
   "board": "linkedin",
   "source": "linkedin",
@@ -130,45 +114,5 @@
   "tags": [],
   "fit": 7,
   "network": true
- },
- {
-  "id": "jobicy:159604",
-  "board": "jobicy",
-  "source": "jobicy",
-  "title": "UX Designer - Infrastructure",
-  "company": "Canonical",
-  "url": "https://jobicy.com/jobs/159604-ux-designer-infrastructure",
-  "region": "REMOTE",
-  "location": "EMEA",
-  "posted": "2026-11-07T15:23:28+00:00",
-  "salary": null,
-  "first_seen": "2026-11-07T20:50:36.980134+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Gov/Enterprise"
-  ],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "jobicy:159602",
-  "board": "jobicy",
-  "source": "jobicy",
-  "title": "UX Designer - Design systems",
-  "company": "Canonical",
-  "url": "https://jobicy.com/jobs/159602-ux-designer-design-systems",
-  "region": "REMOTE",
-  "location": "EMEA",
-  "posted": "2026-11-07T15:23:25+00:00",
-  "salary": null,
-  "first_seen": "2026-11-07T20:50:36.980134+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Gov/Enterprise"
-  ],
-  "fit": 4,
-  "network": false
  }
 ]
