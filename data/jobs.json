@@ -1,5 +1,24 @@
 [
  {
+  "id": "workable:775c51f6-1518-4698-b516-d6b885faf098",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "Product Designer Specialist",
+  "company": "FlyAkeed",
+  "url": "https://jobs.workable.com/view/fJSwLU6uoyho2g6Xx5JNJL/product-designer-specialist-in-riyadh-at-flyakeed",
+  "region": "SA",
+  "location": "Riyadh, Saudi Arabia",
+  "posted": "2026-11-16T09:24:38.606000+00:00",
+  "salary": null,
+  "first_seen": "2026-11-16T12:39:12.690352+00:00",
+  "tags": [
+   "AI",
+   "Design system"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "linkedin:4490203880",
   "board": "linkedin",
   "source": "linkedin",
@@ -98,37 +117,5 @@
   "tags": [],
   "fit": 3,
   "network": false
- },
- {
-  "id": "linkedin:4457339528",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Designer",
-  "company": "Fuse Energy",
-  "url": "https://ae.linkedin.com/jobs/view/product-designer-at-fuse-energy-4457339528",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-11-09T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-06T15:35:19.429328+00:00",
-  "tags": [],
-  "fit": 3,
-  "network": false
- },
- {
-  "id": "linkedin:4487131889",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer",
-  "company": "Globant",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-globant-4487131889",
-  "region": "AE",
-  "location": "Dubai, United Arab Emirates",
-  "posted": "2026-11-09T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-09T22:57:36.844308+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
  }
 ]
