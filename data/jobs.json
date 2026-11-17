@@ -1,5 +1,58 @@
 [
  {
+  "id": "workable:9c7ea2ae-f106-4618-85ce-4bb5a5598aa3",
+  "board": "workable-search",
+  "source": "workable",
+  "title": "UI/UX Designer",
+  "company": "GTECH Information Technology LLC",
+  "url": "https://jobs.workable.com/view/kjQ41R45wFrtVFjzgBGmAg/ui%2Fux-designer-in-dubai-at-gtech-information-technology-llc",
+  "region": "AE",
+  "location": "Dubai, United Arab Emirates",
+  "posted": "2026-11-17T08:26:45.555000+00:00",
+  "salary": null,
+  "first_seen": "2026-11-17T13:12:44.667130+00:00",
+  "tags": [
+   "Arabic/RTL",
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 7,
+  "network": false
+ },
+ {
+  "id": "linkedin:4490975806",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UI Designer (Remote)",
+  "company": "Joblet-AI",
+  "url": "https://ae.linkedin.com/jobs/view/ui-designer-remote-at-joblet-ai-4490975806",
+  "region": "AE",
+  "location": "United Arab Emirates",
+  "posted": "2026-11-17T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-17T13:12:44.667130+00:00",
+  "tags": [],
+  "fit": 3,
+  "network": false
+ },
+ {
+  "id": "linkedin:4490996841",
+  "board": "linkedin",
+  "source": "linkedin",
+  "title": "UX and Product Designers",
+  "company": "CLPS Global",
+  "url": "https://sa.linkedin.com/jobs/view/ux-and-product-designers-at-clps-global-4490996841",
+  "region": "SA",
+  "location": "Jeddah, Makkah, Saudi Arabia",
+  "posted": "2026-11-17T00:00:00+00:00",
+  "salary": null,
+  "first_seen": "2026-11-17T13:12:44.667130+00:00",
+  "tags": [],
+  "fit": 2,
+  "network": false
+ },
+ {
   "id": "workable:775c51f6-1518-4698-b516-d6b885faf098",
   "board": "workable-search",
   "source": "workable",
@@ -84,22 +137,6 @@
    "AI"
   ],
   "fit": 6,
-  "network": false
- },
- {
-  "id": "linkedin:4487457824",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "UI/UX Designer",
-  "company": "Saal.ai",
-  "url": "https://ae.linkedin.com/jobs/view/ui-ux-designer-at-saal-ai-4487457824",
-  "region": "AE",
-  "location": "Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-11-10T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-10T12:31:21.507420+00:00",
-  "tags": [],
-  "fit": 3,
   "network": false
  }
 ]
