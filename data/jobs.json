@@ -102,41 +102,5 @@
   "tags": [],
   "fit": 7,
   "network": true
- },
- {
-  "id": "linkedin:4488911873",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI Designer",
-  "company": "Puffy",
-  "url": "https://ae.linkedin.com/jobs/view/ai-designer-at-puffy-4488911873",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-11-13T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-13T12:06:08.136736+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 6,
-  "network": false
- },
- {
-  "id": "linkedin:4488916606",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI Image Designer",
-  "company": "Puffy",
-  "url": "https://ae.linkedin.com/jobs/view/ai-image-designer-at-puffy-4488916606",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-11-13T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-13T12:06:08.136736+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 6,
-  "network": false
  }
 ]
