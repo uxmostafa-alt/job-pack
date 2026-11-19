@@ -1,5 +1,25 @@
 [
  {
+  "id": "wwr:https://weworkremotely.com/remote-jobs/tebra-product-designer",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Product Designer",
+  "company": "Tebra",
+  "url": "https://weworkremotely.com/remote-jobs/tebra-product-designer",
+  "region": "REMOTE",
+  "location": "Anywhere in the World",
+  "posted": "2026-11-19T18:31:26+00:00",
+  "salary": null,
+  "first_seen": "2026-11-19T21:26:23.678948+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "ashby:1de8e4bb-224d-43f3-b826-be513d13243c",
   "board": "ashby:kraken.com",
   "source": "ashby",
