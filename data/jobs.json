@@ -1,5 +1,44 @@
 [
  {
+  "id": "wwr:https://weworkremotely.com/remote-jobs/gemini-senior-product-designer-prediction-markets",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Senior Product Designer (Prediction Markets)",
+  "company": "Gemini",
+  "url": "https://weworkremotely.com/remote-jobs/gemini-senior-product-designer-prediction-markets",
+  "region": "REMOTE",
+  "location": "Anywhere in the World",
+  "posted": "2026-11-21T18:32:07+00:00",
+  "salary": null,
+  "first_seen": "2026-11-21T19:45:20.497695+00:00",
+  "tags": [
+   "Design system"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
+  "id": "wwr:https://weworkremotely.com/remote-jobs/gusto-inc-staff-product-designer",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Staff Product Designer",
+  "company": "Gusto, Inc.",
+  "url": "https://weworkremotely.com/remote-jobs/gusto-inc-staff-product-designer",
+  "region": "REMOTE",
+  "location": "Anywhere in the World",
+  "posted": "2026-11-21T18:31:36+00:00",
+  "salary": null,
+  "first_seen": "2026-11-21T19:45:20.497695+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise",
+   "Fintech"
+  ],
+  "fit": 7,
+  "network": false
+ },
+ {
   "id": "wwr:https://weworkremotely.com/remote-jobs/tebra-product-designer",
   "board": "wwr",
   "source": "wwr",
