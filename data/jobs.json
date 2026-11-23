@@ -1,5 +1,23 @@
 [
  {
+  "id": "wwr:https://weworkremotely.com/remote-jobs/elation-health-senior-or-staff-product-designer",
+  "board": "wwr",
+  "source": "wwr",
+  "title": "Senior OR Staff Product Designer",
+  "company": "Elation Health",
+  "url": "https://weworkremotely.com/remote-jobs/elation-health-senior-or-staff-product-designer",
+  "region": "REMOTE",
+  "location": "Anywhere in the World",
+  "posted": "2026-11-23T06:01:56+00:00",
+  "salary": null,
+  "first_seen": "2026-11-23T14:28:41.082841+00:00",
+  "tags": [
+   "AI"
+  ],
+  "fit": 4,
+  "network": false
+ },
+ {
   "id": "wwr:https://weworkremotely.com/remote-jobs/gemini-senior-product-designer-prediction-markets",
   "board": "wwr",
   "source": "wwr",
@@ -128,41 +146,6 @@
   "first_seen": "2026-11-17T13:12:44.667130+00:00",
   "tags": [],
   "fit": 2,
-  "network": false
- },
- {
-  "id": "workable:775c51f6-1518-4698-b516-d6b885faf098",
-  "board": "workable-search",
-  "source": "workable",
-  "title": "Product Designer Specialist",
-  "company": "FlyAkeed",
-  "url": "https://jobs.workable.com/view/fJSwLU6uoyho2g6Xx5JNJL/product-designer-specialist-in-riyadh-at-flyakeed",
-  "region": "SA",
-  "location": "Riyadh, Saudi Arabia",
-  "posted": "2026-11-16T09:24:38.606000+00:00",
-  "salary": null,
-  "first_seen": "2026-11-16T12:39:12.690352+00:00",
-  "tags": [
-   "AI",
-   "Design system"
-  ],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "linkedin:4490605643",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Product Design Lead",
-  "company": "Equiti Group",
-  "url": "https://ae.linkedin.com/jobs/view/product-design-lead-at-equiti-group-4490605643",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-11-16T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-16T22:30:50.010828+00:00",
-  "tags": [],
-  "fit": 5,
   "network": false
  }
 ]
