@@ -1,5 +1,24 @@
 [
  {
+  "id": "himalayas:https://himalayas.app/companies/art2hire/jobs/senior-mobile-product-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Senior Mobile Product Designer",
+  "company": "ART2HIRE",
+  "url": "https://himalayas.app/companies/art2hire/jobs/senior-mobile-product-designer?utm_source=api",
+  "region": "AE",
+  "location": "Afghanistan / Albania / Andorra / Armenia / Austria / Azerbaijan / Bahrain / Bangladesh / Belarus / Belgium / Bhutan / Bosnia and Herzegovina / Brunei Darussalam / Bulgaria / Cambodia / China / Croatia / Cyprus / Czechia / Denmark / Estonia / Faroe Islands / Finland / France / Georgia / Germany / Gibraltar / Greece / Guernsey / Holy See (Vatican City State) / Hong Kong / Hungary / Iceland / India / Indonesia / Iran / Iraq / Ireland / Isle of Man / Israel / Italy / Japan / Jersey / Jordan / Kazakhstan / Kosovo / Kuwait / Kyrgyzstan / Lao People's Democratic Republic / Latvia / Lebanon / Liechtenstein / Lithuania / Luxembourg / Macao / Malaysia / Maldives / Malta / Moldova / Monaco / Mongolia / Montenegro / Myanmar / Nepal / Netherlands / North Macedonia / Norway / Oman / Pakistan / Palestine, State of / Philippines / Poland / Portugal / Qatar / Romania / Russian Federation / San Marino / Saudi Arabia / Serbia / Singapore / Slovakia / Slovenia / South Korea / Spain / Sri Lanka / Svalbard and Jan Mayen / Sweden / Switzerland / Syrian Arab Republic / Taiwan / Tajikistan / Thailand / Timor-Leste / Turkey / Turkmenistan / Ukraine / United Arab Emirates / United Kingdom / Uzbekistan / Vietnam / Yemen / Åland Islands",
+  "posted": "2026-11-24T20:03:26+00:00",
+  "salary": null,
+  "first_seen": "2026-11-24T23:52:00.176892+00:00",
+  "tags": [
+   "AI",
+   "Design system"
+  ],
+  "fit": 7,
+  "network": false
+ },
+ {
   "id": "linkedin:4493945498",
   "board": "linkedin",
   "source": "linkedin",
