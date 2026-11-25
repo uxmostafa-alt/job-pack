@@ -325,57 +325,5 @@
   ],
   "fit": 7,
   "network": false
- },
- {
-  "id": "linkedin:4491813817",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "AI Product Designer",
-  "company": "Opus",
-  "url": "https://ae.linkedin.com/jobs/view/ai-product-designer-at-opus-4491813817",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-11-18T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-24T01:52:19.751356+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 6,
-  "network": false
- },
- {
-  "id": "linkedin:4492109021",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Sr Staff Product Designer - Krak",
-  "company": "Kraken",
-  "url": "https://ae.linkedin.com/jobs/view/sr-staff-product-designer-krak-at-kraken-4492109021",
-  "region": "AE",
-  "location": "United Arab Emirates",
-  "posted": "2026-11-18T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-24T01:52:19.751356+00:00",
-  "tags": [],
-  "fit": 5,
-  "network": false
- },
- {
-  "id": "linkedin:4490888039",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer – AI Products & GITEX Experience",
-  "company": "Socium - Teams Done Differently",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-%E2%80%93-ai-products-gitex-experience-at-socium-teams-done-differently-4490888039",
-  "region": "AE",
-  "location": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
-  "posted": "2026-11-18T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-24T01:52:19.751356+00:00",
-  "tags": [
-   "AI"
-  ],
-  "fit": 8,
-  "network": false
  }
 ]
