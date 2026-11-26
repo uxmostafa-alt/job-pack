@@ -1,5 +1,25 @@
 [
  {
+  "id": "himalayas:https://himalayas.app/companies/spectro-cloud/jobs/senior-ux-designer",
+  "board": "himalayas",
+  "source": "himalayas",
+  "title": "Senior UX Designer",
+  "company": "Spectro Cloud",
+  "url": "https://himalayas.app/companies/spectro-cloud/jobs/senior-ux-designer?utm_source=api",
+  "region": "AE",
+  "location": "Afghanistan / Albania / Algeria / Andorra / Angola / Antarctica / Armenia / Austria / Azerbaijan / Bahrain / Belarus / Belgium / Benin / Bosnia and Herzegovina / Botswana / Bouvet Island / Bulgaria / Burkina Faso / Burundi / Cabo Verde / Cameroon / Central African Republic / Chad / Comoros / Congo / Congo, The Democratic Republic of the / Cook Islands / Croatia / Curaçao / Cyprus / Czechia / Côte d'Ivoire / Denmark / Djibouti / Egypt / Equatorial Guinea / Eritrea / Estonia / Eswatini / Ethiopia / Faroe Islands / Finland / France / French Guiana / French Southern Territories / Gabon / Gambia / Georgia / Germany / Ghana / Gibraltar / Greece / Greenland / Guadeloupe / Guernsey / Guinea / Guinea-Bissau / Heard Island and McDonald Islands / Holy See (Vatican City State) / Hungary / Iceland / Iran / Iraq / Ireland / Isle of Man / Israel / Italy / Jersey / Jordan / Kazakhstan / Kenya / Kosovo / Kuwait / Kyrgyzstan / Latvia / Lebanon / Lesotho / Liberia / Libya / Liechtenstein / Lithuania / Luxembourg / Madagascar / Malawi / Mali / Malta / Martinique / Mauritania / Mauritius / Mayotte / Moldova / Monaco / Montenegro / Morocco / Mozambique / Namibia / Netherlands / Niger / Nigeria / North Macedonia / Norway / Oman / Palestine, State of / Poland / Portugal / Qatar / Romania / Rwanda / Réunion / Saint Barthélemy / Saint Helena, Ascension and Tristan da Cunha / Saint Martin (French part) / Saint Pierre and Miquelon / San Marino / Sao Tome and Principe / Saudi Arabia / Senegal / Serbia / Seychelles / Sierra Leone / Sint Maarten (Dutch part) / Slovakia / Slovenia / Somalia / South Africa / South Sudan / Spain / Sudan / Svalbard and Jan Mayen / Sweden / Switzerland / Syrian Arab Republic / Tajikistan / Tanzania / Togo / Tunisia / Turkey / Turkmenistan / Uganda / Ukraine / United Arab Emirates / United Kingdom / Uzbekistan / Western Sahara / Yemen / Zambia / Zimbabwe / Åland Islands",
+  "posted": "2026-11-26T03:56:56+00:00",
+  "salary": null,
+  "first_seen": "2026-11-26T13:48:26.685434+00:00",
+  "tags": [
+   "AI",
+   "Design system",
+   "Gov/Enterprise"
+  ],
+  "fit": 8,
+  "network": false
+ },
+ {
   "id": "linkedin:4469454345",
   "board": "linkedin",
   "source": "linkedin",
@@ -47,25 +67,6 @@
   "first_seen": "2026-11-25T23:16:42.244804+00:00",
   "tags": [],
   "fit": 4,
-  "network": false
- },
- {
-  "id": "himalayas:https://himalayas.app/companies/art2hire/jobs/senior-mobile-product-designer",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Senior Mobile Product Designer",
-  "company": "ART2HIRE",
-  "url": "https://himalayas.app/companies/art2hire/jobs/senior-mobile-product-designer?utm_source=api",
-  "region": "AE",
-  "location": "Afghanistan / Albania / Andorra / Armenia / Austria / Azerbaijan / Bahrain / Bangladesh / Belarus / Belgium / Bhutan / Bosnia and Herzegovina / Brunei Darussalam / Bulgaria / Cambodia / China / Croatia / Cyprus / Czechia / Denmark / Estonia / Faroe Islands / Finland / France / Georgia / Germany / Gibraltar / Greece / Guernsey / Holy See (Vatican City State) / Hong Kong / Hungary / Iceland / India / Indonesia / Iran / Iraq / Ireland / Isle of Man / Israel / Italy / Japan / Jersey / Jordan / Kazakhstan / Kosovo / Kuwait / Kyrgyzstan / Lao People's Democratic Republic / Latvia / Lebanon / Liechtenstein / Lithuania / Luxembourg / Macao / Malaysia / Maldives / Malta / Moldova / Monaco / Mongolia / Montenegro / Myanmar / Nepal / Netherlands / North Macedonia / Norway / Oman / Pakistan / Palestine, State of / Philippines / Poland / Portugal / Qatar / Romania / Russian Federation / San Marino / Saudi Arabia / Serbia / Singapore / Slovakia / Slovenia / South Korea / Spain / Sri Lanka / Svalbard and Jan Mayen / Sweden / Switzerland / Syrian Arab Republic / Taiwan / Tajikistan / Thailand / Timor-Leste / Turkey / Turkmenistan / Ukraine / United Arab Emirates / United Kingdom / Uzbekistan / Vietnam / Yemen / Åland Islands",
-  "posted": "2026-11-24T20:03:26+00:00",
-  "salary": null,
-  "first_seen": "2026-11-24T23:52:00.176892+00:00",
-  "tags": [
-   "AI",
-   "Design system"
-  ],
-  "fit": 7,
   "network": false
  },
  {
@@ -354,40 +355,6 @@
    "Design system",
    "Gov/Enterprise"
   ],
-  "fit": 4,
-  "network": false
- },
- {
-  "id": "linkedin:4468202383",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Staff Product Designer, Global Public Sector",
-  "company": "Scale",
-  "url": "https://ae.linkedin.com/jobs/view/staff-product-designer-global-public-sector-at-scale-4468202383",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-11-19T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-24T01:52:19.751356+00:00",
-  "tags": [
-   "Gov/Enterprise"
-  ],
-  "fit": 6,
-  "network": false
- },
- {
-  "id": "linkedin:4491633714",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product/UI Designer",
-  "company": "Astek",
-  "url": "https://sa.linkedin.com/jobs/view/senior-product-ui-designer-at-astek-4491633714",
-  "region": "SA",
-  "location": "Jeddah, Makkah, Saudi Arabia",
-  "posted": "2026-11-19T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-11-24T01:52:19.751356+00:00",
-  "tags": [],
   "fit": 4,
   "network": false
  }
