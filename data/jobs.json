@@ -1,25 +1,5 @@
 [
  {
-  "id": "himalayas:https://himalayas.app/companies/spectro-cloud/jobs/senior-ux-designer",
-  "board": "himalayas",
-  "source": "himalayas",
-  "title": "Senior UX Designer",
-  "company": "Spectro Cloud",
-  "url": "https://himalayas.app/companies/spectro-cloud/jobs/senior-ux-designer?utm_source=api",
-  "region": "AE",
-  "location": "Afghanistan / Albania / Algeria / Andorra / Angola / Antarctica / Armenia / Austria / Azerbaijan / Bahrain / Belarus / Belgium / Benin / Bosnia and Herzegovina / Botswana / Bouvet Island / Bulgaria / Burkina Faso / Burundi / Cabo Verde / Cameroon / Central African Republic / Chad / Comoros / Congo / Congo, The Democratic Republic of the / Cook Islands / Croatia / Curaçao / Cyprus / Czechia / Côte d'Ivoire / Denmark / Djibouti / Egypt / Equatorial Guinea / Eritrea / Estonia / Eswatini / Ethiopia / Faroe Islands / Finland / France / French Guiana / French Southern Territories / Gabon / Gambia / Georgia / Germany / Ghana / Gibraltar / Greece / Greenland / Guadeloupe / Guernsey / Guinea / Guinea-Bissau / Heard Island and McDonald Islands / Holy See (Vatican City State) / Hungary / Iceland / Iran / Iraq / Ireland / Isle of Man / Israel / Italy / Jersey / Jordan / Kazakhstan / Kenya / Kosovo / Kuwait / Kyrgyzstan / Latvia / Lebanon / Lesotho / Liberia / Libya / Liechtenstein / Lithuania / Luxembourg / Madagascar / Malawi / Mali / Malta / Martinique / Mauritania / Mauritius / Mayotte / Moldova / Monaco / Montenegro / Morocco / Mozambique / Namibia / Netherlands / Niger / Nigeria / North Macedonia / Norway / Oman / Palestine, State of / Poland / Portugal / Qatar / Romania / Rwanda / Réunion / Saint Barthélemy / Saint Helena, Ascension and Tristan da Cunha / Saint Martin (French part) / Saint Pierre and Miquelon / San Marino / Sao Tome and Principe / Saudi Arabia / Senegal / Serbia / Seychelles / Sierra Leone / Sint Maarten (Dutch part) / Slovakia / Slovenia / Somalia / South Africa / South Sudan / Spain / Sudan / Svalbard and Jan Mayen / Sweden / Switzerland / Syrian Arab Republic / Tajikistan / Tanzania / Togo / Tunisia / Turkey / Turkmenistan / Uganda / Ukraine / United Arab Emirates / United Kingdom / Uzbekistan / Western Sahara / Yemen / Zambia / Zimbabwe / Åland Islands",
-  "posted": "2026-11-26T03:56:56+00:00",
-  "salary": null,
-  "first_seen": "2026-11-26T13:48:26.685434+00:00",
-  "tags": [
-   "AI",
-   "Design system",
-   "Gov/Enterprise"
-  ],
-  "fit": 8,
-  "network": false
- },
- {
   "id": "linkedin:4469454345",
   "board": "linkedin",
   "source": "linkedin",
@@ -302,40 +282,6 @@
   "first_seen": "2026-11-25T23:16:42.244804+00:00",
   "tags": [],
   "fit": 5,
-  "network": true
- },
- {
-  "id": "linkedin:4484958278",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer",
-  "company": "Easygenerator",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-at-easygenerator-4484958278",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-11-20T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-29T17:23:57.485671+00:00",
-  "tags": [],
-  "fit": 7,
-  "network": true
- },
- {
-  "id": "linkedin:4484940907",
-  "board": "linkedin",
-  "source": "linkedin",
-  "title": "Senior Product Designer, Visual and Design Systems",
-  "company": "Easygenerator",
-  "url": "https://ae.linkedin.com/jobs/view/senior-product-designer-visual-and-design-systems-at-easygenerator-4484940907",
-  "region": "AE",
-  "location": "Dubai, Dubai, United Arab Emirates",
-  "posted": "2026-11-20T00:00:00+00:00",
-  "salary": null,
-  "first_seen": "2026-10-29T17:23:57.485671+00:00",
-  "tags": [
-   "Design system"
-  ],
-  "fit": 8,
   "network": true
  }
 ]
